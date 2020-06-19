@@ -2,17 +2,30 @@ Package: glossary
 Title: A Multilingual Glossary
 Version: 0.2
 Authors@R: 
-    person(given = "Greg",
+   c(person(given = "Greg",
            family = "Wilson",
            role = c("aut", "cre"),
            email = "greg.wilson@rstudio.com",
-           comment = c(ORCID = "0000-0001-8659-8979"))
-Description: >
-  A glossary of data science terms in multiple languages
+           comment = c(ORCID = "0000-0001-8659-8979")),
+     person(given = "Francois",
+            family = "Michonneau",
+            role = c("aut"),
+            email = "francois.michonneau@gmail.com",
+            comment = c(ORCID = "0000-0002-9092-966X")),
+     person(given = "Ian",
+            family = "Flores Siaca",
+            role = c("aut"),
+            email = "iflores.siaca@gmail.com"),
+     person(given = "Zhian N.",
+            family = "Kamvar",
+            role = c("aut"),
+            email = "zkamvar@gmail.com",
+            comment = c(ORCID = "0000-0003-1458-7108")))
+Description: A glossary of data science terms in multiple languages
   and usable from multiple languages.
 Encoding: UTF-8
 LazyData: true
-License: CCBY-4.0 + file LICENSE.md
+License: MIT + file LICENSE
 RoxygenNote: 7.1.0
 Depends: 
     R (>= 2.10)
