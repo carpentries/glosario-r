@@ -19,3 +19,4 @@
 ^Gemfile*
 ^_data$
 ^_site$
+^data-raw$

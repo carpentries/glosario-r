@@ -21,3 +21,4 @@ Imports:
     tibble,
     purrr,
     cli
+Roxygen: list(markdown = TRUE)
