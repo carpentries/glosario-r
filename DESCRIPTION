@@ -1,4 +1,4 @@
-Package: glossary
+Package: glosario
 Title: A Multilingual Glossary
 Version: 0.2
 Authors@R: 
@@ -36,5 +36,4 @@ Imports:
     R6,
     tibble,
     yaml
-
 Roxygen: list(markdown = TRUE)
