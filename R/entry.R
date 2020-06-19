@@ -1,3 +1,4 @@
+#' @importFrom rlang is_scalar_character
 LanguageGlossaryEntry <- R6::R6Class("LanguageGlossaryEntry",
   private = list(
     .lang = NA_character_,
@@ -36,6 +37,7 @@ LanguageGlossaryEntry <- R6::R6Class("LanguageGlossaryEntry",
   )
 )
 
+#' @importFrom rlang is_scalar_character
 GlossaryEntry <- R6::R6Class("GlossaryEntry",
   private = list(
     .slug = NA_character_,

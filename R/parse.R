@@ -1,5 +1,4 @@
-## FIXME: get the real 2-letter iso codes for languages
-langs <- c("en", "fr", "es")
+langs <- na.omit(glosario::iso639$iso639_1)
 
 
 ##' Get a glossary

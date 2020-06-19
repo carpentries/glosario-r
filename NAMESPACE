@@ -2,4 +2,5 @@
 
 export(define)
 export(get_glossary)
+importFrom(rlang,is_scalar_character)
 importFrom(tibble,`%>%`)

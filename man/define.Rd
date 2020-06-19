@@ -12,6 +12,9 @@ define(key, lang = "en", glossary, show_lang = FALSE)
 \item{lang}{language for the definition}
 
 \item{glossary}{a glossary object}
+
+\item{show_lang}{should the ISO639-1 2-letter code be displayed with the
+definition?}
 }
 \value{
 string containing definition

@@ -34,6 +34,7 @@ Imports:
     digest,
     purrr,
     R6,
+    rlang,
     tibble,
     yaml
 Roxygen: list(markdown = TRUE)

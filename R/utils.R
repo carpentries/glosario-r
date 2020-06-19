@@ -1,3 +1,4 @@
+#' @importFrom rlang is_scalar_character
 validate_glossary_cache_path <- function(path) {
 
   if (!rlang::is_scalar_character(path)) {

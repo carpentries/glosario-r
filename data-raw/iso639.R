@@ -14,6 +14,11 @@ iso639 <- iso639_raw %>%
     TRUE ~ iso639_2_terminology
   )) %>%
   mutate(across(starts_with("iso639_2"), ~ gsub(" \\([B|T]\\)", "", .))) %>%
+  mutate(iso639_1 = gsub(" ", "", iso639_1)) %>%
+  mutate(iso639_1 = case_when(
+    nzchar(iso639_1) ~ iso639_1,
+    TRUE ~ NA_character_
+  )) %>%
   mutate(iso639_2 = iso639_2_terminology, .before = "iso639_2_bibliographic") %>%
   relocate(iso639_1, .before = "iso639_2")
 
