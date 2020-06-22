@@ -19,14 +19,14 @@ knitr::opts_chunk$set(
 [![R build status](https://github.com/carpentries/glosario-r/workflows/R-CMD-check/badge.svg)](https://github.com/carpentries/glosario-r/actions)
 <!-- badges: end -->
 
-glosario allows users to create and retrieve multilingual glossaries. By
-default, glossario provides access to a [community-curated glossary](https://github.com/carpentries/glosario) hosted by The Carpentries. This repository also documents the structure exepcted for the glossaries that can be managed by glosario. 
+`glosario` allows users to create and retrieve multilingual glossaries. By
+default, `glosario` provides access to a [community-curated glossary](https://github.com/carpentries/glosario) hosted by The Carpentries. This repository also documents the structure expected for the glossaries that can be managed by `glosario`. 
 
-There is also a [Python interface](https://github.com/carpentries/glosario-py).
+There is also a [Python interface](https://glosario.readthedocs.io/en/latest/).
 
 ## Installation
 
-glosario is still in the development stage and is only available from [GitHub](https://github.com/) with:
+`glosario` is still in the development stage and is only available from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("remotes")
@@ -40,4 +40,11 @@ library(glosario)
 g <- get_glossary()
 g
 define("slug", glossary = g)
+```
+
+To get definitions in other languages we would do:
+
+```{r french}
+g <- get_glossary()
+define("plus_one", lang = 'fr', glossary = g)
 ```
