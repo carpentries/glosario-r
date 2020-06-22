@@ -1,0 +1,9 @@
+- slug: test_slug
+  en:
+    term: "test slug"
+    def: >-
+      test slug
+  fr:
+    term: "slug test"
+    def: >-
+      slug test
