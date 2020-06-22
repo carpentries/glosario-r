@@ -5,19 +5,28 @@
 \title{Get a glossary}
 \usage{
 get_glossary(
-  url = "https://raw.githubusercontent.com/gvwilson/glossary/master/glossary.yml",
+  url = "https://raw.githubusercontent.com/carpentries/glosario/master/glossary.yml",
   cache = tempdir()
 )
 }
 \arguments{
-\item{url}{the path for the glossary}
+\item{url}{the url, path for the glossary or the OWNER/REPO for a GitHub
+repository that hosts a glossary.}
+
+\item{cache}{the local path to cache the glossary (default: \code{tempdir()})?}
 }
 \value{
-a list
+a glossary (as an R6 object)
 }
 \description{
 Retrive a YAML-formatted glossary from the web or locally.
 }
 \details{
-The specification of the file is available from https://github.com/gvwilson/glossary/#readme
+The specification of the file is available from
+https://github.com/carpentries/glosario/#readme
+
+If <OWNER/REPO> is provided to the \code{url} argument, the successful
+conversion into an URL that will resolve to a glossary assumes that the
+glossary is called \code{glossary.yml} in the repository and it lives in the
+branch \code{master}.x
 }

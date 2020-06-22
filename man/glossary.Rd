@@ -4,6 +4,8 @@
 \name{glossary}
 \alias{glossary}
 \title{A multilingual glossary.}
-\author{
-Greg Wilson, \email{greg.wilson@rstudio.com}
+\description{
+\code{glosario} provides the infrastructure to create and read multilingual
+glossaries. By default, \code{glosario} providesaccess to a community-curated
+glossary hosted by \href{https://github.com/carpentries/glosario}{The Carpentries}.
 }
