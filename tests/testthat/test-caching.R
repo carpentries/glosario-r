@@ -3,7 +3,7 @@ context("caching")
 test_that("caching works", {
 
   valid_test_yml <- system.file(
-    "test-parsing/good-files/valid-file.yml",
+    "test-parsing/valid-files/valid-file.yml",
     package = "glosario"
   )
 
