@@ -21,3 +21,5 @@
 ^_site$
 ^data-raw$
 ^utils$
+^\.github$
+^README\.Rmd$
