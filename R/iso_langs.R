@@ -25,5 +25,6 @@ iso_langs <- function(code = NULL, from = "iso639_1", to = "iso639_1") {
     return(glosario::iso639[[to]][!is.na(glosario::iso639[[to]])])
   }
 
-  glosario::iso639[[to]][match(tolower(code), glosario::iso639[[from]])]
+  m <- match(tolower(code), tolower(glosario::iso639[[from]]))
+  glosario::iso639[[to]][m]
 }
