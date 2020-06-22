@@ -22,4 +22,4 @@ iso639 <- iso639_raw %>%
   mutate(iso639_2 = iso639_2_terminology, .before = "iso639_2_bibliographic") %>%
   relocate(iso639_1, .before = "iso639_2")
 
-usethis::use_data(iso639, overwrite = TRUE)
+usethis::use_data(iso639, overwrite = TRUE, compress = "bzip2")

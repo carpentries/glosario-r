@@ -102,7 +102,7 @@ GlossaryEntry <- R6::R6Class("GlossaryEntry",
     print = function(lang = NULL, show_lang = TRUE) {
 
       if (! is.null(lang)) {
-        lang <- match.arg(lang, langs, several.ok = TRUE)
+        lang <- match.arg(lang, iso_langs(), several.ok = TRUE)
 
         if (!all(lang %in% self$list_languages())) {
           warning(
@@ -170,7 +170,7 @@ Glossary <- R6::R6Class("Glossary",
           slug <- e$slug
           ref <- e$ref
 
-          entries_lang <- e[names(e) %in% langs]
+          entries_lang <- e[names(e) %in% iso_langs()]
           res <- GlossaryEntry$new(
             slug = slug,
             term = entries_lang[[1]]$term,

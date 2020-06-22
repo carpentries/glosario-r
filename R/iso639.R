@@ -21,4 +21,5 @@
 #'
 #' @source \url{http://www.loc.gov/standards/iso639-2/php/code_list.php}
 #'   retrieved on 2020-06-19
+#' @importFrom tibble tibble
 "iso639"
