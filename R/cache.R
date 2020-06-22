@@ -4,7 +4,8 @@ read_cache <- function(cached_glossary_path) {
   cached_glossary
 }
 
-write_cache <- function(glossary_path, entries, cached_glossary_path) {
+
+write_cache <- function(glossary_path, cached_glossary_path) {
   parsed_yaml <- yaml::read_yaml(glossary_path)
 
   to_cache <- list(
@@ -32,7 +33,6 @@ use_cache <- function(glossary_path, cache_path) {
   } else {
     raw_glossary <- write_cache(
       glossary_path,
-      entries,
       cached_glossary_path
     )
   }
