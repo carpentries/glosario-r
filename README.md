@@ -7,6 +7,7 @@
 
 [![R build
 status](https://github.com/carpentries/glosario-r/workflows/R-CMD-check/badge.svg)](https://github.com/carpentries/glosario-r/actions)
+[![codecov](https://codecov.io/gh/carpentries/glosario-r/branch/master/graph/badge.svg)](https://codecov.io/gh/carpentries/glosario-r)
 <!-- badges: end -->
 
 `glosario` allows users to create and retrieve multilingual glossaries.
