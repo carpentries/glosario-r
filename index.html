@@ -85,18 +85,17 @@
 <span class="kw">g</span>
 <span class="co">#&gt; A glossary with 152 entries.</span>
 <span class="fu"><a href="reference/define.html">define</a></span>(<span class="st">"slug"</span>, glossary = <span class="kw">g</span>)
-<span class="co">#&gt; slug: An abbreviated portion of a</span>
-<span class="co">#&gt;   page's URL that uniquely identifies</span>
-<span class="co">#&gt;   it. In the example</span>
-<span class="co">#&gt;   `https://www.mysite.com/category/post-name`,</span>
-<span class="co">#&gt;   the slug is `post-name`.</span>
+<span class="co">#&gt; slug: An abbreviated portion of a page's URL that uniquely identifies it. In</span>
+<span class="co">#&gt;   the example `https://www.mysite.com/category/post-name`, the slug is</span>
+<span class="co">#&gt;   `post-name`.</span>
 <span class="co">#&gt; </span>
 </pre></div>
 <p>To get definitions in other languages we would do:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit">
 <span class="kw">g</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_glossary.html">get_glossary</a></span>()
-<span class="fu"><a href="reference/define.html">define</a></span>(<span class="st">"plus one"</span>, lang = <span class="st">'fr'</span>, glossary = <span class="kw">g</span>)
-<span class="co">#&gt; Warning: Some key are not found: 'plus one'. They are being excluded.</span>
+<span class="fu"><a href="reference/define.html">define</a></span>(<span class="st">"plus_one"</span>, lang = <span class="st">'fr'</span>, glossary = <span class="kw">g</span>)
+<span class="co">#&gt; +1: Un vote en faveur de quelque chose.</span>
+<span class="co">#&gt; </span>
 </pre></div>
 </div>
 </div>
