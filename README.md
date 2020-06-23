@@ -37,11 +37,9 @@ g <- get_glossary()
 g
 #> A glossary with 152 entries.
 define("slug", glossary = g)
-#> slug: An abbreviated portion of a
-#>   page's URL that uniquely identifies
-#>   it. In the example
-#>   `https://www.mysite.com/category/post-name`,
-#>   the slug is `post-name`.
+#> slug: An abbreviated portion of a page's URL that uniquely identifies it. In
+#>   the example `https://www.mysite.com/category/post-name`, the slug is
+#>   `post-name`.
 #> 
 ```
 
@@ -49,6 +47,7 @@ To get definitions in other languages we would do:
 
 ``` r
 g <- get_glossary()
-define("plus one", lang = 'fr', glossary = g)
-#> Warning: Some key are not found: 'plus one'. They are being excluded.
+define("plus_one", lang = 'fr', glossary = g)
+#> +1: Un vote en faveur de quelque chose.
+#> 
 ```
