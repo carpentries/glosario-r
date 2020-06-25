@@ -36,7 +36,8 @@ Imports:
     R6,
     rlang,
     tibble,
-    yaml
+    yaml,
+    stringdist
 Roxygen: list(markdown = TRUE)
 Suggests:
     testthat

@@ -207,12 +207,22 @@ Glossary <- R6::R6Class("Glossary",
     define = function(key, lang = NULL, show_lang = FALSE) {
       idx <- match(key, self$list_slugs())
       if (any(is.na(idx))) {
-        warning(
-          "Some key are not found: ",
-          sQuote(paste(key[is.na(idx)], collapse = ", ")),
-          ". They are being excluded.",
-          call. = FALSE
-        )
+        for (i in 1:length(idx)){
+          if (is.na(idx[i])){
+            idx[i] <- which.max(stringdist::stringsim(key[i],
+                                          self$list_slugs(),
+                                          method = 'cosine')
+                                )
+          }
+        }
+        if (any(is.na(idx))){
+          warning(
+            "Some key are not found: ",
+            sQuote(paste(key[is.na(idx)], collapse = ", ")),
+            ". They are being excluded.",
+            call. = FALSE
+          )
+        }
       }
       idx <- idx[!is.na(idx)]
       purrr::walk(
