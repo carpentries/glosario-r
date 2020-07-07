@@ -38,7 +38,8 @@ Imports:
     tibble,
     yaml,
     stringdist,
-    glue
+    glue,
+    dplyr
 Roxygen: list(markdown = TRUE)
 Suggests:
     testthat,

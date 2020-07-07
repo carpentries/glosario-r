@@ -40,7 +40,7 @@ remotes::install_github("carpentries/glosario-r")
 library(glosario)
 g <- get_glossary()
 g
-glosario::define(c("slug", "data frame"), glossary = g)
+glosario::define("data frame", glossary = g)
 ```
 
 To get definitions in other languages we would do:

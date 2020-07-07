@@ -36,11 +36,10 @@ library(glosario)
 g <- get_glossary()
 g
 #> A glossary with 152 entries.
-
-define("slug", glossary = g)
-#> slug: An abbreviated portion of a page's URL that uniquely identifies it. In
-#>   the example `https://www.mysite.com/category/post-name`, the slug is
-#>   `post-name`.
+glosario::define("data frame", glossary = g)
+#> data frame: A two-dimensional data structure for storing tabular data in memory. Rows
+#>   represent [records](#record) and columns represent [variables](variable_data).
+#> See also: tidy_data
 #> 
 ```
 
