@@ -7,6 +7,7 @@
 
 [![R build
 status](https://github.com/carpentries/glosario-r/workflows/R-CMD-check/badge.svg)](https://github.com/carpentries/glosario-r/actions)
+[![codecov](https://codecov.io/gh/carpentries/glosario-r/branch/master/graph/badge.svg)](https://codecov.io/gh/carpentries/glosario-r)
 <!-- badges: end -->
 
 `glosario` allows users to create and retrieve multilingual glossaries.
@@ -35,13 +36,11 @@ library(glosario)
 g <- get_glossary()
 g
 #> A glossary with 152 entries.
-glosario::define(c("slug", "data frame"), glossary = g)
-#> slug: An abbreviated portion of a page's URL that uniquely identifies it. In the
-#>   example `https://www.mysite.com/category/post-name`, the slug is `post-name`.
-#> 
-#> data frame: A two-dimensional data structure for storing tabular data in memory.
-#>   Rows represent [records](#record) and columns represent [variables](variable_data).
-#> See also: tidy_data
+
+define("slug", glossary = g)
+#> slug: An abbreviated portion of a page's URL that uniquely identifies it. In
+#>   the example `https://www.mysite.com/category/post-name`, the slug is
+#>   `post-name`.
 #> 
 ```
 
