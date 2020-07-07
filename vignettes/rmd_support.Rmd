@@ -1,0 +1,54 @@
+---
+title: "RMarkdown Support"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{rmd_support}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(glosario)
+```
+
+To add links to definitions, you can use the `gdef` function for inline writing:
+
+```{r, eval=FALSE}
+This is a `r gdef('data_frame', 'Data Frame')`, they are used for storing data.
+```
+
+Which would look like this:
+
+> This is a `r gdef('data_frame', 'Data Frame')`, they are used for storing data.
+
+The `gdef` function depends on the YAML header being set up under the `glosario` key. An example of a YAML header for glosario would be: 
+
+```YAML
+title: "Test Glosario RMD Support"
+output: html_document
+glosario:
+  base_url:
+    - http://carpentries.org/glosario
+  language:
+    - en
+  requires:
+  - readr
+  defines:
+  - data_frame
+```
+
+An explanation of the keys follows:
+
+| Key | Explanation |
+|:---:|:-----------:|
+|`base_url`| URL where the links will point to|
+|`language`| Language of the terms|
+|`requires`| Terms that have to be known before starting the lesson|
+|`defines`| The terms that are defined in this lesson |

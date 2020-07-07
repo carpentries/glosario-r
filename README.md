@@ -35,12 +35,13 @@ library(glosario)
 g <- get_glossary()
 g
 #> A glossary with 152 entries.
-define("slug", glossary = g)
-#> slug: An abbreviated portion of a
-#>   page's URL that uniquely identifies
-#>   it. In the example
-#>   `https://www.mysite.com/category/post-name`,
-#>   the slug is `post-name`.
+glosario::define(c("slug", "data frame"), glossary = g)
+#> slug: An abbreviated portion of a page's URL that uniquely identifies it. In the
+#>   example `https://www.mysite.com/category/post-name`, the slug is `post-name`.
+#> 
+#> data frame: A two-dimensional data structure for storing tabular data in memory.
+#>   Rows represent [records](#record) and columns represent [variables](variable_data).
+#> See also: tidy_data
 #> 
 ```
 
@@ -48,6 +49,20 @@ To get definitions in other languages we would do:
 
 ``` r
 g <- get_glossary()
-define("plus one", lang = 'fr', glossary = g)
-#> Warning: Some key are not found: 'plus one'. They are being excluded.
+define("plus_one", lang = 'fr', glossary = g)
+#> +1: Un vote en faveur de quelque chose.
+#> 
 ```
+
+To add links to definitions, you can use the `gdef` function for inline
+writing:
+
+``` r
+This is a `r gdef('data_frame', 'Data Frame')`, they are used for storing data.
+```
+
+Which would look like this:
+
+> This is a
+> <a href="http://carpentries.org/glossary/en/#data_frame" class="glossary-definition">Data
+> Frame</a>, they are used for storing data.

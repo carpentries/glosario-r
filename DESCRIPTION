@@ -37,7 +37,11 @@ Imports:
     rlang,
     tibble,
     yaml,
-    stringdist
+    stringdist,
+    glue
 Roxygen: list(markdown = TRUE)
 Suggests:
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

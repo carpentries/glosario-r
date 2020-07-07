@@ -39,7 +39,7 @@ remotes::install_github("carpentries/glosario-r")
 library(glosario)
 g <- get_glossary()
 g
-define(c("slug", "data_frame"), glossary = g)
+glosario::define(c("slug", "data frame"), glossary = g)
 ```
 
 To get definitions in other languages we would do:
@@ -48,3 +48,13 @@ To get definitions in other languages we would do:
 g <- get_glossary()
 define("plus_one", lang = 'fr', glossary = g)
 ```
+
+To add links to definitions, you can use the `gdef` function for inline writing:
+
+```{r, eval=FALSE}
+This is a `r gdef('data_frame', 'Data Frame')`, they are used for storing data.
+```
+
+Which would look like this:
+
+> This is a `r gdef('data_frame', 'Data Frame')`, they are used for storing data.
