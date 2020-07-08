@@ -62,5 +62,5 @@ This is a `r gdef('data_frame', 'Data Frame')`, they are used for storing data.
 Which would look like this:
 
 > This is a
-> <a href="http://carpentries.org/glossary/en/#data_frame" class="glossary-definition">Data
+> <a href="https://carpentries.org/glossary/en/#data_frame" class="glossary-definition">Data
 > Frame</a>, they are used for storing data.
