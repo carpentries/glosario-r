@@ -16,7 +16,7 @@ gdef <- function(term, text){
   glosario_data <- rmarkdown::metadata[['glosario']]
 
   if (is.null(glosario_data$base_url)){
-    base_url <- 'http://carpentries.org/glosario'
+    base_url <- 'https://carpentries.org/glosario'
   } else {
     base_url <- glosario_data$base_url
   }
