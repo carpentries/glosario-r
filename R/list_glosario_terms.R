@@ -1,14 +1,21 @@
 #' @param title The table title
 #' @export
 #'
-list_glosario_terms <- function(title = NULL){
+list_glosario_terms <- function(title = NULL, type = 'definitions'){
 
   if (!isTRUE(getOption('knitr.in.progress'))){
     stop('This function only runs on RMarkdown Documents')
   }
 
   glosario_data <- rmarkdown::metadata[['glosario']]
-  defines <- glosario_data$defines
+
+  if (type == 'definitions'){
+    defines <- glosario_data$defines
+  } else if (type == 'reqs'){
+    defines <- glosario_data$requires
+  } else {
+    stop('We don\'t support the type argument outside of "definitions" or "reqs"')
+  }
 
   definitions <- purrr::map_chr(defines, text_definition, glosario_data$language)
 
