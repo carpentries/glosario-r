@@ -3,6 +3,7 @@
 export(define)
 export(gdef)
 export(get_glossary)
+export(list_glosario_terms)
 importFrom(rlang,is_scalar_character)
 importFrom(tibble,`%>%`)
 importFrom(tibble,tibble)
