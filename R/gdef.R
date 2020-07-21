@@ -16,7 +16,7 @@ gdef <- function(term, text){
   glosario_data <- rmarkdown::metadata[['glosario']]
 
   if (is.null(glosario_data$base_url)){
-    base_url <- 'https://carpentries.org/glosario'
+    base_url <- 'https://carpentries.github.io/glosario'
   } else {
     base_url <- glosario_data$base_url
   }
@@ -27,6 +27,8 @@ gdef <- function(term, text){
     language <- glosario_data$language
   }
 
-  string <- glue::glue('<a href="{base_url}/{language}/#{term}" class="glossary-definition">{text}</a>')
+  # We introduce a div with class glosario_def so people can style HTML
+  # The link itself is a MD link so that it renders without problem in all formats.
+  string <- glue::glue('<div class="glosario_def">[{text}]({base_url}/{language}/#{term})</div>')
   return(string)
 }
