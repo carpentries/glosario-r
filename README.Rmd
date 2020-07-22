@@ -38,15 +38,23 @@ remotes::install_github("carpentries/glosario-r")
 
 ```{r example}
 library(glosario)
-g <- get_glossary()
-g
-glosario::define("data frame", glossary = g)
+
+define("data frame")
 ```
 
 To get definitions in other languages we would do:
 
 ```{r french}
-g <- get_glossary()
+define("plus_one", lang = 'fr')
+```
+
+If you want to use your custom glossary file you can do it the following way:
+
+```{r}
+custom_url <- "https://raw.githubusercontent.com/carpentries/glosario/master/glossary.yml"
+
+g <- get_glossary(url = custom_url)
+
 define("plus_one", lang = 'fr', glossary = g)
 ```
 

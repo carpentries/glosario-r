@@ -33,12 +33,10 @@ remotes::install_github("carpentries/glosario-r")
 
 ``` r
 library(glosario)
-g <- get_glossary()
-g
-#> A glossary with 152 entries.
-glosario::define("data frame", glossary = g)
-#> data frame: A two-dimensional data structure for storing tabular data in memory. Rows
-#>   represent [records](#record) and columns represent [variables](variable_data).
+
+define("data frame")
+#> data frame: A two-dimensional data structure for storing tabular data in memory. Rows represent [records](#record) and columns
+#>   represent [variables](variable_data).
 #> See also: tidy_data
 #> 
 ```
@@ -46,7 +44,19 @@ glosario::define("data frame", glossary = g)
 To get definitions in other languages we would do:
 
 ``` r
-g <- get_glossary()
+define("plus_one", lang = 'fr')
+#> +1: Un vote en faveur de quelque chose.
+#> 
+```
+
+If you want to use your custom glossary file you can do it the following
+way:
+
+``` r
+custom_url <- "https://raw.githubusercontent.com/carpentries/glosario/master/glossary.yml"
+
+g <- get_glossary(url = custom_url)
+
 define("plus_one", lang = 'fr', glossary = g)
 #> +1: Un vote en faveur de quelque chose.
 #> 
@@ -62,5 +72,5 @@ This is a `r gdef('data_frame', 'Data Frame')`, they are used for storing data.
 Which would look like this:
 
 > This is a
-> <a href="https://carpentries.org/glossary/en/#data_frame" class="glossary-definition">Data
+> <a href="https://carpentries.org/glosario/en/#data_frame" class="glossary-definition">Data
 > Frame</a>, they are used for storing data.

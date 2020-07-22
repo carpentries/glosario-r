@@ -19,20 +19,28 @@ To get a single definition, you just need to pass a slug with the term you want 
 ```{r setup}
 library(glosario)
 
-g <- get_glossary()
-
-define('data_frame', lang = 'en', glossary = g)
+define('data_frame', lang = 'en')
 ```
 
 If you don't know the exact slug for the term you're searching, don't worry. Type the term as close as you remember and `define` will try to match it to the closes term we have available.
 
 ```{r}
-define('data frame', lang = 'en', glossary = g)
+define('data frame', lang = 'en')
 ```
 
 `define` is not constrained to a single language. In one code chunk you can define terms both in English and French, for example.
 
 ```{r}
-define('slug', lang = 'en', glossary = g)
-define('slug', lang = 'fr', glossary = g)
+define('plus one', lang = 'en')
+define('plus one', lang = 'fr')
+```
+
+If you want to use your custom glossary file you can do it the following way:
+
+```{r}
+custom_url <- "https://raw.githubusercontent.com/carpentries/glosario/master/glossary.yml"
+
+g <- get_glossary(url = custom_url)
+
+define("plus_one", lang = 'fr', glossary = g)
 ```
