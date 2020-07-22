@@ -39,7 +39,8 @@ Imports:
     yaml,
     stringdist,
     glue,
-    dplyr
+    dplyr,
+    magrittr
 Roxygen: list(markdown = TRUE)
 Suggests:
     testthat,
