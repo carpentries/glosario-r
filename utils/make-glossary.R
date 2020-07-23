@@ -11,6 +11,6 @@ for (entry in raw) {
   glossary[[entry$slug]] <- entry
 }
 
-setwd('r-package') # We have to trick usethis because of package safeguarding on the functions
+setwd('glosario-r') # We have to trick usethis because of package safeguarding on the functions
 
 usethis::use_data(glossary, internal = TRUE)
