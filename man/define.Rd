@@ -4,7 +4,7 @@
 \alias{define}
 \title{Look up definition of term.}
 \usage{
-define(key, lang = "en", glossary, show_lang = FALSE)
+define(key, lang = "en", glossary = NULL, show_lang = FALSE)
 }
 \arguments{
 \item{key}{lookup key}

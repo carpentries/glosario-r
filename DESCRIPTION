@@ -40,7 +40,8 @@ Imports:
     stringdist,
     glue,
     dplyr,
-    magrittr
+    magrittr,
+    stringr
 Roxygen: list(markdown = TRUE)
 Suggests:
     testthat,

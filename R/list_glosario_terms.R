@@ -1,4 +1,8 @@
+#' List all the glosario terms in an RMd
+#'
 #' @param title The table title
+#' @param type One of 'definitions' or 'reqs'
+#'
 #' @export
 #'
 list_glosario_terms <- function(title = NULL, type = 'definitions'){
