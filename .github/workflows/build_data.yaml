@@ -1,8 +1,6 @@
 on:
-  push:
-    branches:
-      - master
-      - rmd_support
+  schedule:
+  - cron: "0 0 * * *"
 
 name: build_data
 
@@ -25,4 +23,4 @@ jobs:
           git config user.email github-actions@github.com
           git add .
           git commit -m "GH ACTION - Glosario file generated"
-          git push
+          git push -q
