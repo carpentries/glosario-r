@@ -16,5 +16,13 @@ jobs:
 
       - uses: r-lib/actions/setup-r@v1
 
-      - name: Query dependencies
-        shell: Rscript utils/make-glossary.R
+      - name: Make Glosario
+        run: Rscript utils/make-glossary.R
+
+      - name: Push the new file to the repo
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "GH ACTION - Glosario file generated"
+          git push
