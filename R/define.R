@@ -11,7 +11,7 @@
 #' @export
 define <- function(key, lang = "en", glossary = NULL, show_lang = FALSE) {
   if (is.null(glossary)){
-    glossary <- get_glossary()
+    glossary <- Glossary$new()
   }
 
   return(glossary$define(key, lang, show_lang = show_lang))

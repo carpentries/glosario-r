@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - master
+      - rmd_support
+
+name: build_data
+
+jobs:
+  pkgdown:
+    runs-on: macOS-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Query dependencies
+        run: |
+          utils/make-glossary.R https://raw.githubusercontent.com/carpentries/glosario/master/glossary.yml
+        shell: Rscript {0}

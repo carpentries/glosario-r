@@ -164,14 +164,19 @@ Glossary <- R6::R6Class("Glossary",
   ),
 
   public = list(
-    initialize = function(glossary_path,
+    initialize = function(glossary_path = NULL,
                           cache_path = tempdir()) {
 
-      validate_glossary_uri(glossary_path)
-
-      if (!is.null(cache_path)) {
+      if (is.null(glossary_path)){
+        raw_glossary <- list(
+          uri = 'PKG_DATA',
+          entries = glosario
+        )
+      } else if(!is.null(cache_path)) {
+        validate_glossary_uri(glossary_path)
         raw_glossary <- use_cache(glossary_path, cache_path)
       } else {
+        validate_glossary_uri(glossary_path)
         raw_glossary <- list(
           uri = glossary_path,
           entries = yaml::read_yaml(glossary_path)
