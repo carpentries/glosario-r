@@ -31,6 +31,16 @@ define('data frame')
 `define` is not constrained to a single language. In one code chunk you can define terms both in English and French, for example.
 
 ```{r}
-define('slug', lang = 'en')
-define('slug', lang = 'fr')
+define('plus one', lang = 'en')
+define('plus one', lang = 'fr')
+```
+
+If you want to use your custom glossary file you can do it the following way:
+
+```{r}
+custom_url <- "https://raw.githubusercontent.com/carpentries/glosario/master/glossary.yml"
+
+g <- get_glossary(url = custom_url)
+
+define("plus_one", lang = 'fr', glossary = g)
 ```
