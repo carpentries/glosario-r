@@ -1,11 +1,11 @@
 #!/usr/bin/env Rscript
 
 # Create .rda version of glossary for R package.
-# Usage: Rscript make-glossary.R /path/to/glossary.yml
+# Usage: Rscript make-glossary.R
 
 
-args <- commandArgs(trailingOnly = TRUE)
-raw <- yaml::read_yaml(args[1])
+#args <- commandArgs(trailingOnly = TRUE)
+raw <- yaml::read_yaml("https://raw.githubusercontent.com/carpentries/glosario/master/glossary.yml")
 glosario <- list()
 for (entry in raw) {
   glosario[[entry$slug]] <- entry
