@@ -1,8 +1,8 @@
 ---
-title: "Definitions"
+title: "Basic Usage"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{definitions}
+  %\VignetteIndexEntry{Basic Usage}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -19,20 +19,18 @@ To get a single definition, you just need to pass a slug with the term you want 
 ```{r setup}
 library(glosario)
 
-g <- get_glossary()
-
-define('data_frame', lang = 'en', glossary = g)
+define('data_frame')
 ```
 
 If you don't know the exact slug for the term you're searching, don't worry. Type the term as close as you remember and `define` will try to match it to the closes term we have available.
 
 ```{r}
-define('data frame', lang = 'en', glossary = g)
+define('data frame')
 ```
 
 `define` is not constrained to a single language. In one code chunk you can define terms both in English and French, for example.
 
 ```{r}
-define('slug', lang = 'en', glossary = g)
-define('slug', lang = 'fr', glossary = g)
+define('slug', lang = 'en')
+define('slug', lang = 'fr')
 ```

@@ -16,5 +16,4 @@ Validate Documents using Glosario Definitions
 In case the document is not valid the function will return a warning
 for each term not defined and raise a final error listing the total
 number of terms not matched.
-\code{validate_document("lessons/lesson_01.Rmd")}
 }
