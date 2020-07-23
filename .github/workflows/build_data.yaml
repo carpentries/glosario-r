@@ -7,7 +7,7 @@ on:
 name: build_data
 
 jobs:
-  pkgdown:
+  build_data:
     runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}

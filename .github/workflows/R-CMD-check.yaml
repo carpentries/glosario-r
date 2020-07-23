@@ -2,6 +2,7 @@ on:
   push:
     branches:
       - master
+      - rmd_support
   pull_request:
     branches:
       - master
