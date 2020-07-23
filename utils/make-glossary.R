@@ -3,6 +3,8 @@
 # Create .rda version of glossary for R package.
 # Usage: Rscript make-glossary.R
 
+install.packages("yaml")
+install.packages("usethis")
 
 #args <- commandArgs(trailingOnly = TRUE)
 raw <- yaml::read_yaml("https://raw.githubusercontent.com/carpentries/glosario/master/glossary.yml")
