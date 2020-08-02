@@ -27,8 +27,8 @@ gdef <- function(term, text){
     language <- glosario_data$language
   }
 
-  # We introduce a div with class glosario_def so people can style HTML
+  # We introduce a span with class glosario_def so people can style HTML
   # The link itself is a MD link so that it renders without problem in all formats.
-  string <- glue::glue('<div class="glosario_def">[{text}]({base_url}/{language}/#{term})</div>')
+  string <- glue::glue('<span class="glosario_def">[{text}]({base_url}/{language}/#{term})</span>')
   return(string)
 }

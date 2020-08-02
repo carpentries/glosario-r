@@ -15,12 +15,12 @@ jobs:
       - uses: r-lib/actions/setup-r@v1
 
       - name: Make Glosario
-        run: Rscript utils/make-glossary.R
+        run: Rscript utils/fetch-glossary.R
 
       - name: Push the new file to the repo
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add .
+          git add inst/glosario/glossary.yml
           git commit -m "GH ACTION - Glosario file generated"
           git push -q

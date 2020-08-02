@@ -14,7 +14,7 @@ validate_document <- function(file_path){
 
   file_text <- readLines(file_path)
 
-  gdef_idx <- purrr::map_lgl(file_text, stringr::str_detect, 'gdef()')
+  gdef_idx <- purrr::map_lgl(file_text, stringr::str_detect, 'gdef(')
 
   gdef_lines <- file_text[gdef_idx]
 
@@ -22,7 +22,8 @@ validate_document <- function(file_path){
     purrr::map_chr(stringr::str_remove_all, "'") %>%
     purrr::map_chr(stringr::str_remove_all, "\\)`") %>%
     purrr::map(stringr::str_split_fixed, ", ", 2) %>%
-    purrr::map_chr(~.x[, 1])
+    purrr::map_chr(~.x[, 1], drop = TRUE) %>%
+    unique()
 
 
   terms_flag <- all(yaml_defines %in% text_slugs)

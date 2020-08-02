@@ -169,8 +169,8 @@ Glossary <- R6::R6Class("Glossary",
 
       if (is.null(glossary_path)){
         raw_glossary <- list(
-          uri = 'PKG_DATA',
-          entries = glosario
+          uri = system.file("glosario/glossary.yml", package = "glosario"),
+          entries = yaml::read_yaml(system.file("glosario/glossary.yml", package = "glosario"))
         )
       } else if(!is.null(cache_path)) {
         validate_glossary_uri(glossary_path)
