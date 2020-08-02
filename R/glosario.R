@@ -1,4 +1,4 @@
-#' A multilingual glossary.
+#' A multilingual glosario
 #'
 #' `glosario` provides the infrastructure to create and read multilingual
 #' glossaries. By default, `glosario` providesaccess to a community-curated
@@ -6,6 +6,6 @@
 #' Carpentries](https://github.com/carpentries/glosario).
 #'
 #' @docType package
-#' @name glossary
+#' @name glosario
 #' @importFrom tibble `%>%`
 NULL
