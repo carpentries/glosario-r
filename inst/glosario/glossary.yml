@@ -23,6 +23,12 @@
        Un chemin d'accès absolu indique la même position dans le système de fichier
        quelque soit l'emplacement où il est evalué. Un chemin d'accès absolu est
        l'équivalent de la latitude et longitude en géographie.
+  es:
+    term: "ruta absoluta"
+    def: >
+      Una ruta que dirige a la misma ubicación en el sistema de archivos
+      independientemente del contexto donde sea evaluada. Una ruta absoluta es
+      el equivalente a la latitud y longitud en geografía.
   ref:
     - relative_path
 
@@ -32,6 +38,11 @@
     def: >
       The sequential index of a row in a table, regardless of what sections of the
       table is being displayed.
+  es:
+    term: "número de fila absoluto"
+    def: >
+      El índice secuencial que indentifica una fila en un tablero, sin importar
+      qué secciones se estén mostrando.
 
 - slug: aggregation
   en:
@@ -39,6 +50,11 @@
     def: >
       To combine many values into one, e.g., by summing a set of numbers or
       concatenating a set of strings.
+  es:
+    term: "agregación"
+    def: >
+      Combinar muchos valores en uno, por ejemplo, sumando una serie de números
+      o concatenando un conjunto de cadenas de caracteres.
   fr:
     term: "agrégation"
     def: >
@@ -50,10 +66,15 @@
     term: "aggregation function"
     def: >
       A function that combines many values into one, such as `sum` or `max`.
+  es:
+    term: "función de agregación"
+    def: >
+      Una función que combina varios valores en uno, como `sum` o `max`.
   fr:
     term: "fonction d'agrégation"
     def: >
       Une fonction qui permet de synthétiser plusieurs valeurs en une seule, example, 'sum' ou 'max'.
+
 - slug: agile
   en:
     term: "agile development"
@@ -97,6 +118,11 @@
     def: >
       A value passed into a function. Some authors use the term as a synonym for
       [parameter](#parameter) and some do not; it's all very confusing.
+  es:
+    term: "argumento"
+    def: >
+      Un valor pasado a una función. Algunos autores usan el término como sinónimo de
+      [parámetro](#parameter) y algunos no; Todo es muy confuso.
 
 - slug: ascii
   en:
@@ -162,11 +188,42 @@
   ref:
     - tidyverse
 
+- slug: binary
+  en:
+    term: "binary"
+    def: >
+      A system which can have one of two possible states. In computing often represented as being in the state 0 or 1.
+      Represented in [Boolean](#boolean) logic as [False](#false) (0) or [True](#true) (1). Computers are built upon systems which store 0s and 1s as "[bits](#bit)"
+    ref:
+      - boolean
+      - bit
+
+- slug: bit
+  en:
+    term: "bit"
+    def: >
+      A unit of information representing representing alternatives, yes/no, [true](#true)/[false](#false). In computing a state of either 0 or 1.
+  ref:
+    - binary
+    - boolean
+
 - slug: boilerplate
   en:
     term: "boilerplate"
     def: >
       FIXME
+
+- slug: boolean
+  en:
+    term: "Boolean"
+    def: >
+       Relating to a variable or data type that can have either a logical value of [true](#true) or a value of [false](#false). Named for George Boole,
+       a mathemetician who lived in the 19th Century. Binary systems, like all computers are built on this foundation of systems of logical evaluations between
+       states of true and false, 1 or 0.
+    ref:
+      - truthy
+      - falsy
+      - binary
 
 - slug: branch
   en:
@@ -567,13 +624,25 @@
     def: >
       FIXME
 
+- slug: "false"
+  en:
+    term: "false"
+    def: >
+       The logical ([Boolean](#boolean)) state opposite of "[true](#true)". Used in logic and programming to represent [binary](#binary) state of something.
+    ref:
+      - boolean
+      - "true"
+      - truthy
+      - falsy
+
 - slug: falsy
   en:
     term: "falsy"
     def: >
-      A horrible neologism meaning "equivalent to false".
+      Evaluating to [false](#false) in a [Boolean](#boolean) context.
   ref:
     - truthy
+    - boolean
 
 - slug: faq
   en:
@@ -633,7 +702,7 @@
   fr:
     term: "filtrer"
     def: >
-      Le fait de sélectionner un ensemble d'[observations](#record) (example, certaines lignes d'une table) en se 
+      Le fait de sélectionner un ensemble d'[observations](#record) (example, certaines lignes d'une table) en se
       basant sur leurs valeurs.
 
 - slug: fixture
@@ -684,14 +753,18 @@
   fr:
     term: "fonction générique"
     def: >
-      Une collection de fonctions ayant un objectif similaire, chacune opérant sur une classe 
+      Une collection de fonctions ayant un objectif similaire, chacune opérant sur une classe
       de données différente.
 
 - slug: git
   en:
     term: "Git"
     def: >
-      a version control tool to record and manage changes to a project.
+      A version control tool to record and manage changes to a project.
+  fr:
+    term: "Git"
+    def: >
+      Un outil de gestion des versions qui permet d'enregistrer et de piloter les modifications effectuées au niveau d'un projet.
 
 - slug: git_branch
   en:
@@ -699,6 +772,11 @@
     def: >
       A snapshot of a version of a Git repository. Multiple branches can capture
       multiple versions of the same repository.
+  fr:
+    term: "Git branch"
+    def: >
+      Une photographie d'une version d'un dépôt Git. Plusieurs branches peuvent capturer
+      plusieurs versions au niveau d'un même dépôt.
   ref:
     - feature_branch
     - fork
@@ -710,7 +788,12 @@
     def: >
       Copies (and usually downloads) a Git [remote repository](#remote_repository)
       onto the local computer.
-
+  fr:
+    term: "Git clone"
+    def: >
+      Permet de copier (et générallement de télécharger) un [dépôt éloigné](#remote_repository) Git au niveau
+      de l'ordinateur local.
+      
 - slug: git_conflict
   en:
     term: "Git conflict"
@@ -737,6 +820,11 @@
     def: >
       Downloads and synchronizes changes between a [remote repository](#remote_repository)
       and a local [repository](#repository).
+  fr:
+    term: "Git pull"
+    def: >
+      Télécharge et synchronise des modifications entre le [dépôt éloigné](#remote_repository)
+      et le [dépôt](#repository) local.
 
 - slug: git_push
   en:
@@ -744,6 +832,11 @@
     def: >
       Uploads and synchronizes changes between a local [repository](#repository)
       and a [remote repository](#remote_repository).
+  fr:
+    term: "Git push"
+    def: >
+      Charge et synchronise des modifications entre le [dépôt](#repository) local et
+      le [dépôt éloigné](#remote_repository).
 
 - slug: github
   en:
@@ -751,6 +844,11 @@
     def: >
       A cloud-based platform built around [Git](#git) that allows you to save versions
       of your project online and collaborate with other Git users.
+  fr:
+    term: "Github"
+    def: >
+      Une platefome dans le Cloud, construite autour de [Git](#git) qui permet de sauvegarder en ligne les versions
+      d'un projet et de collaborer avec d'autres utilisateurs Git.
 
 - slug: global_environment
   en:
@@ -761,7 +859,7 @@
   fr:
     term: "environnement global"
     def: >
-      L'[environnement](#environment) qui contient des définitions de premier niveau dans R, 
+      L'[environnement](#environment) qui contient des définitions de premier niveau dans R,
       example, celles écrites directement dans l'intérpreteur.
 
 - slug: global_installation
@@ -773,7 +871,7 @@
   fr:
     term: "installation globale"
     def: >
-      Le fait d'installer un package dans un emplacement où il peut être accessible par tous les utilisateurs ainsi que 
+      Le fait d'installer un package dans un emplacement où il peut être accessible par tous les utilisateurs ainsi que
       tous les projets.
   ref:
     - local_installation
@@ -792,7 +890,7 @@
   fr:
     term: "variable globale"
     def: >
-      Une variable définie en dehors d'une fonction donnée, qui est par conséquent visible pour 
+      Une variable définie en dehors d'une fonction donnée, qui est par conséquent visible pour
       toutes les fonctions.
   ref:
     - local_variable
@@ -1652,6 +1750,12 @@
       The practice of escribing and documenting research results in
       such a way that another researcher or person can re-run the
       analysis code on the exact data to obtain the same result.
+  pt:
+    term: "Pesquisa Reprodutível"
+    def: >
+      A prática de escrever e documentar resultados de pesquisa de forma
+      que outras pessoas pesquisadoras possam executar novamente o código
+      de análise com os mesmos dados para obter os mesmos resultados.
 
 - slug: root_directory
   en:
@@ -1949,11 +2053,17 @@
     def: >
       A modern replacement for R's data frame, which stores tabular data in columns
       and rows, defined and used in the [tidyverse](#tidyverse).
+  fr:
+    term: "tibble"
+    def: >
+      Une alternative moderne du "data frame" en R permettant de matérialiser des données tabulaires
+      en colonnes et en lignes, le "tibble" a été défini et est utilisé dans le [tidyverse](#tidyverse).
   es:
     term: "tibble"
     def: >
       Un remplazo moderno para los data frames de R que guarda datos tabulares en
       columnas y filas, definido y usado en el [tidyverse](#tidyverse).
+
 - slug: ticket
   en:
     term: "ticket"
@@ -1992,16 +2102,30 @@
     def: >
       A collection of R packages for modeling and statistical analysis designed with
       a [shared philosophy](https://tidymodels.github.io/model-implementation-principles/index.html).
+  fr:
+    term: "Tidymodels"
+    def: >
+      Une collection de packages R pour la modélisation et l'analyse statistique élaborés en prenant en considération
+      une [philosophie partagée](https://tidymodels.github.io/model-implementation-principles/index.html)
 
 - slug: tidyverse
   en:
     term: "Tidyverse"
     def: >
       A collection of R packages for operating on tabular data in consistent ways.
+  fr:
+    term: "Tidyverse"
+    def: >
+      Une collection de packages R permettant le traitement des données tabulaire d'une manière cohérente.
   es:
     term: "Tidyverse"
     def: >
       Una colección de paquetes de R para operar de maneras consistentes con datos
+      tabulares.
+  pt:
+    term: "Tidyverse"
+    def: >
+      Uma coleção de pacotes de R para trabalhar de forma consistente com dados 
       tabulares.
 
 - slug: timestamp
@@ -2016,13 +2140,26 @@
     def: >
       FIXME
 
+- slug: "true"
+  en:
+    term: "true"
+    def: >
+       The logical ([Boolean](#boolean)) state opposite of "[false](#false)". Used in logic and programming to represent [binary](#binary) state of something.
+  ref:
+    - "false"
+    - boolean
+    - truthy
+    - falsy
+
+
 - slug: truthy
   en:
     term: "truthy"
     def: >
-      A truly Orwellian neologism meaning "not equivalent to false". Cf.
-      [falsy](#falsy), but only if you are able to set aside your respect for the
-      English language.
+      Evaluating to true in a [Boolean](#boolean) context.
+  ref:
+    - falsy
+    - boolean
 
 - slug: type_coercion
   en:
@@ -2075,6 +2212,11 @@
     def: >
       In a function, the ability to take any number of arguments.  R uses `...` to
       capture the "extra" arguments.
+  fr:
+    term: "arguments d'une variable"
+    def: >
+      La possibilité d'intégrer n'importe quel nombre d'arguments dans une fonction. R utilise `...` afin
+      de capturer les arguments "additionnels".
 
 - slug: variable_data
   en:
@@ -2088,6 +2230,11 @@
     def: >
       A name in a program that has some data associated with it. A variable's value
       can be changed after definition.
+  fr:
+    term: "variable (programme)"
+    def: >
+       Un nom associé à des données au niveau d'un programme. La valeur d'une variable
+       peut être modifiée après l'avoir définie.
   ref:
     - constant
 
@@ -2120,6 +2267,10 @@
     term: "sistema de control de versión"
     def: >
       Un sistema para manejar los cambios hechos durante el desarollo de software.
+  fr:
+    term: "système de gestion des versions"
+    def: >
+       Un système qui permet de gérer les modifications effectuées sur un programme durant son développement.
   ref:
     - git
 
