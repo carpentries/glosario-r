@@ -99,6 +99,24 @@ GlossaryEntry <- R6::R6Class("GlossaryEntry",
         )
       )
     },
+    rmd_define = function(lang = NULL){
+      if (! is.null(lang)) {
+        lang <- match.arg(lang, iso_langs(), several.ok = TRUE)
+
+        if (!all(lang %in% self$list_languages())) {
+          warning(
+            "Some languages requested are not availble for this entry.",
+            call. = FALSE
+          )
+        }
+        idx <- match(lang, self$list_languages(), nomatch = NULL)
+      } else {
+        idx <- seq_along(private$.entries)
+      }
+
+      purrr::map(private$.entries[idx], ~.x$definition())
+    },
+
     print = function(lang = NULL, show_lang = TRUE) {
 
       if (! is.null(lang)) {
@@ -146,14 +164,21 @@ Glossary <- R6::R6Class("Glossary",
   ),
 
   public = list(
-    initialize = function(glossary_path,
+    initialize = function(glossary_path = NULL,
                           cache_path = tempdir()) {
 
-      validate_glossary_uri(glossary_path)
-
-      if (!is.null(cache_path)) {
+      if (is.null(glossary_path)){
+        raw_glossary <- list(
+          uri = system.file("glosario/glossary.yml", package = "glosario"),
+          entries = yaml::read_yaml(system.file("glosario/glossary.yml",
+                                                package = "glosario"),
+                                    eval.expr = FALSE)
+        )
+      } else if(!is.null(cache_path)) {
+        validate_glossary_uri(glossary_path)
         raw_glossary <- use_cache(glossary_path, cache_path)
       } else {
+        validate_glossary_uri(glossary_path)
         raw_glossary <- list(
           uri = glossary_path,
           entries = yaml::read_yaml(glossary_path)
@@ -230,6 +255,29 @@ Glossary <- R6::R6Class("Glossary",
         function(e) {
           e$print(lang, show_lang = show_lang)
         })
+    },
+    rmd_define = function(key, lang = NULL){
+      idx <- match(key, self$list_slugs())
+      if (any(is.na(idx))) {
+        for (i in 1:length(idx)){
+          if (is.na(idx[i])){
+            idx[i] <- which.max(stringdist::stringsim(key[i],
+                                                      self$list_slugs(),
+                                                      method = 'cosine')
+            )
+          }
+        }
+        if (any(is.na(idx))){
+          warning(
+            "Some key are not found: ",
+            sQuote(paste(key[is.na(idx)], collapse = ", ")),
+            ". They are being excluded.",
+            call. = FALSE
+          )
+        }
+      }
+      idx <- idx[!is.na(idx)]
+      private$.entries[idx]
     },
 
     print = function() {

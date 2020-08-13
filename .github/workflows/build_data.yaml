@@ -1,0 +1,26 @@
+on:
+  schedule:
+  - cron: "0 0 * * *"
+
+name: build_data
+
+jobs:
+  build_data:
+    runs-on: macOS-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: r-lib/actions/setup-r@v1
+
+      - name: Make Glosario
+        run: Rscript utils/fetch-glossary.R
+
+      - name: Push the new file to the repo
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add inst/glosario/glossary.yml
+          git commit -m "GH ACTION - Glosario file generated"
+          git push -q

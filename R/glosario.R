@@ -6,6 +6,6 @@
 #' Carpentries](https://github.com/carpentries/glosario).
 #'
 #' @docType package
-#' @name glossary
+#' @name glosario-package
 #' @importFrom tibble `%>%`
 NULL

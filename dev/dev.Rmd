@@ -1,0 +1,27 @@
+---
+title: "Test Glosario RMD Support"
+output:
+  pdf_document: default
+  html_document: default
+glosario:
+  base_url: https://carpentries.github.io/glosario
+  defines:
+  - data_frame
+  - slug
+  - git_branch
+  language: en
+  requires: readr
+---
+
+```{r}
+library(glosario)
+```
+
+`r gdef('data_frame', 'Data Frame')`
+
+```{r}
+list_glosario_terms()
+```
+
+
+[Google](https://google.com)
