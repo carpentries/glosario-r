@@ -112,6 +112,15 @@
       To have two or more references to the same thing, such as a data structure
       in memory or a file on disk.
 
+- slug: anchor
+  en:
+    term: "anchor"
+    def: >
+      In a [regular expression](#regular_expression), a symbol that fixes a
+      position without matching characters. `^` matches the start of the line,
+      while `$` matches the end of the line and `\b` matches a break between
+      word and non-word characters.
+
 - slug: anonymous_function
   en:
     term: "anonymous function"
@@ -491,6 +500,21 @@
     term: "causation"
     def: >
       FIXME
+
+- slug: cc_0
+  en:
+    term: "CC-0"
+    def: >
+      A [Creative Commons license](#cc_license) that imposes no restrictions
+      whatsover, thereby putting a work in the public domain.
+
+- slug: cc_by
+  en:
+    term: "CC-BY"
+    def: >
+      The [Creative Commons](#cc_license) - Attribution license that requires
+      people to give credit to the author of a work but imposes no other
+      restrictions.
 
 - slug: cc_license
   en:
