@@ -50,9 +50,14 @@
   af:
     term: "absolute fout"
     def: >
-      Die absolute fout is die absolute waarde van die verskil tussen die waargenome-
-      en die korrekte waarde. Die absolute fout is gewoonlik van minder waarde as die
-      [relatiewe](#relative_error) fout.
+      Die absolute fout is die absolute waarde van die verskil tussen die waargenome- 
+      en die korrekte waarde. Die absolute fout is gewoonlik van minder waarde as 
+      die [relatiewe](#relative_error) fout.
+  pt:
+    term: "erro absoluto"
+    def: >
+      O valor absoluto da diferença entre um valor observado e o valor correto.
+      O erro absoluto é normalmente menos útil do que o [erro relativo](#relative_error).
   fr:
     term: "erreur absolue"
     def: >
@@ -109,6 +114,11 @@
     def: >
       El índice secuencial que indentifica una fila en un tablero, sin importar qué
       secciones se estén mostrando.
+  pt:
+    term: "número de linha absoluto"
+    def: >
+      O índice sequencial de uma linha em uma tabela, independente de qual seção
+      da tabela está sendo exibida.
 
 - slug: abstract_method
   en:
@@ -291,6 +301,11 @@
     def: >
       A [join](#join) that keeps rows from table A whose keys do *not* match keys in
       table B.
+  af:
+    term: "anti-koppeling"
+    def: >
+      'n [Koppeling](#join) wat rye in tabel A bevat wie se sleutels *nie* die
+      sleutels van tabel B bevat nie.
 
 - slug: api
   en:
@@ -299,7 +314,14 @@
     def: >
       A set of functions and procedures provided by one software library or web
       service through which another application can communicate with it. An API is not
-      the code, the database, or the server: it is the access point.
+      the code, the database, or the server: it's the access point.
+  af:
+    term: "Toepassing Programmeerderkoppelvlak"
+    def: >
+      n Versameling funksies en prosedures wat deur 'n sagtewareprogrammateek
+      of webdiens voorsien word vir gebruik deur ander toepassings om met
+      die programmateek of webdiens te kommunikeer. Die API is nie die kode, die
+      databasis of die bediener nie, dit is die koppelvlak.
 
 - slug: append_mode
   en:
@@ -308,6 +330,13 @@
       To add data to the end of an existing file instead of overwriting the previous
       contents of that file. Overwriting is the default, so most programming languages
       require programs to be explicit about wanting to append instead.
+  af:
+    term: "byvoeg modus"
+    def: >
+      Om data aan die einde van 'n lêer te voeg in plaas daarvan om die inhoud van
+      dielêer te oorskryf. Oorskryf is die verstek, wat beteken dat
+      meesteprogrammeertale verwag dat programme eksplisiet moet aandui dat daar
+      bygevoeg inplaas van oorskryf moet word.
 
 - slug: argument
   en:
@@ -320,6 +349,11 @@
     def: >
       Un valor pasado a una función. Algunos autores usan el término como sinónimo de
       [parámetro](#parameter) y algunos no; Todo es muy confuso.
+  pt:
+    term: "argumento"
+    def: >
+      Um valor passado para uma função. Algumas pessoas autoras usam este termo como sinônimo
+      de parâmetro(#parameter) e outras não fazem isso; é tudo bastante confuso.
   ar:
     term: "وسيطة"
     def: >
@@ -331,6 +365,10 @@
     term: "arithmetic mean"
     def: >
       See [mean](#mean).
+  pt:
+    term: "média aritmética"
+    def: >
+      Veja [média](#mean).
 
 - slug: ascii
   en:
@@ -2756,6 +2794,12 @@
       The average value of a dataset, more properly known as the [arithmetic
       mean](#arithmetic_mean) to distinguish it from the [geometric](#geometric_mean)
       and [harmonic](#harmonic_mean) means.
+  pt:
+    term: "média"
+    def: >
+      O valor médio de um conjunto de dados, mais apropriadamente conhecido
+      como [média aritmética](#arithmetic_mean) para que seja distinguido da
+      média [geométrica](#geometric_mean) e da [harmônica](#harmonic_mean).
 
 - slug: mean_absolute_error
   ref:
@@ -3713,6 +3757,14 @@
       divided by the desired value. For example, if the actual value is 9 and the
       correct value is 10, the relative error is 0.1. Relative error is usually more
       useful than [absolute error](#absolute_error).
+  pt:
+    term: "erro relativo"
+    def: >
+      O valor absoluto da diferença entre um valor observado e o valor correto,
+      dividido pelo vaor desejado. Por exemplo, se o valor observado é 9 e o 
+      correto é 10, o erro relativo é 0.1. Erro relativo é normalmente mais útil
+       do que o [erro absoluto](#absolute_error).
+
 
 - slug: relative_path
   ref:
@@ -3736,6 +3788,11 @@
     def: >
       The index of a row in a displayed portion of a table, which may or may not be
       the same as the [absolute row number](#absolute_row_number) within the table.
+  pt:
+    term: "número de linha relativo"
+    def: >
+      O índice de uma linha em uma parte da tabela em exibição, que pode ou não
+      ser igual ao [número de linha absoluto](#absolute_row_number) na tabela.
 
 - slug: remote_login
   en:
@@ -4875,6 +4932,7 @@
       indentation rather than the parentheses and commas of [JSON](#json). YAML is
       often used in configuration files and to define parameters for various flavors
       of [Markdown](#markdown) documents.
+
   fr:
     term: "YAML"
     def: >
