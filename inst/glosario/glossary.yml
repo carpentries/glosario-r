@@ -14,6 +14,13 @@
       val binne twee en 99.7% val binne drie standaardafwykings. Omgekeerd, in die
       meeste gevalle val 0.3% van die waardes meer as drie standaardafwykings bo of
       onder die gemiddelde.
+  pt:
+    term: "regra 68-95-99,7"
+    def: >
+      Expressa o fato de que 68% dos valores estão dentro de um [desvio padrão](#standard_deviation)
+      da [média](#mean), 95% estão dentro de dois e 99,7% estão dentro de três. Inversamente,
+      aproximadamente 0,3% dos valores estão mais do que três desvios padrões acima ou abaixo da média
+      na maioria dos casos.
   fr:
     term: "règle de 68-95-99.7"
     def: >
@@ -22,6 +29,19 @@
       deux (2) écarts-types, et 99,7% à l'interieur de trois (3) écarts-types.
       Inversement et dans la plupart des cas, environ 0.3% des valeurs se situent à
       plus de 3 écarts-types au-dessus ou au-dessous de la moyenne.
+  ar:
+    term: "القاعدة ٩٩,٧-٩٥-٦٨"
+    def: >
+        يُعبِر عن حقيقة أن ٦٨٪ من القيم تقع ضمن وحدة واحدة من
+        [الانحراف المعياري]
+        (#standard_deviation)
+        من
+        [الوسط]
+        (#mean)
+        ، بينما ٩٥٪ تقع ضمن وحدتين ،
+        و٩٩,٧٪ تقع ضمن ثلاث وحدات
+        بالمقابل ، حوالي ٠,٣ ٪  من القيم تقع  في أكثر من ثلاثة وحدات
+        من الانحرافات المعيارية أعلى أو أقل من المتوسط في معظم الحالات
 
 
 - slug: abandonware
@@ -41,12 +61,15 @@
     term: "abandonware"
     def: >
       Software cuyo mantenimiento ha sido abandonado.
-
   fr:
     term: "abandonware"
     def: >
       Un logiciel qui n'est plus maintenu.
-
+  ar:
+    term: "البرمجيات المهجورة أو المتروكة"
+    def: >
+       هي البرامج التى لايتوفر لها دعم من أي برمجيات أُخرى
+       ولم تعد على قيد الصيانة
 
 - slug: absolute_error
   en:
@@ -70,7 +93,14 @@
     def: >
       La valeur absolue de la différence entre la valeur observée et la valeur
       correcte. L'erreur absolue est généralement moins pertinente que l'[erreur relative](#relative_error).
-
+  ar:
+    term: "الخطأ المُطلق"
+    def: >
+       هو عبارة عن القيمة المطلقة للفرق بين القيمة المرصودة والقيمة الواقعية الصحيحة
+       ،
+       الخطأ المُطلق عادة مايكون أقل فائدة من
+       [الخطأ النسبي]
+       (#relative_error)
 
 - slug: absolute_path
   ref:
@@ -105,6 +135,14 @@
       Um caminho que leva ao mesmo local no sistema de arquivos independente do
       contexto em que é avaliado. Um caminho absoluto pode ser comparado com a
       latitude e longitude em geografia.
+  ar:
+    term: "المسار المُطلق"
+    def: >
+        المسار الذي يُشير إلى ذات الموقع في
+        [نظام الملفات]
+        (#filesystem)
+        بغض النظر عن مكان تقييمها ،
+        المسار المُطلق يُعادل خطوط الطول والعرض في الجغرافيا
 
 
 - slug: absolute_row_number
@@ -259,6 +297,12 @@
       'n Sagteware-ontwikkelingsmetode wat die klem lê op vele klein stappies en
       deurlopende terugvoering in plaas van vooraf beplanning en langtermyn
       skeduluering. [Verkennende programmering](#exploratory_programming) is dikwel lenig.
+  pt:
+    term: "desenvolvimento ágil"
+    def: >
+      Um método de desenvolvimento de software que enfatiza vários passos pequenos e
+      feedback contínuo ao invés de planejamento de longo prazo. [Programação exploratória](#exploratory_programming)
+      costuma ser ágil.
 
 
 - slug: aliasing
@@ -295,7 +339,12 @@
       afin de déterminer une position sans pour autant identifier des charactères. `^`
       détermine le début d'une ligne, tandis que `$` détermine sa fin. `\b` identifie
       un espace entre un mot et un non-mot.
-
+  pt:
+    term: "âncora"
+    def: >
+      Em uma [expressão regular](#regular_expression), é um símbolo que fixa uma posição sem caracteres
+      correspondentes. `^` identifica o começo de uma linha, enquanto `$` indica o fim de uma linha e
+      `\b` identifica uma quebra entre caracteres que formam e que não formam uma palavra.
 
 - slug: anonymous_function
   en:
@@ -382,8 +431,10 @@
   ar:
     term: "وسيطة"
     def: >
-      قيمة يتم تمريرها إلى دالة أو وسيطة ، البعض يُطلِق عليها مصطلح (مُعطى) ، والبعض
-      الآخر يُطلِق عليها مصطلح (وسيطة) ، لذلك قد تُسبب الحيرة للبعض
+      قيمة يتم تمريرها إلى دالة أو وسيطة ، البعض يُطلِق عليها مصطلح
+      [مُعطى]
+      (#parameter)
+      والبعض الآخر يُطلِق عليها مصطلح وسيطة
   af:
     term: "argument"
     def: >
@@ -464,6 +515,11 @@
       Une fonctionnalité permettant à l'utilisateur de finir rapidement un mot ou du
       code à travers l'utilisation de la touche TAB qui liste le mot ou le code
       susceptible d'être choisi par l'utilisateur.
+  pt:
+    term: "auto-completar"
+    def: >
+      Uma funcionalidade que permite a pessoa usuária terminar uma palavra ou código rapidamente
+      ao pressinar a tecla TAB para listar possíveis palavras ou códigos que podem ser escolhidos.
 
 
 - slug: automatic_variable
@@ -497,6 +553,11 @@
     def: >
       Ce dit d'un logiciel qui est capable d'être utilisé de la même manière que ses
       versions précédentes sans difficulté.
+  pt:
+    term: "compatibilidade reversa"
+    def: >
+      Software que pode ser usado da mesma maneira que versão anteriores de si mesmo
+      sem problemas. Também é chamado de retrocompatibilidade.
 
 
 - slug: base_r
@@ -509,6 +570,13 @@
       `src/library` and are not updated outside of R; their version numbers follow R
       version numbering. Base packages are installed and loaded with R, while priority
       packages are installed with base R but must be loaded prior to use.
+  pt:
+    term: "R base"
+    def: >
+      As funções básicas que compõe a linguagem R. Os pacotes de base podem ser encontrados
+      em `src/library` e não são atualizados fora do R; eles seguem a numeração de versão do 
+      próprio R. Pacotes de base são instalados e carregados junto do R, enquanto pacotes
+      prioritários são instalados com o R base mas precisam ser carregados antes do uso.
 
 
 - slug: bayes_rule
@@ -659,10 +727,15 @@
   ar:
     term: "التعبير المنطقي"
     def: >
-      التعبير المنطقي عبارة عن تعبير يُستخدم لإنشاء جمل إما تحمل القيمة صح أو القيمة
-      خطأ (true or false) تُتستخدم التعبيرات المنطقية مع العبارات الشرطية في محركات
-      البحث والخوارزميات وتُسمى التعبيرات المنطقية أيضا تعبيرات المقارنة والتعبيرات
-      الشرطية والتعبيرات العلائقية
+        التعبير المنطقى عبارة عن تعبير يُستخدم لإنشاء جُمل إما تحمل
+        [القيمة صح]
+        (#true)
+        أو
+        [القيمة خطأ]
+        (#false)
+         وتستخدم التعبيرات المنطقية مع العبارات الشرطية في محركات البحث والخوارزميات
+         وتُسمى التعبيرات المنطقية أيضا تعبيرات المقارنة والتعبيرات الشرطية
+         والتعبيرات العلائقية
 
 
 - slug: branch
@@ -889,6 +962,10 @@
     term: "centroid"
     def: >
       The center or anchor of a group created by a [clustering](#clustering) algorithm.
+  pt:
+    term: "centróide"
+    def: >
+      O centro ou âncora de um grupo criado por um algoritmo de [agrupamento](#clustering).
 
 
 - slug: character_encoding
@@ -897,6 +974,14 @@
     def: >
       A specification of how characters are stored as bytes. The most commonly-used
       encoding today is [UTF-8](#utf_8).
+  ar:
+    term: "ترميز"
+    def: >
+      إعادة تمثيل البيانات بصياغة أُخرى ليسهل التعامل معها وحفظها كبايت
+      (bytes)
+       ولا علاقة للترميز بالسرية والتشفير مطلقا، ومن صيغ ترميز البيانات المشهورة
+       هو يوتي إف ٨
+       (#UTF-8).
 
 
 - slug: chi_square_test
@@ -907,6 +992,12 @@
       are correlated. A chi-square distribution varies from a [normal
       distribution](#normal_distribution) based on the [degrees of
       freedom](#degrees_of_freedom) used to calculate it.
+  af:
+    term: " chi-kwadraattoets"
+    def: >
+      'n Statistiese metode om te bepaal of twee veranderlikes in 'n kruistabellering 
+      gekorreleerd is. 'n Chi-kwadraatverdeling wissel vanaf 'n normale verspreiding
+      gebaseer op die vryheidsgrade wat gebruik word om dit te bereken.
 
 
 - slug: child_class
@@ -944,11 +1035,11 @@
     def: >
       En [programación orientada a objetos](#oop), es una estructura que combina
       datos y operaciones (denominadas [métodos](#method)). El programa emplea un
-      [constructor](#constructor) para crear un [objeto](#object) con esas 
+      [constructor](#constructor) para crear un [objeto](#object) con esas
       propiedades y métodos. Los programadores generalmente definen comportamientos
       genéricos o reutilizables en [superclases](#parent_class) y comportamientos
       más específicos o detallados en [subclases](#child_class).
-      
+
 - slug: classification
   ref:
     - supervised_learning
@@ -999,6 +1090,11 @@
     def: >
       The process of dividing data into groups when the groups themselves are not
       known in advance.
+  pt: 
+    term: "agrupamento"
+    def: >
+      O processo de dividir os dados em grupos quando os grupos em si não são conhecidos
+      antecipadamente.
 
 
 - slug: code_coverage
@@ -1115,7 +1211,9 @@
     def: >
       هو برنامج يقوم بترجمة النصوص المصدرية إلى أوامر ومعلومات يفهمها الحاسب لذلك
       يُمكن للكمبيوتر فهم البرنامج وتشغيله دون استخدام برنامج البرمجة المستخدم لإنشائه
-
+      أو مايُسمى
+      [رموز البايت]
+      (#byte_code)
 
 - slug: computational_linguistics
   ref:
@@ -1166,7 +1264,7 @@
     term: "vertrouensinterval"
     def: >
       'n Variasiewydte rondom 'n beraming wat'n foutgrens aandui, gekombineerd met die waarskynlikheid
-       dat die werklike getal binne die skatting val. 
+       dat die werklike getal binne die skatting val.
 
 - slug: console
   en:
@@ -1186,13 +1284,13 @@
       A function that creates an [object](#object) of a particular
       [class](#class). In the [S3](#s3) object system, constructors are a
       convention rather than a requirement.
-  es: 
+  es:
     term: "constructor"
     def: >
       Una función que crea un [objeto](#object) de una [clase](#class)
       particular. En el sistema de objetos de [S3](#s3), los constructores
       son más una convención que un requisito.
-     
+
 - slug: continuation_prompt
   en:
     term: "continuation prompt"
@@ -1350,7 +1448,12 @@
     def: >
       O local, pasta ou diretório, em que o programa está operando. Qualquer ação do
       programa acontece relativa a esse diretório.
-
+  fr:
+    term: "répertoire de travail"
+    def: >
+      L'emplacement du système de fichiers dans lequel le programme en cours est en train d'opérer.
+      Chaque opération effectuée par le programme se fait relativement à cet emplacement.
+      
 
 - slug: data_engineer
   ref:
@@ -2908,7 +3011,7 @@
     term: "programmation lettrée"
     def: >
       Une approche de la programmation qui mélange langage naturel (prose) et code.
-  
+
 
 - slug: local_installation
   ref:
@@ -3182,7 +3285,7 @@
   es:
     term: "método"
     def: >
-      Una implementación de una [función genérica](#generic_function) que 
+      Una implementación de una [función genérica](#generic_function) que
       manipula objetos de una clase específica.
 
 
@@ -3427,9 +3530,14 @@
   en:
     term: "NoSQL database"
     def: >
-      Any database that does not use the relational model. The awkward name comes from
+      Any database that does not use the [relational](#relational_database) model. The awkward name comes from
       the fact that such databases do not use [SQL](#sql) as a query language.
-
+  fr:
+    term: "base de données NoSQL"
+    def: >
+      Une base de données qui ne suit pas le modèle [relationnel](#relational_database), ainsi nommée car
+      n'utilisant en principe pas le langage de requête [SQL](#sql).
+      
 
 - slug: "null"
   en:
@@ -3478,7 +3586,7 @@
     term: "objeto"
     def: >
       En [programación orientada a objetos](#oop), es una estructura que contiene
-      los datos de una instancia específica de una [clase](#class). Las 
+      los datos de una instancia específica de una [clase](#class). Las
       operaciones que son capaces de realizar estos objetos están definidas
       por los [métodos](#method) de la clase.
 
@@ -3522,7 +3630,7 @@
     acronym: "POO"
     def: >
       Un paradigma de programación en el cual los datos (atributos) y funciones
-      (métodos) se agrupan en objetos que interactúan entre sí a través de 
+      (métodos) se agrupan en objetos que interactúan entre sí a través de
       interfaces bien definidas.
 
 
@@ -4077,7 +4185,7 @@
     term: "R Markdown"
     def: >
       Un dialecte de [Markdown](#markdown) qui permet à ses auteurs de mélanger langage naturel et code
-      (habituellement écrit en langage [R](#r_language)) dans un même document. 
+      (habituellement écrit en langage [R](#r_language)) dans un même document.
       Voir aussi [programmation lettrée](#literate_programming).
 
 
@@ -4219,15 +4327,21 @@
   en:
     term: "relational database"
     def: >
-      A database that organizes information into tables, each of which has a fixed set
-      of named fields (shown as columns) and a variable number of records (shown as rows).
+      A database that organizes information into [tables](#table), each of which has a fixed set
+      of named [fields](#field) (shown as columns) and a variable number of [records](#record) (shown as rows).
   es:
     term: "base de datos relacional"
     def: >
-      Una base de datos que organiza la información en tablas, cada una de las cuales
-      tiene un set fijo de campos con nombre (que se muestran como columnas) y un
-      número variable de registros (que se muestran como filas).
-
+      Una base de datos que organiza la información en [tablas](#table), cada una de las cuales
+      tiene un set fijo de [campos](#field) con nombre (que se muestran como columnas) y un
+      número variable de [registros](#record) (que se muestran como filas).
+  fr:
+    term: "base de données relationnelle"
+    def: >
+      Une base de données dont le contenu est organisé sous forme de [tables](#table),
+      chacune avec un ensemble déterminé de [champs](#field) (représentés sous forme de colonnes)
+      et un nombre variable d'[entrées](#record) (représentées sous forme de lignes).
+      
 
 - slug: relative_error
   en:
@@ -4243,7 +4357,14 @@
       O valor absoluto da diferença entre um valor observado e o valor correto,
       dividido pelo vaor desejado. Por exemplo, se o valor observado é 9 e o correto é
       10, o erro relativo é 0.1. Erro relativo é normalmente mais útil do que o [erro absoluto](#absolute_error).
-
+  fr:
+    term: "erreur relative"
+    def: >
+      La valeur absolue de la différence entre la valeur observée et la valeur correcte,
+      divisée par la valeur désirée. Par exemple, si la valeur observée est 9 et la valeur
+      correcte est 10, l'erreur absolue est 0.1. L'erreur relative est généralement
+      plus utile que [l'erreur absolue](#absolute_error).
+      
 
 - slug: relative_path
   ref:
@@ -4260,7 +4381,14 @@
       Um caminho cujo destino é interpretado de maneira relativa a outro local, como o
       [diretório de trabalho](#current_working_directory). Um caminho relativo é o
       equivalente a indicar um destino com termos como "siga em frente" e "vire a esquerda".
-
+  fr:
+    term: "chemin d'accès relatif"
+    def: >
+      Un chemin d'accès dont la destination est définie relativement à un autre emplacement,
+      par exemple le [répertoire de travail actuel](#current_working_directory). Utiliser
+      un chemin relatif équivaut à se déplacer à l'aide d'instructions telles que "tout droit"
+      ou "tourner à gauche".
+      
 
 - slug: relative_row_number
   en:
@@ -4748,7 +4876,12 @@
       Lenguaje utilizado para escribir consultas para una [base de datos
       relacional](#relational_database). El término era originalmente un acrónimo del
       inglés Structured Query Language (Lenguage Estructurado de Consulta).
-
+  fr:
+    term: "SQL"
+    def: >
+      Langage employé pour composer des requêtes dans une [base de données relationnelle](#relational_database).
+      Le terme était originellement l'acronyme de "Structured Query Language" (langage de requête structurée).
+      
 
 - slug: ssh
   en:
@@ -5351,7 +5484,7 @@
   ar:
     term: "المتغير"
     def: >
-      المُتغير هو موقع يخزن البيانات المؤقتة داخل البرنامج ويمكن تعديله وتخزينه وعرضه
+      المُتغير هو موقع يٌخزِن البيانات المؤقتة داخل البرنامج ويمكن تعديله وتخزينه وعرضه
       عند الحاجة
 
 
