@@ -1,4 +1,12 @@
 - slug: 68_95_997_rule
+  de:
+    term: "68-95-99.7 Regel"
+    def: >
+      Drückt die Tatsache aus, dass 68% der Werte innerhalb einer
+      [Standardabweichung](#standard_deviation) vom Mittelwert liegen,
+      95% innerhalb von zwei und 99,7% innerhalb von drei. Umgekehrt
+      liegen etwa 0,3% der Werte in den meisten Fällen mehr als drei
+      Standardabweichungen über oder unterhalb des Mittelwerts.
   en:
     term: "68-95-99.7 rule"
     def: >
@@ -43,6 +51,10 @@
 
 
 - slug: abandonware
+  de:
+    term: "Abandonware"
+    def: >
+      Software die nicht länger weiterentwickelt wird.
   en:
     term: "abandonware"
     def: >
@@ -70,6 +82,12 @@
        ولم تعد على قيد الصيانة.
 
 - slug: absolute_error
+  de:
+    term: "Absoluter Fehler"
+    def: >
+      Der absolute Wert der Differenz zwischen dem beobachteten und
+      dem korrekten Wert. Der absolute Fehler ist normalerweise
+      weniger nützlich als der [relative Fehler](#relative_error).
   en:
     term: "absolute error"
     def: >
@@ -141,6 +159,11 @@
 
 
 - slug: absolute_row_number
+  de:
+    term: "Absolute Zeilennummer"
+    def: >
+      Der sequentielle Index einer Zeile in einer Tabelle, unabhängig
+      davon, welche Abschnitte der Tabelle angezeigt werden.
   en:
     term: "absolute row number"
     def: >
@@ -164,6 +187,15 @@
 
 
 - slug: abstract_method
+  de:
+    term: "Abstrakte Methode"
+    def: >
+      In der [objektorientierten Programmierung](#oop) eine
+      [Methode](#method), die zwar definiert, aber nicht implementiert
+      ist. Programmierer definieren eine abstrakte Methode in einer
+      [übergeordneten Klasse](#parent_class), um Operationen zu
+      spezifizieren, die die [untergeordneten Klassen](#child_class)
+      bereitstellen müssen.
   en:
     term: "abstract method"
     def: >
@@ -200,6 +232,14 @@
 
 
 - slug: actual_result
+  de:
+    term: "Tatsächliche Ergebnis"
+    def: >
+      Der Wert, der durch Ausführen von Code in einem Test erzeugt
+      wird. Wenn dieser Wert mit dem [erwarteten
+      Ergebnis](#expected_result) übereinstimmt, ist der Test
+      bestanden; wenn die beiden Werte unterschiedlich sind, [schlägt
+      der Test fehl](#fail_test).
   en:
     term: "actual result (of test)"
     def: >
@@ -2208,6 +2248,10 @@
     def: >
       Un outil de gestion des versions qui permet d'enregistrer et de piloter les
       modifications effectuées au niveau d'un projet.
+  ja:
+    term: "Git(ギット)"
+    def: >
+       プロジェクトなどの変更履歴を記録・追跡するための分散型バージョン管理システムです。
   pt:
     term: "Git"
     def: >
@@ -3223,6 +3267,12 @@
       To choose the parameters for a [probability
       distribution](#probability_distribution) in order to maximize the likelihood of
       obtaining observed data.
+  af:
+    term: "maksimumaanneemlikheidsberaming"
+    def: >
+      Om die parameters vir 'n [waarskynlikheids verdeling](#probability_distribution)
+      te verkry, te maksimeer.
+ 
 
 
 - slug: mean
@@ -3235,6 +3285,12 @@
       The average value of a dataset, more properly known as the [arithmetic
       mean](#arithmetic_mean) to distinguish it from the [geometric](#geometric_mean)
       and [harmonic](#harmonic_mean) means.
+  af:
+    term: "gemiddeld"
+    def: >
+      Die gemiddelde waarde van 'n datastel, beter bekend as die 
+      [rekenkundige gemiddeld](#arithmetic_mean) om dit van die [meetkundige](#geometric_mean)
+      en die [harmoniese](#harmonic_mean) gemiddelde te onderskei.      
   pt:
     term: "média"
     def: >
@@ -3273,7 +3329,12 @@
       A value separating the upper and lower halves of a sorted dataset. The median
       often gives a better idea of what is typical of the dataset than the
       [mean](#mean), which can be influenced by a small number of extreme outliers.
-
+  af:
+    term: "mediaan"
+    def: >
+      'n Waarde wat die boonste en onderste helfte van 'n gesorteerde datastel skei. Die mediaan
+      gee dikwels 'n beter idee van wat tipies is vir die datastel as die
+      [mediaan](#mean), wat beïnvloed kan word deur 'n klein aantal ekstreme uitskieters.
 
 - slug: merge_git
   en:
@@ -3347,6 +3408,10 @@
     term: "mode"
     def: >
       The value that occurs most frequently in a dataset.
+  af:
+    term: "modus"
+    def: >
+      Die waarde wat die meeste in 'n datastel voorkom.
 
 
 - slug: model
@@ -3888,6 +3953,10 @@
 
 
 - slug: plus_one
+  de:
+    term: "+1"
+    def: >
+      Eine Zustimmung zu etwas.
   en:
     term: "+1"
     def: >
@@ -5640,6 +5709,11 @@
 
 
 - slug: wildcard
+  de:
+    term: "Wildcard"
+    def: >
+      Ein Zeichenausdruck, der mit Text übereinstimmen kann, wie z.B. das `*` in `*.csv` (das
+      passt auf jeden Dateinamen, dessen Name mit `.csv`) endet.
   en:
     term: "wildcard"
     def: >
@@ -5648,6 +5722,13 @@
 
 
 - slug: xml
+  de:
+    term: "XML"
+    def: >
+      Eine Reihe von Regeln zur Definition von [HTML](#html)-ähnlichen Tags und deren 
+      Verwendung zur Formatierung Dokumente (typischerweise Daten). XML war in den 
+      frühen 2000er Jahren populär, aber seine Komplexität veranlasste 
+      viele Programmierer, stattdessen [JSON](#json) zu übernehmen.
   en:
     term: "XML"
     def: >
@@ -5671,6 +5752,14 @@
 
 
 - slug: yaml
+  de:
+    term: "YAML"
+    def: >
+      Abkürzung für "YAML Ain't Markup Language", eine Methode zur Darstellung 
+      verschachtelter Daten mit Einrückung statt der Klammern und Kommas 
+      von [JSON](#json). YAML ist oft in Konfigurationsdateien und zur Definition 
+      von Parametern für verschiedene Geschmacksrichtungen verwendet
+      von [Markdown](#markdown)-Dokumenten.
   en:
     term: "YAML"
     def: >
@@ -5686,3 +5775,4 @@
       utilise des indentations au lieu de signes typographiques, comme les parenthèses
       et virgules en [JSON](#json). YAML est souvent utilisé dans les fichiers de
       configuration et pour définir les paramètres de documents [Markdown](#markdown).
+ 
