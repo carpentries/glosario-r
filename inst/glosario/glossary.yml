@@ -81,6 +81,7 @@
        هي البرامج التى لايتوفر لها دعم من أي برمجيات أُخرى
        ولم تعد على قيد الصيانة.
 
+
 - slug: absolute_error
   de:
     term: "Absoluter Fehler"
@@ -115,6 +116,7 @@
        هو عبارة عن القيمة المطلقة للفرق بين القيمة المرصودة والقيمة الواقعية الصحيحة،
        الخطأ المُطلق عادة مايكون أقل فائدة من
        [الخطأ النسبي](#relative_error).
+
 
 - slug: absolute_path
   ref:
@@ -184,6 +186,10 @@
     def: >
       O índice sequencial de uma linha em uma tabela, independente de qual seção da
       tabela está sendo exibida.
+  he:
+    term: "מספר שורה מוחלט"
+    def: >
+      המספר הסידורי של שורה בטבלה, ללא קשר לאילו חלקים של הטבלה מוצגים
   ar:
     term: "رقم الصف المُطلق"
     def: >
@@ -214,6 +220,12 @@
       gedefiniëer maar nie geïmplementeer is nie. Programmeerders sal 'n abstrakte
       metode in 'n [voorsaatklas](#parent_class) definiëer wat in
       [nasaatklasse](#child_class) geïmplementeer moet word.
+  pt:
+    term: "método abstrato"
+    def: >
+      In [programação orientada a objetos](#oop), um [método](#method) que é definido
+      mas não implementado. Pessoas programadoras definem um método abstrato em uma [classe base](#parent_class)
+      para especificar operações que as [classes derivadas](#child_class) devem prover.
   ar:
     term: "الطريقة المجردة"
     def: >
@@ -230,7 +242,7 @@
 - slug: abstract_syntax_tree
   en:
     term: "abstract syntax tree"
-    acronym: AST
+    acronym: "AST"
     def: >
       A deeply nested data structure, or [tree](#tree), that represents the structure
       of a program. For example, the AST might have a [node](#node) representing a
@@ -276,6 +288,7 @@
       [تم نجاحه](#pass_test)
       و اذا كان النتيجتين مختلفتين فان الاختبار قد
       [فشل](#fail_test).
+
 
 - slug: affordance
   en:
@@ -404,6 +417,7 @@
       correspondentes. `^` identifica o começo de uma linha, enquanto `$` indica o fim de uma linha e
       `\b` identifica uma quebra entre caracteres que formam e que não formam uma palavra.
 
+
 - slug: anonymous_function
   en:
     term: "anonymous function"
@@ -423,6 +437,17 @@
     def: >
       Une fonction qui ne s'est pas vue assignée de nom. Les fonctions anonymes sont
       en général courtes et définies là où elles sont utilisées, exemple: callbacks
+  ar:
+    term: "دالة مجهولة"
+    def: >
+       هي دالة  لم يتم تعيين اسم لها، عادةً ما تكون الدوال المجهولة قصيرة جدًا
+       وعادة ما يتم تحديدها في الموضع الذي يتم استخدامها ،مثل عمليات رد الإتصال
+       (callback).
+       لكن
+       في 
+       لغة
+       [Python](#python)
+        تسمى هذه وظائف lambda ويتم إنشاؤها من خلال استخدام كلمة lambda المتداوله. 
 
 
 - slug: anti_join
@@ -514,6 +539,7 @@
       sinoniem daarvoor nie. 'n Argument is die spesifieke waarde wat aan 'n funksie
       verskaf word in 'n lys van waardes wat deur kommas geskei word. Parameters is
       die veranderlikes en argumente is die waardes wat aan die veranderlikes toegeken is.
+
 
 - slug: arithmetic_mean
   en:
@@ -772,6 +798,7 @@
     def: >
       Uma expressão com dois argumentos ou parâmetros, como `1 + 2`, por exemplo.
 
+
 - slug: binomial_distribution
   ref:
     - discrete_random_variable
@@ -871,6 +898,7 @@
       [verdadeiro](#true) ou [falso](#false). Nomeado em referêcia à George Boole, um
       matemático do século XIX. Sistemas binários, como todos os computadores, são construídos
       com base em sistemas de avaliação entre estados de verdadeiro e falso, 0 ou 1.
+
 
 - slug: branch
   en:
@@ -1079,13 +1107,13 @@
     term: "CC-BY"
     def: >
       The [Creative Commons](#cc_license) - Attribution [license](#license) that
-
       requires people to give credit to the author of a work, but imposes no other restrictions.
   pt:
     term: "CC-BY"
     def: >
       Uma [licença](#license) [Creative Commons](#cc_license) com Atribuição, que requer que
       seja dado crédito às pessoas autoras do trabalho, mas que não impõe outras restrições.
+
 
 - slug: cc_license
   en:
@@ -1170,7 +1198,11 @@
     def: >
       En [programación orientada a objetos](#oop), es la extensión de otra
       clase (denominada [superclase](#parent_class)).
-
+  pt:
+    term: "classe derivada"
+    def: >
+      Em [programação orientada a objetos](#oop), a classe derivada de uma outra classe
+      (chamada de [classe base](#parent_class)).
 
 - slug: child_tree
   en:
@@ -1198,6 +1230,7 @@
       propiedades y métodos. Los programadores generalmente definen comportamientos
       genéricos o reutilizables en [superclases](#parent_class) y comportamientos
       más específicos o detallados en [subclases](#child_class).
+
 
 - slug: classification
   ref:
@@ -1374,6 +1407,7 @@
       أو مايُسمى
       [رموز البايت](#byte_code).
 
+
 - slug: computational_linguistics
   ref:
     - nlp
@@ -1425,6 +1459,7 @@
       'n Variasiewydte rondom 'n beraming wat'n foutgrens aandui, gekombineerd met die waarskynlikheid
        dat die werklike getal binne die skatting val.
 
+
 - slug: console
   en:
     term: "console"
@@ -1449,6 +1484,7 @@
       Una función que crea un [objeto](#object) de una [clase](#class)
       particular. En el sistema de objetos de [S3](#s3), los constructores
       son más una convención que un requisito.
+
 
 - slug: continuation_prompt
   en:
@@ -1532,6 +1568,7 @@
       dui dit aan dat X die perfekte voorspelling van Y is. As die korrelasiekoëffisiënt
       0,0 is, dui dit aan dat X nie verwant is aan Y nie. As dit -1,0 is, dan voorspel
       X vir Y, maar verandering in X veroorsaak 'n teenoorgestelde verandering in Y.
+
 
 - slug: covariance
   en:
@@ -1905,7 +1942,7 @@
 - slug: dom
   en:
     term: "Document Object Model"
-    acronym: DOM
+    acronym: "DOM"
     def: >
       A standard, in-memory representation of [HTML](#html) and [XML](#xml). Each
       [element](#element) is stored as a [node](#node) in a [tree](#tree) with a set
@@ -2825,14 +2862,14 @@
     - repl
   en:
     term: "Integrated Development Environment"
-    acronym: IDE
+    acronym: "IDE"
     def: >
       An application that helps programmers develop software. IDEs typically have a
       built-in editor, a [console](#console) to execute code immediately, and browsers for
       exploring data structures in memory and files on disk.
   es:
     term: "Entorno de Desarrollo Integrado"
-    acronym: EDI
+    acronym: "EDI"
     def: >
       Una aplicación que ayuda a programadores a desarrollar software. Los EDI
       usualmente tiene un editor incorporado, una consola que ejecuta el código
@@ -3096,6 +3133,7 @@
       or, in the case of a conditional expression, only evaluating as much of
       the expression as is necessary. For instance, the second half of `A and B`
       will only be evaluated if A is [truthy](#truthy).
+
 
 - slug: left_join
   ref:
@@ -3515,6 +3553,7 @@
       gee dikwels 'n beter idee van wat tipies is vir die datastel as die
       [mediaan](#mean), wat beïnvloed kan word deur 'n klein aantal ekstreme uitskieters.
 
+
 - slug: merge_git
   en:
     term: "merge (Git)"
@@ -3742,7 +3781,7 @@
 - slug: nlp
   en:
     term: "natural language processing"
-    acronym: NLP
+    acronym: "NLP"
     def: >
       See [computational linguistics](#computational_linguistics).
 
@@ -3881,7 +3920,13 @@
       Un paradigma de programación en el cual los datos (atributos) y funciones
       (métodos) se agrupan en objetos que interactúan entre sí a través de
       interfaces bien definidas.
-
+  pt:
+    term: "programação orientada a objetos"
+    acronym: "POO"
+    def: >
+      Um paradigma de programação no qual dados (atributos) e funções (métodos)
+      são encapsulados em objetos que interagem entre si por meio de
+      interfaces bem definidas.
 
 - slug: open_license
   en:
@@ -4010,7 +4055,11 @@
     def: >
       En [programación orientada a objetos](#oop), es la clase a partir de
       la cual se derivan otras clases (denominadas [subclases](#child_class)).
-
+  pt:
+    term: "classe base"
+    def: >
+      Em [programação orientada a objetos](#oop), a classe a partir da qual outra
+      classe (chamada [classe derivada](#child_class)) é produzida.
 
 - slug: parent_directory
   ref:
@@ -4254,6 +4303,7 @@
     term: "product manager"
     def: >
       The person responsible for defining what features a product should have.
+
 
 - slug: production_code
   en:
@@ -4790,7 +4840,7 @@
     - mean_absolute_error
   en:
     term: "root mean squared error"
-    acronym: RMSE
+    acronym: "RMSE"
     def: >
       The square root of the [mean squared error](#mean_squared_error). Like the
       [standard deviation](#standard_deviation), it is in the same units as the
@@ -5321,7 +5371,7 @@
 - slug: svm
   en:
     term: "support vector machine"
-    acronym: SVM
+    acronym: "SVM"
     def: >
       A [supervised learning](#supervised_learning) algorithm that seeks to divide
       points in a dataset so that the empty space between the resultant sets is as wide as possible.
