@@ -1073,6 +1073,11 @@
       The file(s) that a [build rule](#build_rule) will update if they are out-of-date
       compared to their [dependencies](#dependency).
 
+- slug: byte
+  en:
+    term: "byte"
+    def: >
+      A unit of digital information that typically consists of eight [binary](#binary) digits, or [bits](#bit).
 
 - slug: byte_code
   en:
@@ -4433,6 +4438,18 @@
     term: "pothole case"
     def: >
       A naming style that separates the parts of a name with underscores, as in `first_second_third`.
+
+- slug: preamble
+  ref:
+    - LaTeX
+  en:
+    term: "preamble"
+    def: >
+      A series of commands, either placed in the main document, or kept in a separate document,
+      that are included prior to the \begin{document} command. The preamble defines the type of
+      the document, along with other formatting attributes and parameters. This is also the section
+      of the document where packages are added using the command \usepackage{} to enable
+      additional functionalities, and where custom commands can be defined. 
 
 
 - slug: prerequisite
