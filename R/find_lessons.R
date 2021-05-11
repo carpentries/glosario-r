@@ -1,4 +1,17 @@
-find_lessons <- function(folder = NULL, files = NULL, terms = NULL){
+#' Find terms in lessons
+#'
+#' @param folder The top-level folder to start searching for lessons
+#' @param files The vector of specific files you want scanned
+#' @param terms The vector of the terms you want to find
+#' @param verbose If to print each term when found or not, TRUE by default
+#' @return list of which terms were found and in which files
+#' @details
+#' This functions helps the user find terms in different lessons, irrespective
+#' of folder management strategy or organization hierarchy. If the term is found,
+#' a list entry will contain the term as a key and the files as values.
+#'
+#' @export
+find_lessons <- function(folder = NULL, files = NULL, terms = NULL, verbose = TRUE){
 
   if (is.null(files) & is.null(folder)){
     stop("You need to provide either a path to the folder with the lessons or a
@@ -17,6 +30,8 @@ find_lessons <- function(folder = NULL, files = NULL, terms = NULL){
   # Read in the YAML header metadata into a list
   yaml_headers <- purrr::map(files, rmarkdown::yaml_front_matter)
 
+  terms_returned <- list()
+
   # Iterate over the YAML headers to search for the terms
   for (idx in 1:length(yaml_headers)){
     terms_searched <- terms %in% yaml_headers[[idx]]$glosario$defines
@@ -24,10 +39,14 @@ find_lessons <- function(folder = NULL, files = NULL, terms = NULL){
       terms_found <- terms[which(terms_searched)]
       for (term in terms_found){
         # Print the term with which file name they're in.
-        print(paste0(term, " : ",  files[idx]))
+        if (verbose){
+          print(paste0(term, " : ",  files[idx]))
+        }
+        # Assign terms to a list which we return to the user
+        terms_returned[[term]] = c(terms_returned[[term]], files[idx])
       }
     }
   }
 
-
+  invisible(terms_returned)
 }
