@@ -33,7 +33,7 @@ find_lessons <- function(folder = NULL, files = NULL, terms = NULL, verbose = TR
   terms_returned <- list()
 
   # Iterate over the YAML headers to search for the terms
-  for (idx in 1:length(yaml_headers)){
+  for (idx in seq(length(yaml_headers))){
     terms_searched <- terms %in% yaml_headers[[idx]]$glosario$defines
     if (any(terms_searched)){
       terms_found <- terms[which(terms_searched)]
