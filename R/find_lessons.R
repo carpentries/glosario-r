@@ -13,7 +13,7 @@
 #' @export
 find_lessons <- function(files = ".", terms = NULL, verbose = TRUE){
 
-  if (is.null(files) & is.null(folder)){
+  if (is.null(files) && is.null(folder)){
     stop("You need to provide either a path to the folder with the lessons or a
          vector with the specific files you want scanned.")
   }
