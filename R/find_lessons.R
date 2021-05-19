@@ -40,7 +40,7 @@ find_lessons <- function(folder = NULL, files = NULL, terms = NULL, verbose = TR
       for (term in terms_found){
         # Print the term with which file name they're in.
         if (verbose){
-          print(paste0(term, " : ",  files[idx]))
+          message(paste0(term, " : ",  files[idx]), "\n")
         }
         # Assign terms to a list which we return to the user
         terms_returned[[term]] = c(terms_returned[[term]], files[idx])
