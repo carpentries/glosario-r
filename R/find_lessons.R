@@ -24,7 +24,7 @@ find_lessons <- function(files = ".", terms = NULL, verbose = TRUE){
 
   if (is.null(files)){
     folder <- stringr::str_remove(folder, "\\/$")
-    files <- dir(path = folder, full.names = TRUE, recursive = TRUE)
+    files <- list.files(path = folder, full.names = TRUE, recursive = TRUE, pattern = "*[rR]m(ark)?d(own)?")
   }
 
   # Read in the YAML header metadata into a list
