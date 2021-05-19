@@ -1,7 +1,7 @@
 #' Find terms in lessons
 #'
-#' @param folder The top-level folder to start searching for lessons
-#' @param files The vector of specific files you want scanned
+#' @param files The vector of specific files you want scanned or the
+#' top-level folder to start searching for lessons
 #' @param terms The vector of the terms you want to find
 #' @param verbose If to print each term when found or not, TRUE by default
 #' @return list of which terms were found and in which files
@@ -13,18 +13,16 @@
 #' @export
 find_lessons <- function(files = ".", terms = NULL, verbose = TRUE){
 
-  if (is.null(files) & is.null(folder)){
-    stop("You need to provide either a path to the folder with the lessons or a
-         vector with the specific files you want scanned.")
-  }
-
   if (is.null(terms)){
     stop("You need to provide the terms to search for in the lessons.")
   }
 
-  if (is.null(files)){
-    folder <- stringr::str_remove(folder, "\\/$")
-    files <- list.files(path = folder, full.names = TRUE, recursive = TRUE, pattern = "*[rR]m(ark)?d(own)?")
+  if (fs::is_dir(files)){
+    folder <- stringr::str_remove(files, "\\/$")
+    files <- fs::dir_ls(path = "inst/test_find_lessons/",
+                        recurse = TRUE,
+                        type = "file",
+                        regexp = "*[rR]m(ark)?d(own)?")
   }
 
   # Read in the YAML header metadata into a list
@@ -48,5 +46,10 @@ find_lessons <- function(files = ".", terms = NULL, verbose = TRUE){
     }
   }
 
-  invisible(terms_returned)
+  terms_returned_df <- tibble::as_tibble(terms_returned)
+  terms_returned_df <- tidyr::pivot_longer(terms_returned_df,
+                                           'data_frame',
+                                           names_to = "term",
+                                           values_to = "files")
+  invisible(terms_returned_df)
 }
