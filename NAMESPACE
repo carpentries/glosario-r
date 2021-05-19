@@ -2,7 +2,7 @@
 
 export("%>%")
 export(define)
-export(find_lessons)
+export(find_terms)
 export(gdef)
 export(get_glossary)
 export(list_glosario_terms)

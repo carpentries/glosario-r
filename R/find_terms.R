@@ -11,7 +11,7 @@
 #' a list entry will contain the term as a key and the files as values.
 #'
 #' @export
-find_lessons <- function(files = ".", terms = NULL, verbose = TRUE){
+find_terms <- function(files = ".", terms = NULL, verbose = TRUE){
 
   if (is.null(files) && is.null(folder)){
     stop("You need to provide either a path to the folder with the lessons or a

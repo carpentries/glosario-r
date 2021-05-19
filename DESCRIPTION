@@ -42,7 +42,9 @@ Imports:
     glue,
     dplyr,
     magrittr,
-    stringr
+    stringr,
+    fs,
+    tidyr
 Roxygen: list(markdown = TRUE)
 Suggests:
     testthat,
