@@ -14,6 +14,13 @@
       deviation](#standard_deviation) of the [mean](#mean), 95% lie within two, and
       99.7% lie within three. Conversely, about 0.3% of values lie more than three
       standard deviations above or below the mean in most cases.
+  it:
+    term: "regola 68-95-99,7"
+    def: >
+      Esprime il fatto che il 68% dei valori si trova entro una [deviazione
+      standard](#standard_deviation) dalla [media](#mean), il 95% entro due deviazioni
+      standard e il 99,7% entro tre. Al contrario, circa lo 0,3% dei valori si trova oltre
+      tre deviazioni standard sopra o sotto la media. 
   af:
     term: "68-95-99.7 reël"
     def: >
@@ -106,6 +113,11 @@
     def: >
       The absolute value of the difference between the observed and the correct value.
       Absolute error is usually less useful than [relative error](#relative_error).
+  it:
+    term: "errore assoluto"
+    def: >
+      La differenza in valore assoluto tra il valore osservato e il valore corretto. 
+      L'errore assoluto è in genere meno utile dell'[errore relativo](#relative_error).
   es:
     term: "error absoluto"
     def: >
@@ -553,7 +565,13 @@
       Un conjunto de funciones y procedimientos proporcionados por una libreria de software o servicio web
       atraves del cual otra aplicación se puede comunicar. Una API no es el código,
       la base de datos o el servidor; es el punto de acceso.
-
+      
+  fr: 
+    term: "Interface de Programmation d'application"
+    def: >
+      Un ensemble de fonctions et de procédures fournies par une bibliothèque de logiciels ou un service web
+      par lequel une autre application peut communiquer. Une API n'est ni le code, ni la base de données
+      ni le serveur, mais le point d'accès.
 
 - slug: append_mode
   en:
@@ -613,6 +631,10 @@
     term: "arithmetic mean"
     def: >
       See [mean](#mean).
+  it:
+    term: "media aritmetica"
+    def: >
+      Vedi [media](#mean).
   pt:
     term: "média aritmética"
     def: >
@@ -1059,6 +1081,15 @@
       placed at the top of the page. Breadcrumbs show the users where the current page
       lies in the website; the term comes from a fairy tale in which children left a
       trail of breadcrumbs behind themselves so that they could find their way home.
+  es:
+    term: "guías de navegación"
+    def: >
+      Literalmente: “migas,” “migas de pan,” “migaja;” en esto contexto: “árbol de navegación,” 
+      “guías de navegación,” “navegación de migas,“ o “rastro de navegación.” Un grupo de enlaces 
+      de navegación incluidos en muchos sitios web, generalmente ubicados en la parte superior 
+      de una página. “Breadcrumbs” muestran a los usuarios dónde se encuentra la página 
+      en el sitio web; la palabra proviene de un cuento de hadas en que unos niños 
+      habían dejado atrás un rastro de migas de pan para que pudieran encontrar su camino a casa.  
 
 
 - slug: breadth_first
@@ -1990,6 +2021,23 @@
       to another function or a [class](#class) after its initial definition.
       Decorators are a feature of [Python](#python) and can be implemented in most
       other languages as well.
+
+
+- slug: decrement
+  ref:
+    - increment
+  en:
+    term: "decrement"
+    def: >
+      A unary operation that decreases the value of a variable, usually by 1.
+  es:
+    term: "decrementar"
+    def: >
+      Una operación unaria que disminuye el valor de una variable, generalmente en 1.
+  pt:
+    term: "decrementar"
+    def: >
+      Uma operação unária que diminui o valor de uma variável, geralmente em um.
 
 
 - slug: deep_learning
@@ -3199,6 +3247,23 @@
       assign the result back to `x`.
 
 
+- slug: increment
+  ref:
+    - decrement
+  en:
+    term: "increment"
+    def: >
+      A unary operation that increases the value of a variable, usually by 1.
+  es:
+    term: "incrementar"
+    def: >
+      Una operación unaria que aumenta el valor de una variable, generalmente en 1.  
+  pt:
+    term: "incrementar"
+    def: >
+      Uma operação unária que aumenta o valor de uma variável, geralmente em um.
+
+
 - slug: independent_variable
 
 
@@ -3861,6 +3926,11 @@
       The average value of a dataset, more properly known as the [arithmetic
       mean](#arithmetic_mean) to distinguish it from the [geometric](#geometric_mean)
       and [harmonic](#harmonic_mean) means.
+  it:
+    term: "media"
+    def: >
+      Rapporto tra la somma dei valori e il numero di valori. Chiamata anche [media aritmetica](#arithmetic_mean)
+      per distinguerla dalla [media geometrica](#geometric_mean) e dalla [media armonica](#harmonic_mean).
   af:
     term: "gemiddeld"
     def: >
@@ -5174,6 +5244,12 @@
       divided by the correct value. For example, if the actual value is 9 and the
       correct value is 10, the relative error is 0.1. Relative error is usually more
       useful than [absolute error](#absolute_error).
+  it:
+    term: "errore relativo"
+    def: >
+      Errore assoluto diviso il valore assoluto del valore corretto. Ad esempio, se il
+      valore osservato è 9 e il valore corretto è 10, l'errore relativo è 0,1. L'errore
+      relativo è spesso più utile dell'[errore assoluto](#absolute_error).
   es:
     term: "error relativo"
     def: >
@@ -5803,6 +5879,11 @@
     def: >
       How widely values in a dataset differ from the [mean](#mean). It is calculated
       as the square root of the [variance](#variance).
+  it:
+    term: "deviazione standard"
+    def: >
+      Misura della distanza dei valori dalla loro [media](#mean). È calcolata come
+      la radice quadrata della [varianza](#variance).
   es:
     term: "desviación estándar"
     def: >
@@ -6414,6 +6495,13 @@
       as the average of the squared differences between the values and the mean. The
       [standard deviation](#standard_deviation) is often used instead, since it has
       the same units as the data, while the variance is expressed in units squared.
+  it:
+    term: "varianza"
+    def: >
+      Misura della distanza dei valori dalla loro [media](#mean). È calcolata
+      come la media dei quadrati delle differenze tra i valori e la loro media. La [deviazione
+      standard](#standard_deviation) è spesso usata al posto della varianza, perché ha
+      la stessa unità di misura dei dati, mentre la varianza è misurata nell'unità al quadrato.
   es:
     term: "varianza"
     def: >
