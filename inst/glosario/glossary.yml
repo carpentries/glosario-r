@@ -49,7 +49,7 @@
     def: >
       Exprime le fait que 68% des valeurs sont localisées à l'intérieur d'un (1)
       [écart-type](#standard_deviation) de la [moyenne](#mean), 95% à l'intérieur de
-      deux (2) écarts-types, et 99,7% à l'interieur de trois (3) écarts-types.
+      deux (2) écarts-types, et 99,7% à l'intérieur de trois (3) écarts-types.
       Inversement et dans la plupart des cas, environ 0.3% des valeurs
       se situent à plus de 3 écarts-types au-dessus ou au-dessous de la moyenne.
   ar:
@@ -173,7 +173,7 @@
     term: "chemin d'accès absolu"
     def: >
       Un chemin d'accès absolu indique la même position dans le système de fichier
-      quelque soit l'emplacement où il est evalué. Un chemin d'accès absolu est
+      quel que soit l'emplacement où il est evalué. Un chemin d'accès absolu est
       l'équivalent de la latitude et longitude en géographie.
   es:
     term: "ruta absoluta"
@@ -382,8 +382,8 @@
   fr:
     term: "fonction d'agrégation"
     def: >
-      Une fonction qui permet de synthétiser plusieurs valeurs en une seule, example,
-      'sum' ou 'max'.
+      Une fonction qui permet de synthétiser plusieurs valeurs en une seule, comme par
+      exemple 'sum' ou 'max'.
   pt:
     term: "função de agregação"
     def: >
@@ -510,7 +510,9 @@
     term: "fonction anonyme"
     def: >
       Une fonction qui ne s'est pas vue assignée de nom. Les fonctions anonymes sont
-      en général courtes et définies là où elles sont utilisées, exemple: callbacks
+      en général courtes et définies là où elles sont utilisées, exemple: callbacks.
+      En [Python](#python), elles sont appelées fonctions lambda et sont créées en
+      utilisant le mot-clé `lambda`.
   ar:
     term: "دالة مجهولة"
     def: >
@@ -609,6 +611,13 @@
     def: >
       Un valor pasado a una función. Algunos autores usan el término como sinónimo de
       [parámetro](#parameter) y algunos no; Todo es muy confuso.
+  fr:
+    term: "argument"
+    def: >
+      Un argument est une expression donnée passée à une fonction.
+      Ce terme ne doit pas être confondu avec [paramètre](#parameter), et n'en est pas un
+      synonyme. Alors qu'un paramètre est une variable, un argument est une valeur associée
+      à cette variable. 
   pt:
     term: "argumento"
     def: >
@@ -748,7 +757,7 @@
     term: "attribut"
     def: >
       Un couple nom-valeur associé à un objet et utilisé pour stocker des métadonnées
-      concernant ce dernier, example, les dimensions d'un tableau.
+      concernant ce dernier, par exemple les dimensions d'un tableau.
   af:
     term: "eienskap"
     def: >
@@ -766,7 +775,7 @@
     term: "auto-complétion"
     def: >
       Une fonctionnalité permettant à l'utilisateur de finir rapidement un mot ou du
-      code à travers l'utilisation de la touche TAB qui liste le mot ou le code
+      code à travers l'utilisation de la touche TAB qui affiche le mot ou le code
       susceptible d'être choisi par l'utilisateur.
   pt:
     term: "auto-completar"
@@ -822,10 +831,12 @@
       For example a [function](#function) written in [Python](#python) 3 that can be
       run successfully with Python version 2 is backward-compatible.
   fr:
-    term: "compatibilité descendante"
+    term: "rétrocompatible"
     def: >
-      Ce dit d'un logiciel qui est capable d'être utilisé de la même manière que ses
-      versions précédentes sans difficulté.
+      Se dit d'un système, matériel ou logiciel, qui est capable d'être utilisé de la
+      même manière que ses versions précédentes sans difficulté.
+      Par exemple, une [fonction](#function) écrite en [Python](#python) 3 qui peut
+      être utilisée avec [Python](#python) 2 est rétrocompatible.
   pt:
     term: "compatibilidade reversa"
     def: >
@@ -1300,7 +1311,7 @@
       A relationship between distinct events, where it is asserted that one event is responsible for
       producing or affecting change in the other.
   fr:
-    term: causalité
+    term: "causalité"
     def: >
       Une relation entre des événements distincts, où il est affirmé qu'un événement est responsable de
       produire ou d'affecter un changement dans l'autre.
@@ -1585,7 +1596,7 @@
   fr:
     term: "commentaire"
     def: >
-      Text écrit dans un script qui n'est pas évalué lors de l'exécution du code. Il
+      Texte écrit dans un script, qui n'est pas évalué lors de l'exécution du code. Il
       est utilisé pour décrire ce qui se passe lorsque le code est évalué. Les
       commentaires sont en général des notes brèves, qui commencent après un `#` (dans
       plusieurs langages de programmation)
@@ -1904,6 +1915,7 @@
       colors, and layout.
   fr:
     term: "Feuilles de Style en Cascade"
+    acronym: "CSS"
     def: >
       Une manière de contrôler l'apparence du rendu HTML. Le CSS est généralement
       utilisé dans le but de spécifier les polices, les couleurs ainsi que la
@@ -1971,7 +1983,8 @@
     term: "trame de données"
     def: >
       Une structure bi-dimensionnelle pour enregistrer des données tabulaires. Les
-      lignes représentent les [entrées](#record) et les colonnes représentent les [variables](#variable_data).
+      lignes représentent les [entrées](#record) et les colonnes représentent les
+      [variables](#variable_data).
   es:
     term: "marco de datos"
     def: >
@@ -2392,8 +2405,8 @@
   fr:
     term: "vecteur vide"
     def: >
-      Un vecteur qui ne contient aucun élément. Les vecteurs vides peuvent être de
-      type logique ou caractère, et sont *differents* des vecteurs [null](#null).
+      Un vecteur qui ne contient aucun élément. Les vecteurs vides possèdent un type, par
+      exemple entier ou caractère, et sont *différents* de [null](#null).
 
 
 - slug: environment
@@ -2626,7 +2639,7 @@
   fr:
     term: "filtrer"
     def: >
-      Le fait de sélectionner un ensemble d'[observations](#record) (example,
+      Le fait de sélectionner un ensemble d'[observations](#record) (par exemple
       certaines lignes d'une table) en se basant sur leurs valeurs.
 
 
@@ -2832,8 +2845,8 @@
   fr:
     term: "Git clone"
     def: >
-      Permet de copier (et générallement de télécharger) un [dépôt
-      éloigné](#remote_repository) Git au niveau de l'ordinateur local.
+      Permet de copier (et généralement de télécharger) un [dépôt Git distant](#remote_repository)
+      sur l'ordinateur local.
 
 
 - slug: git_conflict
@@ -2873,8 +2886,8 @@
   fr:
     term: "Git pull"
     def: >
-      Télécharge et synchronise des modifications entre le [dépôt
-      éloigné](#remote_repository) et le [dépôt](#repository) local.
+      Télécharge et synchronise les modifications entre le [dépôt distant](#remote_repository)
+      et le [dépôt](#repository) local.
 
 
 - slug: git_push
@@ -2887,7 +2900,7 @@
     term: "Git push"
     def: >
       Charge et synchronise des modifications entre le [dépôt](#repository) local et
-      le [dépôt éloigné](#remote_repository).
+      le [dépôt distant](#remote_repository).
 
 
 - slug: git_remote
@@ -2926,7 +2939,7 @@
     term: "environnement global"
     def: >
       L'[environnement](#environment) qui contient des définitions de premier niveau
-      dans un langage de programmation, example, celles écrites directement dans l'intérpreteur.
+      dans un langage de programmation, par exemple celles écrites directement dans l'interpréteur.
 
 
 - slug: global_installation
@@ -2953,8 +2966,8 @@
   en:
     term: "global variable"
     def: >
-      A variable defined outside any particular function or [package](#package) namespace, which is therefore visible
-      to all functions.
+      A variable defined outside any particular function or [package](#package) namespace, which is
+      therefore visible to all functions.
   es:
     term: "variable global"
     def: >
@@ -2963,8 +2976,8 @@
   fr:
     term: "variable globale"
     def: >
-      Une variable définie en dehors d'une fonction donnée, qui est par conséquent
-      visible pour toutes les fonctions.
+      Une variable définie en dehors de l'espace de noms d'une quelconque fonction, qui est par 
+      conséquent visible pour toutes les fonctions.
   ko:
     term: "전역 변수"
     def: >
@@ -4606,6 +4619,13 @@
       A variable specified in a function definition whose value is passed to the function
       when the function is called. Parameters and arguments are distinct, but related concepts.
       Parameters are variables and [arguments](#argument) are the values assigned to those variables.
+  fr:
+    term: "paramètre"
+    def: >
+      Une variable spécifiée dans la définition d'une fonction, dont la valeur est passée à
+      la fonction lorsque celle-ci est appelée.
+      À ne pas confondre avec le terme [argument](#argument). Un paramètre est une variable,
+      un argument est une valeur assignée à cette variable.
 
 
 - slug: parent_class
@@ -5115,7 +5135,7 @@
     def: >
       Un dialecte de [Markdown](#markdown) qui permet à ses auteurs de mélanger langage naturel et code
       (habituellement écrit en langage [R](#r_language)) dans un même document.
-      Voir aussi programmation lettrée.
+      Voir aussi [programmation lettrée](#literate_programming).
 
 
 - slug: raise_exception
@@ -5182,7 +5202,7 @@
     def: >
       Un groupe de valeurs liées qui sont enregistrées ensemble. Une entrée peut être
       représentée comme un [tuple](#tuple) ou une ligne dans une [table](#table); dans
-      ce dernier cas, chaque entrée dans la table comporte les même [champs](#field).
+      ce dernier cas, chaque entrée dans la table comporte les mêmes [champs](#field).
 
 
 - slug: recursion
@@ -5310,8 +5330,8 @@
     term: "erreur relative"
     def: >
       La valeur absolue de la différence entre la valeur observée et la valeur correcte,
-      divisée par la valeur désirée. Par exemple, si la valeur observée est 9 et la valeur
-      correcte est 10, l'erreur absolue est 0.1. L'erreur relative est généralement
+      divisée par la valeur correcte. Par exemple, si la valeur observée est 9 et la valeur
+      correcte est 10, l'erreur relative est 0.1. L'erreur relative est généralement
       plus utile que [l'erreur absolue](#absolute_error).
 
 
@@ -5862,8 +5882,9 @@
   fr:
     term: "SQL"
     def: >
-      Langage employé pour composer des requêtes dans une [base de données relationnelle](#relational_database).
-      Le terme était originellement l'acronyme de "Structured Query Language" (langage de requête structurée).
+      Langage employé pour composer des requêtes dans une
+      [base de données relationnelle](#relational_database).
+      Le terme est l'acronyme de "Structured Query Language" (langage de requête structuré).
 
 
 - slug: ssh
@@ -6207,7 +6228,7 @@
     term: "tibble"
     def: >
       Une alternative moderne du "data frame" en [R](#r_language) permettant de matérialiser des
-      données tabulaires en colonnes et en lignes, le "tibble" a été défini et est
+      données tabulaires en colonnes et en lignes. Le "tibble" a été défini et est
       utilisé dans le [tidyverse](#tidyverse).
   es:
     term: "tibble"
@@ -6259,7 +6280,7 @@
   fr:
     term: "Tidymodels"
     def: >
-      Une collection de packages [R](#r_language) pour la modélisation et l'analyse statistique
+      Une collection de packages [R](#r_language) pour la modélisation et l'analyse statistique,
       élaborés en prenant en considération une [philosophie partagée](https://tidymodels.github.io/model-implementation-principles/index.html)
 
 
@@ -6271,7 +6292,7 @@
   fr:
     term: "Tidyverse"
     def: >
-      Une collection de packages [R](#r_language) permettant le traitement des données tabulaire
+      Une collection de packages [R](#r_language) permettant le traitement des données tabulaires
       d'une manière cohérente.
   es:
     term: "Tidyverse"
@@ -6485,10 +6506,11 @@
       capture the "extra" arguments. [Python](#python) uses `*args` and `**kwargs` to capture
       unnamed, and named, "extra" arguments, respectively.
   fr:
-    term: "arguments d'une variable"
+    term: "arguments en nombre variable"
     def: >
       La possibilité d'intégrer n'importe quel nombre d'arguments dans une fonction. [R](#r_language)
-      utilise `...` afin de capturer les arguments "additionnels".
+      utilise `...` afin de capturer les arguments "additionnels". [Python](#python) utilise `*args`
+      et `**kwargs` pour capturer respectivement les paramètres "additionnels" nommés et non nommés.
 
 
 - slug: variable_data
