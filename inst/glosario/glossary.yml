@@ -842,6 +842,13 @@
     def: >
       Software que pode ser usado da mesma maneira que versão anteriores de si mesmo
       sem problemas. Também é chamado de retrocompatibilidade.
+  de:
+    term: "abwärtskompatibel"
+    def: >
+      Bezeichnet die Eigenschaft eines Systems (z.B. Hardware oder Software), das dessen Funktionsfähigkeit
+      auch in Zusammenarbeit mit älteren oder obsoleten Versionen eines Systems garantiert. Beispielsweise
+      ist eine [Funktion](#function) in [Python](#python) 3 abwärtskompatibel, wenn diese auch in Python 2
+      ausgeführt werden kann.
 
 
 - slug: base_r
@@ -949,6 +956,11 @@
     def: >
       Any data that until recently was too big for most people to work with on a
       single computer.
+  de:
+    term: "Big Data"
+    def: >-
+      Alle Datenmengen, die bis vor Kurzem vor zu umfangreich für die Analyse mit
+      nur einem Computer waren.
 
 
 - slug: binary
@@ -1022,6 +1034,12 @@
     def: >
       Unidad de información representando alternativas si/no, [verdadero](#true)/[falso](#false).
       En computación, un estado de ser 0 ó 1.
+  de:
+    term: "Bit"
+    def: >-
+      Ein Bit ist eine Informationseinheit, die nur zwei Alternativen
+      darstellen kann. Beispiele hierfür sind Ja/ Nein, Wahr / Falsch. In der
+      Computerwelt als 0 und 1 dargestellt.
 
 
 - slug: blob
@@ -1157,6 +1175,10 @@
     def: >
       A missing or undesirable [feature](#feature_software) of a piece of software;
       the digital equivalent of a weed.
+  de:
+    term: "Bug"
+    def: >-
+      Ein Bug ist ein Fehler oder Fehlfunktion einer Software.
 
 
 - slug: bug_report
@@ -1166,6 +1188,13 @@
       A collection of files, [logs](#log), or related information that describes either an
       unexpected output of some code or program, or an unexpected error or warning.
       This information is used to help find and fix a [bug](#bug) in the program or code.
+  de:
+    term: "Fehlerbericht"
+    def: >-
+      Ein Fehlerbericht ist eine Sammlung von Dateien / Einträgen oder damit
+      zusammenhängenden Informationen, die einen unbeabsichtigten Fehler
+      beschreiben. Der Fehlerbericht wird für die Identifikation und Behebung
+      seines des Softwarefehlers / Codefehlers gebraucht.
 
 
 - slug: bug_tracker
@@ -1234,6 +1263,11 @@
     term: "byte"
     def: >
       Unidad de información digital que típicamente consiste de ocho dígitos [binarios](#binary), o [bits](#bit).
+  de:
+    term: "Byte"
+    def: >-
+      Ein Byte ist eine digitale Einheit, die aus acht Binärziffern oder Bits
+      besteht.
 
 - slug: byte_code
   en:
@@ -1776,6 +1810,15 @@
     def: >
       A [variable](#variable_data) whose value can be any real value, either
       within a range, or unbounded, such as age or distance.
+      
+      
+- slug: control_flow
+  en:
+    term: "control flow"
+    def: >
+      The logical flow through a program's code. May be linear (i.e. just a series of 
+      commands), but may also include [loops](#loop) or conditional execution (i.e. if
+      a condition is met).
 
 
 - slug: copy_on_modify
@@ -5520,6 +5563,13 @@
       pessoas pesquisadoras possam executar novamente o código de análise com os
       mesmos dados para obter os mesmos resultados.
 
+- slug: reserved_word
+  en:
+    term: "reserved word"
+    def: >
+      A word (character string) with a distinct meaning for a programming or scripting language.
+      Typically, reserved words cannot be used as names for variables or constants, as this would
+      confuse the compiler or interpreter.
 
 - slug: restructured_text
   ref:
@@ -5751,6 +5801,11 @@
     def: >
       A preliminary vote used to determine whether further discussion is needed in a meeting.
 
+- slug: sequential_data
+  en:
+    term: "sequential data"
+    def: >
+      Any list of data items where the order is an inherent property of the list. Often the next item in the list is dependent on the previous item or items.
 
 - slug: server
   en:
@@ -5793,6 +5848,13 @@
 
 
 - slug: shiny
+  en:
+    term: "Shiny"
+    def: >
+      A [R](#r_language) [package](#package) that makes it simple to build web applications to
+      interactively visualise and manipulate data. Often used to make interactive [graphs](graph) 
+      and [tables](#table) straight from [R](#r_language) without having 
+      to know [HTML](#html), [CSS](#css) or JavaScript.
 
 
 - slug: short_circuit_test
@@ -5913,6 +5975,13 @@
       A set of programs that are built, tested, and distributed as a collection so
       that they can run together.
 
+- slug: source_code
+  en:
+    term: "source code"
+    def: >
+      Source code or, simply, code, is the origin of executed code (either by means of
+      an interpreter or compiler). It's the primarily human-produced series of commands
+      that make up a program. (Note: Automatic code generators exist for some applications)
 
 - slug: source_distribution
   en:
@@ -6462,7 +6531,7 @@
       Un type de donnée correspondant à une collection d'objets en nombre fixé, par exemple
       les trois composantes de la spécification rouge-vert-bleu d'une couleur. En "[Python](#python)",
       les tuples sont immuables (leurs valeurs sont fixées à l'initialisation et ne peuvent plus être
-      modifiées par la suite). 
+      modifiées par la suite).
       Les tuples contenant n objets sont aussi appelés n-uplets.
 
 - slug: two_hard_problems
