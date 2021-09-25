@@ -1707,6 +1707,12 @@
     def: >
       The study or application of computational methods for [parsing](#parse) or understanding
       human languages. Early approaches were algorithmic; most modern approaches are statistical.
+  es:
+    term: "lingüística computacional"
+    def: >
+      El estudio o aplicación de métodos computacionales para procesamiento o entendimiento
+      de lenguajes humanos. Los primeros acercamientos fueron algorítmicos; la mayoría
+      de los acercamientos modernos son estadísticos.
 
 
 - slug: computational_notebook
@@ -2259,6 +2265,11 @@
 
 
 - slug: directory
+  en:
+    term: "directory"
+    def: >
+      An item within a [filesystem](#filesystem) that can contain files and other
+      directories. Also known as a [folder](#folder).
 
 
 - slug: discrete_random_variable
@@ -4392,6 +4403,11 @@
     acronym: "NLP"
     def: >
       See [computational linguistics](#computational_linguistics).
+  es:
+    term: "procesamiento de lenguaje natural"
+    acronym: PLN
+    def: >
+      Ver [lingüística computacional](#computational_linguistics).
 
 
 - slug: node
