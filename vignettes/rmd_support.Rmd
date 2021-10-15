@@ -35,7 +35,7 @@ title: "Test Glosario RMD Support"
 output: html_document
 glosario:
   base_url:
-    - http://carpentries.org/glosario
+    - https://glosario.carpentries.org
   language:
     - en
   requires:

@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 `glosario` allows users to create and retrieve multilingual glossaries. By
-default, `glosario` provides access to a [community-curated glossary](https://github.com/carpentries/glosario) hosted by The Carpentries. This repository also documents the structure expected for the glossaries that can be managed by `glosario`. 
+default, `glosario` provides access to a [community-curated glossary](https://glosario.carpentries.org) hosted by The Carpentries. This repository also documents the structure expected for the glossaries that can be managed by `glosario`. 
 
 There is also a [Python interface](https://glosario.readthedocs.io/en/latest/).
 
