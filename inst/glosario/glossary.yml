@@ -1865,6 +1865,10 @@
     term: "code review"
     def: >
       To check a program or a change to a program by inspecting its source code.
+  es:
+    term: "revisión de código"
+    def: >
+      Revisar un programa o un cambio a un programa inspeccionando su código fuente.
 
 
 - slug: coercion
@@ -4931,6 +4935,12 @@
       A [license](#license) that permits general re-use, such as the [MIT
       License](#mit_license) or [GPL](#gpl) for software and [CC-BY](#cc_by) or
       [CC-0](#cc_0) for data, prose, or other creative outputs.
+  es:
+    term: "licencia abierta"
+    def: >
+      Una [licencia](#license) que permite reuso en general, tal como la [Licencia MIT](#mit_license) 
+      o [GPL](#gpl) para software y [CC-BY](#cc_by) o
+      [CC-0](#cc_0) para datos, prosas u otros productos creativos.
 
 
 - slug: open_science
@@ -5196,6 +5206,10 @@
     term: "permalink"
     def: >
       Short for "permanent link", a URL that is intended to last forever.
+  es:
+    term: "permalink"
+    def: >
+      Abreviatura de "enlace permanente", una URL que se pretende que dure para siempre.
 
 
 - slug: phony_target
@@ -5636,6 +5650,10 @@
     term: "raster image"
     def: >
       An image stored as a matrix of pixels.
+  es:
+    term: "imagen rasterizada"
+    def: >
+      Una imagen almacenada como una matriz de píxeles.
 
 
 - slug: reactive_programming
