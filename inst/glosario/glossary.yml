@@ -2964,6 +2964,10 @@
     term: "fail (a test)"
     def: >
       A test fails if the [actual result](#actual_result) does not match the [expected result](#expected_result).
+  tn:
+    term: "E tlholegile (teko)"
+    def: >
+      Teko e tlholega fa dipholo tsa tlhomamisho di sa chwane le dipholo tse di ne di letetswe.
 
 
 - slug: "false"
@@ -3073,6 +3077,13 @@
       The part of the [operating system](#operating_system) that manages how files
       are stored and retrieved. Also used to refer to all of those files and
       [directories](#directory) or the specific way they are stored (as in "the Unix filesystem").
+  de:
+    term: "Dateisystem"
+    def: >
+      Der Teil des [Betriebssystems](#operating_system), der verwaltet wie Dateien gespeichert
+      und abgerufen werden. Der Begriff wird auch als Referenz für alle Dateien und
+      [Verzeichnisse](#directory) verwendet, oder für die spezifische Art, wie Dateien
+      gespeichert werden (z.B. "das Unix-Dateisystem").
   es:
     term: "sistema de archivos"
     def: >
@@ -3115,6 +3126,10 @@
     term: "folder"
     def: >
       Another term for a [directory](#directory).
+  de:
+    term: "Ordner"
+    def: >
+      Anderer Begriff für [Verzeichnis](#directory).
   es:
     term: "carpeta"
     def: >
@@ -3196,6 +3211,15 @@
       コードブロックとして名前を付けて定義したもの。関数は任意の引数を使って、
       入力ともしあれば返された出力(返り値)を定義します。関数は定義されたタスクを、
       関数呼び出しと呼ばれる１つのコマンドで繰り返し使用することを可能にします。
+  de:
+    term: "Funktion"
+    def: >
+      Eine Funktion ist ein in sich abgeschlossener Teil eines Programmcodes, der eine Abfolge
+      von Anweisungen umfasst und mehrere optionale oder notwendige Eingansparameter akzeptieren
+      kann. Funktionen haben einen eindeutigen Namen, der es erlaubt die Funktion durch einen
+      Funktionsaufruf mehrfach in einem Programm zu verwenden. Eine Funktion kann mehrere optionale
+      oder notwendige Eingangsparameter akzeptieren. Eine Funktion kann Werte zurückgeben, deren
+      Datentypen in einer Funktionsdokumentation niedergeschrieben sein sollten.
 
 
 - slug: functional_programming
@@ -3701,6 +3725,12 @@
     def: >
       The standard [markup language](#markup_language) used for web pages. HTML is
       represented in memory using [DOM](#dom) (Digital Object Model).
+  de:
+    term: "Hypertext-Auszeichnungssprache"
+    acronym: "HTML"
+    def: >
+      Die Standard-[Auszeichnungssprache](#markup_language) für Webseiten. HTML wird
+      im Speicher durch das [Dokumenten-Objekt-Modell](#dom) repräsentiert.
 
 
 - slug: http
@@ -4060,6 +4090,13 @@
       A typesetting system for document preparation that uses a specialized [markup language](#markup_language) to define a document structure
       (e.g., headings), stylise text, insert mathematical equations, and manage citations and cross-references. LaTeX is widely
       used in academia, in particular for scientific papers and theses in mathematics, physics, engineering, and computer science.
+  de:
+    term: "LaTeX"
+    def: >
+      Ein Textsatzsystem zum Erstellen von Dokumenten, das eine spezielle [Auszeichnungssprache](#markup_language)
+      nutzt, um die Dokument-Struktur (z.B. Titel) zu definieren, Text zu setzen, mathematische Gleichungen einzufügen
+      und Zitate und Querverweise zu verwalten. LaTeX  wird häufig in der akademischen Welt verwendet, besonders für
+      wissenschaftliche Veröffentlichungen und Abschlussarbeiten in Mathematik, Physik, Maschinenbau und Informatik.
   fr:
     term: "LaTeX"
     def: >
@@ -4407,6 +4444,12 @@
     def: >
       A [markup language](#markup_language) with a simple syntax intended as a replacement for [HTML](#html).
       Markdown is often used for README files, and is the basis for [R markdown](#r_markdown).
+  de:
+    term: "Markdown"
+    def: >
+      Eine [Auszeichnungssprache](#markup_language) mit einfacher Syntax, die als Ersatz für [HTML](#html)
+      vorgesehen ist. Markdown wird oft für README (lies mich) Dateien verwendet und ist die Basis von
+      [R Markdown](#r_markdown).
   fr:
     term: "Markdown"
     def: >
@@ -4438,6 +4481,13 @@
       displayed. The markup is usually not displayed, but instead controls how the
       underlying text is interpreted or shown. [Markdown](#markdown) and [HTML](#html)
       are widely-used markup languages for web pages.
+  de:
+    term: "Auszeichnungssprache"
+    def: >
+      Ein Regelwerk zur Annotation von Text, um zu definieren, was er bedeutet oder wie er
+      dargestellt werden soll. Die Textauszeichnung wird in der Regel nicht dargestellt, sondern
+      kontrolliert wie der zu Grunde liegende Text interpretiert oder angezeigt wird. [Markdown](#markdown)
+      und [HTML](#html) sind weit verbreitete Auszeichnungssprachen für Internetseiten.
   fr:
     term: "langage de balisage"
     def: >
@@ -5046,6 +5096,12 @@
       A program that provides a standard interface to whatever hardware it is running
       on. Theoretically, any program that only interacts with the operating system
       should run on any computer that operating system runs on.
+  de:
+    term: "Betriebssystem"
+    def: >
+      Ein Programm, das eine Standard-Oberfläche zu der Hardware, auf der es läuft,
+      zur Verfügung stellt. Theoretisch sollte ein Programm, dass nur mit dem Betriebssystem
+      interagiert, auf jedem Computer laufen, der dieses Betriebssystem nutzt
   ja:
     term: "オペレーティングシステム"
     def: >
@@ -5690,10 +5746,7 @@
     term: "R (linguagem de programação)"
     def: >
       Uma linguagem de programação de código aberto usada principalmente para ciência de dados.
-  tn:
-    term: "R ( Puo e e laelang dibalamakgolo/dikhomphutara)"
-    def: >
-  
+
 - slug: r_markdown
   ref:
     - computational_notebook
