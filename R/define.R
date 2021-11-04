@@ -10,7 +10,7 @@
 #'
 #' @export
 define <- function(key, lang = "en", glossary = NULL, show_lang = FALSE) {
-  if (is.null(glossary)){
+  if (is.null(glossary)) {
     glossary <- Glossary$new()
   }
 
