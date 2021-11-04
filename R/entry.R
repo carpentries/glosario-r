@@ -14,7 +14,7 @@ LanguageGlossaryEntry <- R6::R6Class("LanguageGlossaryEntry",
       private$.defn <- defn
       private$.lang <- lang
     },
-    language =  function() {
+    language = function() {
       private$.lang
     },
     term = function() {
@@ -30,9 +30,9 @@ LanguageGlossaryEntry <- R6::R6Class("LanguageGlossaryEntry",
         def <- paste0(def, " (", private$.lang, ")")
       }
 
-      names(def) <- private$.term
-      cli::cli_dl(def)
+      def <- setNames(def, private$.term)
 
+      cli::cli_dl(def)
     }
   )
 )
@@ -99,8 +99,22 @@ GlossaryEntry <- R6::R6Class("GlossaryEntry",
         )
       )
     },
-    rmd_define = function(lang = NULL){
-      if (! is.null(lang)) {
+    export_list = function() {
+      purrr::map(
+        private$.entries,
+        function(.x) {
+          res <- list(
+            term = .x$term(),
+            def = .x$definition()
+          )
+          res <- list(res)
+          names(res) <- .x$language()
+          res
+        }
+      )
+    },
+    rmd_define = function(lang = NULL) {
+      if (!is.null(lang)) {
         lang <- match.arg(lang, iso_langs(), several.ok = TRUE)
 
         if (!all(lang %in% self$list_languages())) {
@@ -114,12 +128,12 @@ GlossaryEntry <- R6::R6Class("GlossaryEntry",
         idx <- seq_along(private$.entries)
       }
 
-      purrr::map(private$.entries[idx], ~.x$definition())
+      purrr::map(private$.entries[idx], ~ .x$definition())
     },
 
     print = function(lang = NULL, show_lang = TRUE) {
 
-      if (! is.null(lang)) {
+      if (!is.null(lang)) {
         lang <- match.arg(lang, iso_langs(), several.ok = TRUE)
 
         if (!all(lang %in% self$list_languages())) {
@@ -133,7 +147,9 @@ GlossaryEntry <- R6::R6Class("GlossaryEntry",
         idx <- seq_along(private$.entries)
       }
 
-      purrr::walk(private$.entries[idx], print, show_lang)
+      purrr::walk(private$.entries[idx], function(.x, show_lang = TRUE) {
+        .x$print(show_lang)
+      })
 
       if (!is.null(private$.ref)) {
         cli::cli_text(
@@ -151,8 +167,16 @@ GlossaryEntry <- R6::R6Class("GlossaryEntry",
       } else {
         stop("Slugs can't be modified.", call. = FALSE)
       }
-    }
-  )
+    },
+    ref = function(value) {
+      if (missing(value)) {
+        private$.ref
+      } else {
+        stopifnot(rlang::is_character(value))
+        private$.ref <- c(private$.ref, value)
+        self
+      }
+    })
 )
 
 
@@ -166,15 +190,16 @@ Glossary <- R6::R6Class("Glossary",
   public = list(
     initialize = function(glossary_path = NULL,
                           cache_path = tempdir()) {
-
-      if (is.null(glossary_path)){
+      if (is.null(glossary_path)) {
         raw_glossary <- list(
           uri = system.file("glosario/glossary.yml", package = "glosario"),
           entries = yaml::read_yaml(system.file("glosario/glossary.yml",
-                                                package = "glosario"),
-                                    eval.expr = FALSE)
+            package = "glosario"
+          ),
+          eval.expr = FALSE
+          )
         )
-      } else if(!is.null(cache_path)) {
+      } else if (!is.null(cache_path)) {
         validate_glossary_uri(glossary_path)
         raw_glossary <- use_cache(glossary_path, cache_path)
       } else {
@@ -195,7 +220,13 @@ Glossary <- R6::R6Class("Glossary",
           slug <- e$slug
           ref <- e$ref
 
+          if (identical(names(e), "slug")) {
+            warning("no entries for slug: ", slug, ". Skipping...")
+            return(NULL)
+          }
+
           entries_lang <- e[names(e) %in% iso_langs()]
+          message("parsing: ", slug)
           res <- GlossaryEntry$new(
             slug = slug,
             term = entries_lang[[1]]$term,
@@ -219,74 +250,143 @@ Glossary <- R6::R6Class("Glossary",
             )
           }
           res
-        })
+        }
+      ) %>%
+  purrr::discard(is.null)
 
       self
-
     },
 
-    list_slugs = function() {
-      purrr::map_chr(private$.entries, "slug")
-    },
+  list_slugs = function() {
+    purrr::map_chr(private$.entries, "slug")
+  },
 
-    define = function(key, lang = NULL, show_lang = FALSE) {
-      idx <- match(key, self$list_slugs())
-      if (any(is.na(idx))) {
-        for (i in 1:length(idx)){
-          if (is.na(idx[i])){
-            idx[i] <- which.max(stringdist::stringsim(key[i],
-                                          self$list_slugs(),
-                                          method = 'cosine')
-                                )
-          }
-        }
-        if (any(is.na(idx))){
-          warning(
-            "Some key are not found: ",
-            sQuote(paste(key[is.na(idx)], collapse = ", ")),
-            ". They are being excluded.",
-            call. = FALSE
-          )
-        }
-      }
-      idx <- idx[!is.na(idx)]
-      purrr::walk(
-        private$.entries[idx],
-        function(e) {
-          e$print(lang, show_lang = show_lang)
-        })
-    },
-    rmd_define = function(key, lang = NULL){
-      idx <- match(key, self$list_slugs())
-      if (any(is.na(idx))) {
-        for (i in 1:length(idx)){
-          if (is.na(idx[i])){
-            idx[i] <- which.max(stringdist::stringsim(key[i],
-                                                      self$list_slugs(),
-                                                      method = 'cosine')
-            )
-          }
-        }
-        if (any(is.na(idx))){
-          warning(
-            "Some key are not found: ",
-            sQuote(paste(key[is.na(idx)], collapse = ", ")),
-            ". They are being excluded.",
-            call. = FALSE
-          )
-        }
-      }
-      idx <- idx[!is.na(idx)]
-      private$.entries[idx]
-    },
-
-    print = function() {
-      n_slugs <- self$list_slugs() %>%
-        length()
-
-      cli::cli_text("A glossary with {.strong {n_slugs}} entries.")
+  list_languages = function(key) {
+    idx <- match(key, self$list_slugs())
+    if (any(is.na(idx))) {
+      warning(
+        "Some key are not found: ",
+        sQuote(paste(key[is.na(idx)], collapse = ", ")),
+        ". They are being excluded.",
+        call. = FALSE
+      )
     }
+    idx <- idx[!is.na(idx)]
+    purrr::map(
+      private$.entries[idx],
+      function(e) {
+        e$list_languages()
+      }
+    ) %>%
+      rlang::set_names(key)
+  },
 
+  add_entry = function(slug, term, defn, lang, ref = NULL) {
+    stopifnot(rlang::is_scalar_character(slug))
+    stopifnot(rlang::is_scalar_character(term))
+    stopifnot(rlang::is_scalar_character(defn))
+    stopifnot(rlang::is_scalar_character(lang))
+    if (!is.null(ref)) {
+      stopifnot(rlang::is_character(ref))
+    }
+    lang <- match.arg(lang, iso_langs())
+
+    ## does the entry exists?
+    idx <- match(slug, self$list_slugs())
+    if (is.na(idx)) {
+      res <- GlossaryEntry$new(
+        slug = slug,
+        term = term,
+        defn = defn,
+        lang = lang,
+        ref = ref
+      )
+      private$.entries <- append(
+        private$.entries,
+        res
+      )
+    } else {
+      private$.entries[[idx]]$add_entry(
+        slug = slug,
+        term = term,
+        defn = defn,
+        lang = lang
+      )
+    }
+    self
+  },
+
+  define = function(key, lang = NULL, show_lang = FALSE) {
+
+    idx <- match(key, self$list_slugs())
+    if (any(is.na(idx))) {
+      for (i in 1:length(idx)) {
+        if (is.na(idx[i])) {
+          idx[i] <- which.max(stringdist::stringsim(key[i],
+            self$list_slugs(),
+            method = "cosine"
+          ))
+        }
+      }
+      if (any(is.na(idx))) {
+        warning(
+          "Some key are not found: ",
+          sQuote(paste(key[is.na(idx)], collapse = ", ")),
+          ". They are being excluded.",
+          call. = FALSE
+        )
+      }
+    }
+    idx <- idx[!is.na(idx)]
+    purrr::walk(
+      private$.entries[idx],
+      function(e) {
+        e$print(lang, show_lang = show_lang)
+      }
+    )
+  },
+  rmd_define = function(key, lang = NULL) {
+    idx <- match(key, self$list_slugs())
+    if (any(is.na(idx))) {
+      for (i in 1:length(idx)) {
+        if (is.na(idx[i])) {
+          idx[i] <- which.max(stringdist::stringsim(key[i],
+            self$list_slugs(),
+            method = "cosine"
+          ))
+        }
+      }
+      if (any(is.na(idx))) {
+        warning(
+          "Some key are not found: ",
+          sQuote(paste(key[is.na(idx)], collapse = ", ")),
+          ". They are being excluded.",
+          call. = FALSE
+        )
+      }
+    }
+    idx <- idx[!is.na(idx)]
+    private$.entries[idx]
+  },
+
+  export = function(file, ...) {
+    res <- purrr::map(private$.entries,
+      function(.x) {
+        .res <- c(
+          slug = .x$slug,
+          ref = list(.x$ref),
+          purrr::flatten(.x$export_list())
+        )
+        purrr::discard(.res, is.null)
+      })
+    yaml::write_yaml(x = res, file = file, indent.mapping.sequence = TRUE, ...)
+  },
+
+  print = function() {
+    n_slugs <- self$list_slugs() %>%
+      length()
+
+    cli::cli_text("A glossary with {.strong {n_slugs}} entries.")
+  }
   )
-
 )
