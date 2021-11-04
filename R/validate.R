@@ -56,7 +56,17 @@ validate_raw_glossary <- function(parsed_yaml) {
   )
   if (!all(refs$is_in_glossary)) {
     ## FIXME: improve error message
-    stop("Some references are slugs that are not found.", call. = FALSE)
+    missing <- refs[!refs$is_in_glossary, ]
+    details <- paste(
+      "ref:", sQuote(missing$ref),
+      "from slug: ", sQuote(missing$slug)
+    )
+    details <- paste(details, collapse = "\n")
+    stop(
+      "Some references are slugs that are not found:", "\n",
+      details,
+      call. = FALSE
+    )
   }
   TRUE
 }
