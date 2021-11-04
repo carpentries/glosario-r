@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://carpentries.github.io/glosario-r/404.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/glosario-r/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/glosario-r/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/glosario-r/articles/definitions.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/glosario-r/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/glosario-r/articles/rmd_support.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/glosario-r/authors.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/glosario-r/index.html</loc>
   </url>
   <url>
@@ -13,15 +34,21 @@
     <loc>https://carpentries.github.io/glosario-r/reference/get_glossary.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/glosario-r/reference/glossary.html</loc>
+    <loc>https://carpentries.github.io/glosario-r/reference/glosario-package.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/glosario-r/reference/index.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/glosario-r/reference/iso639.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/glosario-r/articles/definitions.html</loc>
+    <loc>https://carpentries.github.io/glosario-r/reference/list_glosario_terms.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/glosario-r/articles/rmd_support.html</loc>
+    <loc>https://carpentries.github.io/glosario-r/reference/pipe.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/glosario-r/reference/validate_document.html</loc>
   </url>
 </urlset>

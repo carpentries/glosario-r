@@ -20,6 +20,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -32,18 +34,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">glosario</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
@@ -55,7 +51,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="articles/definitions.html">Definitions</a>
+      <a href="articles/definitions.html">Basic Usage</a>
     </li>
     <li>
       <a href="articles/rmd_support.html">RMarkdown Support</a>
@@ -75,48 +71,50 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="glosario" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#glosario" class="anchor"></a>glosario</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="glosario">glosario<a class="anchor" aria-label="anchor" href="#glosario"></a>
+</h1></div>
 <!-- badges: start -->
 
-<p><code>glosario</code> allows users to create and retrieve multilingual glossaries. By default, <code>glosario</code> provides access to a <a href="https://github.com/carpentries/glosario">community-curated glossary</a> hosted by The Carpentries. This repository also documents the structure expected for the glossaries that can be managed by <code>glosario</code>.</p>
-<p>There is also a <a href="https://glosario.readthedocs.io/en/latest/">Python interface</a>.</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p><code>glosario</code> is still in the development stage and is only available from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="co"># install.packages("remotes")</span>
-<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"carpentries/glosario-r"</span>)
-</pre></div>
+<p><code>glosario</code> allows users to create and retrieve multilingual glossaries. By default, <code>glosario</code> provides access to a <a href="https://glosario.carpentries.org" class="external-link">community-curated glossary</a> hosted by The Carpentries. This repository also documents the structure expected for the glossaries that can be managed by <code>glosario</code>.</p>
+<p>There is also a <a href="https://glosario.readthedocs.io/en/latest/" class="external-link">Python interface</a>.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p><code>glosario</code> is still in the development stage and is only available from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># install.packages("remotes")</span>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"carpentries/glosario-r"</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="example" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
-<div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw">glosario</span>)
-<span class="kw">g</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_glossary.html">get_glossary</a></span>()
-<span class="kw">g</span>
-<span class="co">#&gt; A glossary with 152 entries.</span>
-<span class="kw">glosario</span>::<span class="fu"><a href="reference/define.html">define</a></span>(<span class="st">"data frame"</span>, glossary = <span class="kw">g</span>)
-<span class="co">#&gt; data frame: A two-dimensional data structure for storing tabular data in memory. Rows</span>
-<span class="co">#&gt;   represent [records](#record) and columns represent [variables](variable_data).</span>
+<div class="section level2">
+<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">glosario</span><span class="op">)</span>
+
+<span class="fu"><a href="reference/define.html">define</a></span><span class="op">(</span><span class="st">"data frame"</span><span class="op">)</span>
+<span class="co">#&gt; data frame:</span>
 <span class="co">#&gt; See also: tidy_data</span>
-<span class="co">#&gt; </span>
-</pre></div>
+<span class="co">#&gt; </span></code></pre></div>
 <p>To get definitions in other languages we would do:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit">
-<span class="kw">g</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_glossary.html">get_glossary</a></span>()
-<span class="fu"><a href="reference/define.html">define</a></span>(<span class="st">"plus_one"</span>, lang = <span class="st">'fr'</span>, glossary = <span class="kw">g</span>)
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="reference/define.html">define</a></span><span class="op">(</span><span class="st">"plus_one"</span>, lang <span class="op">=</span> <span class="st">'fr'</span><span class="op">)</span>
 <span class="co">#&gt; +1: Un vote en faveur de quelque chose.</span>
-<span class="co">#&gt; </span>
-</pre></div>
+<span class="co">#&gt; </span></code></pre></div>
+<p>If you want to use your custom glossary file you can do it the following way:</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">custom_url</span> <span class="op">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/carpentries/glosario/master/glossary.yml"</span>
+
+<span class="va">g</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_glossary.html">get_glossary</a></span><span class="op">(</span>url <span class="op">=</span> <span class="va">custom_url</span><span class="op">)</span>
+
+<span class="fu"><a href="reference/define.html">define</a></span><span class="op">(</span><span class="st">"plus_one"</span>, lang <span class="op">=</span> <span class="st">'fr'</span>, glossary <span class="op">=</span> <span class="va">g</span><span class="op">)</span>
+<span class="co">#&gt; +1: Un vote en faveur de quelque chose.</span>
+<span class="co">#&gt; </span></code></pre></div>
 <p>To add links to definitions, you can use the <code>gdef</code> function for inline writing:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>This is a <span class="st">`</span><span class="dt">r gdef('data_frame', 'Data Frame')</span><span class="st">`</span>, they are used <span class="cf">for</span> storing data.</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>This is a <span class="st">`</span><span class="dt">r gdef('data_frame', 'Data Frame')</span><span class="st">`</span>, they are used <span class="cf">for</span> storing data.</span></code></pre></div>
 <p>Which would look like this:</p>
 <blockquote>
-<p>This is a <a href="https://carpentries.org/glossary/en/#data_frame" class="glossary-definition">Data Frame</a>, they are used for storing data.</p>
+<p>This is a <span class="glosario_def"><a href="https://glosario.carpentries.org/en/#data_frame" class="external-link">Data Frame</a></span>, they are used for storing data.</p>
 </blockquote>
 </div>
 </div>
@@ -124,39 +122,44 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
-</ul>
-</div>
-<div class="developers">
-<h2>Developers</h2>
-<ul class="list-unstyled">
-<li>Greg Wilson <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-8659-8979" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Francois Michonneau <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-9092-966X" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Ian Flores Siaca <br><small class="roles"> Author </small>  </li>
-<li>Zhian N. Kamvar <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-1458-7108" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+
+<div class="developers">
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/carpentries/glosario-r/actions"><img src="https://github.com/carpentries/glosario-r/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
-<li><a href="https://codecov.io/gh/carpentries/glosario-r"><img src="https://codecov.io/gh/carpentries/glosario-r/branch/master/graph/badge.svg" alt="codecov"></a></li>
+<li>Greg Wilson <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-8659-8979" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Francois Michonneau <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-9092-966X" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Ian Flores Siaca <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-7573-0708" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Zhian N. Kamvar <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-1458-7108" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
+
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/carpentries/glosario-r/actions" class="external-link"><img src="https://github.com/carpentries/glosario-r/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
+<li><a href="https://codecov.io/gh/carpentries/glosario-r" class="external-link"><img src="https://codecov.io/gh/carpentries/glosario-r/branch/master/graph/badge.svg" alt="codecov"></a></li>
+</ul>
 </div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Greg Wilson, Francois Michonneau, Ian Flores Siaca, Zhian N. Kamvar.</p>
+  <p></p>
+<p>Developed by Greg Wilson, Francois Michonneau, Ian Flores Siaca, Zhian N. Kamvar.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.9000.9000.9000.</p>
 </div>
 
       </footer>
@@ -164,6 +167,8 @@
 
   
 
+
+  
 
   </body>
 </html>

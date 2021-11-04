@@ -19,6 +19,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,18 +33,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">glosario</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
@@ -54,7 +50,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/definitions.html">Definitions</a>
+      <a href="../articles/definitions.html">Basic Usage</a>
     </li>
     <li>
       <a href="../articles/rmd_support.html">RMarkdown Support</a>
@@ -85,21 +81,20 @@
 
     
     
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw">glosario</span>)
-</pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">glosario</span><span class="op">)</span></code></pre></div>
 <p>To add links to definitions, you can use the <code>gdef</code> function for inline writing:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>This is a <span class="st">`</span><span class="dt">r gdef('data_frame', 'Data Frame')</span><span class="st">`</span>, they are used <span class="cf">for</span> storing data.</span></code></pre></div>
 <p>Which would look like this:</p>
 <blockquote>
-<p>This is a <a href="https://carpentries.org/glosario/en/#data_frame" class="glossary-definition">Data Frame</a>, they are used for storing data.</p>
+<p>This is a <span class="glosario_def"><a href="https://glosario.carpentries.org/en/#data_frame" class="external-link">Data Frame</a></span>, they are used for storing data.</p>
 </blockquote>
 <p>The <code>gdef</code> function depends on the YAML header being set up under the <code>glosario</code> key. An example of a YAML header for glosario would be:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Test Glosario RMD Support"</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> html_document</span></span>
 <span id="cb3-3"><a href="#cb3-3"></a><span class="fu">glosario</span><span class="kw">:</span></span>
 <span id="cb3-4"><a href="#cb3-4"></a><span class="at">  </span><span class="fu">base_url</span><span class="kw">:</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="at">    </span><span class="kw">-</span><span class="at"> http://carpentries.org/glosario</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="at">    </span><span class="kw">-</span><span class="at"> https://glosario.carpentries.org</span></span>
 <span id="cb3-6"><a href="#cb3-6"></a><span class="at">  </span><span class="fu">language</span><span class="kw">:</span></span>
 <span id="cb3-7"><a href="#cb3-7"></a><span class="at">    </span><span class="kw">-</span><span class="at"> en</span></span>
 <span id="cb3-8"><a href="#cb3-8"></a><span class="at">  </span><span class="fu">requires</span><span class="kw">:</span></span>
@@ -142,11 +137,13 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by Greg Wilson, Francois Michonneau, Ian Flores Siaca, Zhian N. Kamvar.</p>
+  <p></p>
+<p>Developed by Greg Wilson, Francois Michonneau, Ian Flores Siaca, Zhian N. Kamvar.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.9000.9000.9000.</p>
 </div>
 
       </footer>
@@ -154,6 +151,8 @@
 
   
 
+
+  
 
   </body>
 </html>
