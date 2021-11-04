@@ -1203,7 +1203,13 @@
       in den Zuständen 0 oder 1 dargestellt. In der [Boolschen Logik](#boolean) auch als
       [falsch](#false) (0) oder [wahr](#true) (1). Computer verwenden als kleinste
       Speichereinheit ein [Bit](#bit) welches entweder eine 0 oder 1 enthalten kann.
-
+  es:
+    term: "Binärsystem"
+    def: >
+      Un sistema donde puede haber dos posibilidades de estado. En la computación,
+      el sistema binario se representa con el estado de 0 ó 1. En el sistema lógico [Booleano](#boolean),
+      [falso](#false) se representa con (0) y [verdadero](#true) con (1). Las computadoras operan en sistemas 
+      binarios donde almacenan [bits](#bit).
 
 - slug: binary_expression
   ref:
@@ -2452,7 +2458,10 @@
     term: "sayansi ya data"
     def: >
       mchanganyiko wa takwimu, programu na kazi ngumu inayotumika kupata maarifa kutoka kwa data.
-
+  es:
+    term: "ciencia de datos"
+    def: >
+      La combinación de estadísticas, programación y trabajo duro que se utiliza para extraer información de los datos.
 
 - slug: data_scientist
   en:
@@ -2471,6 +2480,10 @@
     term: "datawetenskaplike"
     def: >
       Iemand wat programmeringsvaardighede gebruik om statistiese probleme op te los.
+  es:
+    term: "cientifico/cientifica de datos"
+    def: >
+      Alguien que usa habilidades de programación para resolver problemas de estadísticas.
 
 - slug: data_structure
   en:
@@ -4546,6 +4559,12 @@
       The average value of a dataset, more properly known as the [arithmetic
       mean](#arithmetic_mean) to distinguish it from the [geometric](#geometric_mean)
       and [harmonic](#harmonic_mean) means.
+  de:
+    term: "Mittelwert"
+    def: >
+      Der Durchschnitt eines Datensatzes, genauer auch bezeichnet als [arithmetischer
+      Mittelwert](#arithmetic_mean), um ihn zu unterscheiden vom [geometrischen](#geometric_mean)
+      und [harmonischen](#harmonic_mean) Mittelwert.
   it:
     term: "media"
     def: >
@@ -6629,7 +6648,13 @@
     term: "standard deviation"
     def: >
       How widely values in a dataset differ from the [mean](#mean). It is calculated
-      as the [square root](#square_root) of the [variance](#variance).
+      as the square root of the [variance](#variance).
+  de:
+    term: "Standardabweichung"
+    def: >
+      Wie weit Werte in einem Datensatz vom [Mittelwert](#mean) abweichen. Die Standardabweichung
+      wird berechnet als Quadratwurzel der [Varianz](#variance).
+      
   it:
     term: "deviazione standard"
     def: >
@@ -7251,6 +7276,13 @@
       as the average of the squared differences between the values and the mean. The
       [standard deviation](#standard_deviation) is often used instead, since it has
       the same units as the data, while the variance is expressed in units squared.
+  de:
+    term: "Varianz"
+    def: >
+      Wie weit Werte in einem Datensatz vom [Mittelwert](#mean) entfernt sind. Die Varianz wird
+      berechnet als die Differenz eines Wertes und des Mittelwerts im Quadrat. Stattdessen wird oft auch
+      die [Standardabweichung](#standard_deviation) verwendet, da sie dieselbe Einheit wie die Daten
+      hat, während die Varianz in der Einheit zum Quadrat ausgedrückt wird.
   it:
     term: "varianza"
     def: >
