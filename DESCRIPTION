@@ -42,7 +42,8 @@ Imports:
     glue,
     dplyr,
     magrittr,
-    stringr
+    stringr,
+    rappdirs
 Roxygen: list(markdown = TRUE)
 Suggests:
     testthat,
