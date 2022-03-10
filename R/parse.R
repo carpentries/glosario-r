@@ -17,7 +17,7 @@
 ##'
 ##' @return a glossary (as an R6 object)
 ##' @export
-get_glossary <- function(url = "https://raw.githubusercontent.com/carpentries/glosario/master/glossary.yml", cache = tempdir()) {
+get_glossary <- function(url = "https://raw.githubusercontent.com/carpentries/glosario/main/glossary.yml", cache = tempdir()) {
 
   if (identical(nchar(gsub("[^/]", "", url)), 1L) &&
         !grepl("\\.yml$", url, ignore.case = TRUE)) {
