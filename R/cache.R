@@ -6,7 +6,7 @@ read_cache <- function(cached_glossary_path) {
 
 
 write_cache <- function(glossary_path, cached_glossary_path) {
-  parsed_yaml <- yaml::read_yaml(glossary_path)
+  parsed_yaml <- yaml::read_yaml(glossary_path, eval.expr = FALSE)
 
   to_cache <- list(
     uri = glossary_path,
