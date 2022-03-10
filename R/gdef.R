@@ -1,7 +1,12 @@
 #' Generate anchor tag for a given term in HTML
 #'
+#'
 #' @param term Look-up key
 #' @param text Text to display
+#'
+#' @note If you set up a language key in the glosario section of the YAML header,
+#' the function will read this key and link to the correct language. If no
+#' language key is provided the function will default to English.
 #'
 #' @return string containing link
 #'
