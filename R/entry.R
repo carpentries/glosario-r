@@ -206,7 +206,7 @@ Glossary <- R6::R6Class("Glossary",
         validate_glossary_uri(glossary_path)
         raw_glossary <- list(
           uri = glossary_path,
-          entries = yaml::read_yaml(glossary_path)
+          entries = yaml::read_yaml(glossary_path, eval.expr = FALSE)
         )
       }
 
