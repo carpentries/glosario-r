@@ -1,3 +1,14 @@
+- slug: concatenate
+  ref:
+    - aggregation
+    - left_join
+    - right_join
+  en:
+    term: "Concatenate"
+    acronym: "concat"
+    def: >
+      Append/stack either columns (axis=1) or rows (axis=0) by end-to-end joining of data. [Python](#python).
+
 - slug: 68_95_997_rule
   de:
     term: "68-95-99.7 Regel"
@@ -300,6 +311,12 @@
       not implemented. Programmers will define an abstract method in a [parent
       class](#parent_class) to specify operations that [child classes](#child_class)
       must provide.
+  es:
+    term: "método abstrato"
+    def: >
+      En [programación orientada a objectos](#oop), es un [método](#method) definido pero no implementado.
+      Programadores definen un método abstracto en una [superclase](#parent_class) para especificar operaciones
+      que las [subclases](#child_class) deberán proveer.
   id:
     term: "metode abstrak"
     def: >
@@ -467,12 +484,17 @@
     def: >
       Combinar vários valores em um, por exemplo, somando um conjunto numérico ou
       concatenando um conjunto de caracteres.
+
+  ar:
+    term: "تجميع"
+    def: >
+      دمج مجموعة من القيم في قيمة واحدة، مثال، حمع مجموعة من الأرقام أو تجميع مجموعة من السلاسل.
+
   sw:
     term: "mchanganyiko"
     def: >
       Kugawana vitu mingi pamoja, kwa mfano, kujumlisha nambari au
       kunganisha matini.
-
 
 - slug: aggregation_function
   en:
@@ -501,12 +523,18 @@
     def: >
       'n Funksie wat 'n groep waardes saamvoeg, bv. `sum` (summering) en `max`
       (maksimale waarde)
+  ar:
+    term: "دالة التجميع"
+    def: >
+       دالة تدمج العديد من القيم في قيمة واحدة ، مثل
+       جمع
+       أو
+       أقصى.
   de:
     term: "Aggregatfunktion"
     def: >
       Eine Funktion, welche mehrere Werte in einem Ergebnis zusammenfasst,
       beispielsweise in einer Summe oder dem Maximalwert.
-
 
 - slug: agile
   en:
@@ -576,6 +604,11 @@
     def: >
       Un algorithme est un ensemble d'étapes ou de règles à suivre pour réaliser une certaine tâche.
       En informatique, un algorithme est un ensemble d'instructions présentes dans un programme qui permet de résoudre un problème informatique.
+  ar:
+    term: "خوارزمية"
+    def: >
+      الخوارزمية عبارة عن مجموعة من الخطوات والمقدمات أوالقواعد التي يجب اتباعها لتحقيق مهمة معين.
+      في علوم الحاسب، الخوارزمية هي مجموعة من التعليمات في برنامج كمبيوتر تحل مشكلة حاسوبية.
   de:
     term: "Algorithmus"
     def: >
@@ -589,7 +622,15 @@
       Αλγόριθμος είναι ένα σύνολο από βήματα ή κανόνες για τη διεκπεραίωση μιας συγκεκριμένης εργασίας.
       Στην πληροφορική, αλγόριθμος είναι ένα σύνολο από εντολές σε κάποιο πρόγραμμα οι οποίες επιλύουν κάποιο
       υπολογιστικό πρόβλημα.
-
+      
+- slug: algorithmic_bias
+  ref:
+    - algorithm
+  en:
+    term: "algorithmic bias"
+    def: >
+      Repeatable results that show bias, or skewed treatment, found in an [algorithm](#algorithm).
+      For example, social media algorithms may prioritize or stigmatize content from certain groups of users.    
   am:
     term: ስልተ ቀመር
     def: "አንድ ስልተ-ቀመር አንድን የተወሰነን ነገር ለማከናወን ሊከተሏቸው የሚገቡ እርምጃዎች ፣ ጥሰቶች ወይም ህጎች ስብስብነው
@@ -752,7 +793,12 @@
     def: >
       Un conjunto de funciones y procedimientos proporcionados por una libreria de software o servicio web
       atraves del cual otra aplicación se puede comunicar. Una API no es el código,
-      la base de datos o el servidor; es el punto de acceso.
+      la base de datos o el servidor; es el punto de acceso.    
+  ar:
+    term: "واجهة التطبيق البرمجية"
+    def: >
+      مجموعة من الوظائف والإجراءات التي توفرها مكتبات البرامج أو خدمة الويب والتي يمكن من خلالها  لتطبيق آخر التواصل معها.
+      واجهة التطبيق البرمجية ليست الكود أو قاعدة البيانات أو الخادم: إنها نقطة الوصول.
   fr:
     term: "Interface de Programmation d'application"
     def: >
@@ -880,7 +926,12 @@
     term: "ASCII"
     def: >
       'n Standaard manier om karakters wat algemeen in Wes-Europese tale gebruik word,
-      voor te stel as 7- of 8-[bis](#bit) heelgetalle. ASCII word vervang deur [Unicode](#unicode).
+      voor te stel as 7- of 8-bis heelgetalle. ASCII word vervang deur [Unicode](#unicode).
+  ar:
+    term: "آسكي"
+    def: >
+       طريقة قياسية لتمثيل الأحرف المستخدمة بشكل شائع في لغات أوروبا الغربية كأعداد صحيحة من ٧ أو ٨ بت،
+       يحل محلها الآن   [الترميز الموحد] (#unicode).
   es:
     term: "ASCII"
     def: >
@@ -982,9 +1033,15 @@
   af:
     term: "asinchronies"
     def: >
-      "Asinchronies is die teenoorgestelde van sinchronies wat beteken dat twee of meer
-      aktiwiteite tergelykertyd plaasvind. In programering is 'n asinchorniese bewerking 'n
-      bewerking wat onafhanklik van 'n ander een plaasvind."
+      Asinchronies is die teenoorgestelde van sinchronies wat beteken dat twee of meer 
+      aktiwiteite tergelykertyd plaasvind. In programering is 'n asinchorniese bewerking 'n 
+      bewerking wat onafhanklik van 'n ander een plaasvind.
+  ar:
+    term: "غير متزامن"
+    def: >
+       لا يحدث في نفس الوقت.
+       في البرمجة، العملية غير المتزامنة هي العملية التي يتم تنفيذها بشكل مستقل عن الأخرى
+       أو تلك التي تبدأ في وقت معين وتنتهي في وقت آخر.
   es:
     term: "asincrónico"
     def: >
@@ -1000,7 +1057,12 @@
     term: ያልተመሳሰለ
     def: >
       በተመሳሳይ ጊዜ አለመከሰት ፡፡ በፕሮግራም ውስጥ ያልተመሳሰለ አሠራር አንዱ  ከሌላው በተናጠል የሚሮጥ ፣ ወይም በተመሳሳይ  ጊዜ ተጀምሮ በሌላ ጊዜ ያበቃል ፡፡
-
+  fr:
+    term: asynchrone
+    def: >
+      Qui ne se produit pas en même temps. En programmation, une opération asynchrone
+      est une opération qui s'exécute indépendamment d'une autre, ou qui commence
+      à un moment et se termine à un autre.
 - slug: attribute
   en:
     term: "attribute"
@@ -1297,6 +1359,10 @@
     def: >
       Any data that until recently was too big for most people to work with on a
       single computer.
+  ar:
+    term: "البيانات الضخمة"
+    def: > 
+      أي بيانات كانت حتى وقت قريب أكبر من أن يشتغل عليها معظم الأشخاص على جهاز كمبيوتر واحد.
   de:
     term: "Big Data"
     def: >
@@ -1314,6 +1380,7 @@
     term: "Data kubwa"
     def: >
       Data inahitaji kutumikwa kwa kichakato kizito.
+
 
 - slug: binary
   en:
@@ -2800,10 +2867,20 @@
       Una estructura de datos bi-dimensional para guardar datos tabulares en memoria.
       Líneas representan [entradas](#record) y columnas representan [variables](#variable_data).
 
+
+- slug: data_masking
+  en:
+    term: "data masking"
+    def: >
+      Altering data in a dataset to anonymize or otherwise remove identifying information.
+      For example, real names might be swapped out with fictional names to provide name-based data
+      without referencing actual people.
+
   am:
     term: የውሂብ ክፈፍ
     def: >
       በትር ውስጥ ሰንጠረዥ መረጃዎችን ለማከማቸት ባለ ሁለት አቅጣጫዊ የውሂብ መዋቅር። ረድፎች [መዝገቦችን](#record) ይወክላሉ  እና አምዶች ይወክላሉ [variables](#variable_data)።
+
 
 - slug: data_mining
   en:
@@ -2912,6 +2989,15 @@
       characterise a set of data values and their representation (or [encoding](#character_encoding)),
       the relationships between values, and ways to access or manipulate those data, such as
       reading, altering, or writing.
+   
+   
+- slug: data_visualization
+  en:
+    term: "data visualization"
+    def: >
+      The creation of charts, maps, graphs, or infographics to translate datasets into something visual.
+      Sometimes called "dataviz" or "data viz."
+     
 
   am:
     term: የውሂብ መዋቅር
@@ -3600,6 +3686,32 @@
     def: >
       የ ሎጂካዊ ([ቦሊያን]ሁኔታ ከ [እውነተኛ](#boolean) ውስጥ ጥቅም ላይ ውሏልየ [ሁለትዮሽ](#true) ሁኔታን ለመወከል አመክንዮ እና መርሃግብር አንድ ነገር ::
 
+- slug: false_negative
+  ref:
+    - false_positive
+    - true_negative
+    - true_positive
+    - machine_learning
+    - classification
+  en:
+    term: "false negative"
+    def: >
+      Data points which are actually [true](#true) but incorrectly predicted as [false](#false).
+
+
+- slug: false_positive
+  ref:
+    - false_negative
+    - true_negative
+    - true_positive
+    - machine_learning
+    - classification
+  en:
+    term: "false positive"
+    def: >
+      Data points which are actually [false](#false) but incorrectly predicted as [true](#true).
+
+
 - slug: falsy
   ref:
     - truthy
@@ -3943,10 +4055,19 @@
       meaning they do not modify the global program state, or do anything other than computing
       the return value, such as writing output to a [log](#log) file, or printing to the [console](#console).
 
+
+- slug: garbage_in_garbage_out
+  en:
+    term: "garbage in, garbage out"
+    acronym: "GIGO"
+    def: >
+      The idea that messy data as an input will result in messy data as an output.
+
   am:
     term: ተግባራዊ ፕሮግራም
     def: >
       መረጃዎች በሚቀየሩበት የፕሮግራም ዘይቤ እንደ ቀለበቶች ያሉ የመቆጣጠሪያ አሠራሮችን ከመጠቀም ይልቅ የተግባሮችን ትግበራ በመተግበር ላይ በተግባራዊ መርሃግብር ውስጥ በግብአት መካከል ቀጥተኛ ግንኙነት መኖር አለበት ወደ ተግባር እና በተግባሩ የሚመረተው ውጤት ፣ ውጤቱ በአለምአቀፍ ተለዋዋጮች ወይም በሌሎች የዓለም ክፍሎች የፕሮግራም ሁኔታ](#global_environment). እንዲሁም ተግባራት [የጎንዮሽ ጉዳቶች](#side_effect) እንዳያወጡ ይጠይቃል ፡፡ ማለትም የዓለም አቀፍ ፕሮግራሙን ሁኔታ አያሻሽሉም ፣ ወይም የመመለሻውን ዋጋ ከማስላት ውጭ ሌላ ነገር አያደርጉም ፣ ለምሳሌ ውጤትን በ [መዝገብ](#log) ፋይል ላይ መጻፍ ፣ ወይም ወደ [ኮንሶል](#console) ማተም።
+
 
 - slug: generator_function
   ref:
@@ -4533,7 +4654,7 @@
     def: >
       አንድ የፕሮጀክት አካል የሆነ ነገር ግን በእውነቱ በእሱ ላይ ምንም ሥራ የማይሠራ ሰው ፡፡
 
-  sot:
+  st:
     term: "mohahlaudi"
     def: >
       Motho a leng karolo ya letsema empa a sa etse letho ho lona.
@@ -4666,6 +4787,14 @@
     def: >
       ፕሮግራም ሰሪዎች ሶፍትዌሮችን እንዲያዳብሩ የሚያግዝ መተግበሪያ ፡፡ መታወቂያዎች በተለምዶ ሀ አብሮገነብ አርታዒ ፣ ኮዱን ወዲያውኑ ለማስፈፀም [ኮንሶል](#console) እና አሳሾች ለ በማስታወሻ ውስጥ እና በዲስክ ላይ ባሉ ፋይሎች ውስጥ የውሂብ መዋቅሮችን ማሰስ ፡፡
 
+- slug: immutable_type
+  en:
+    term: "immutable type"
+    def: >
+      Immutable is when no change is possible over time.
+      An object of this type can not be changed and its state can not be modified after it is created.
+
+
 - slug: import
   en:
     term: "import"
@@ -4692,7 +4821,7 @@
       The [false](#false) belief that one's successes are a result of accident or luck rather
       than ability.
 
-  sot:
+  st:
     term: "lefu la kaketso"
     def: >
       Tumelo e fosahetseng ya hore katleho ya emong e tlile ka lehlohonolo eseng hobane a tshwanetswe kapa a sebeditse ka thata.
@@ -4834,10 +4963,23 @@
       If an invariant expression is not true, this is indicative of a problem, and
       may result in failure or early termination of the program.
 
+- slug: ipython
+  ref:
+    - jupyter
+  en:
+    term: "IPython"
+    def: >
+      Short for "Interactive [Python](#python)", it is a [console](#console) designed
+      to assist interactive and exploratory programming with features such
+      as coloured text, [tab-completion](#tab_completion),
+      [filesystem](#filesystem) navigation, quick access to
+      [documentation](#docstring) and [shell commands](#shell).
+
   am:
     term: የማይለዋወጥ
     def: >
       የሆነ ነገር በማንኛውም ጊዜ በፕሮግራሙ ውስጥ ወይም በ ውስጥ (እውነት)(#true) መሆን አለበት [የሕይወት ዑደት](#lifecycle) የአንድ [ነገር](#object)። ተለዋዋጭነት ብዙውን ጊዜ የሚገለጸው [ማረጋገጫዎችን](#assertion) በመጠቀም ነው  ፡፡
+
 
 - slug: iso_date_format
   en:
@@ -4964,7 +5106,7 @@
     term: "Jupyter"
     def: >
       Project Jupyter is a non-profit, open-source project that was born out of the IPython Project
-      in 2014 as IPython evolved to support interactive [data science](#data_science) and scientific
+      in 2014 as [IPython](#ipython) evolved to support interactive [data science](#data_science) and scientific
       computing in many different programming languages.
 
   am:
@@ -5961,6 +6103,12 @@
       are usually more efficient than [single-threaded](#single_threaded) ones, but
       also harder to understand and debug.
 
+
+- slug: mutable_type
+  en:
+    term: "mutable type"
+    def: >
+      An object of this type may be changed and its state can be modified after it is created.
 
 - slug: mutation
   en:
@@ -7435,6 +7583,15 @@
       other researchers depend on.
 
 
+- slug: rseng
+  en:
+    term: "research software engineering"
+    acronym: "RSEng"
+    def: >
+      The practice of and methods for building the specialized software that
+      other researchers depend on.
+
+
 - slug: s3
   en:
     term: "S3"
@@ -8028,7 +8185,11 @@
     def: >
       To happen at the same time. In programming, synchronous operations are ones that
       have to run simultaneously, or complete at the same time.
-
+  fr:
+    term: synchrone
+    def: >
+      Qui se produit en même temps. En programmation, des opérations synchrones
+      sont des opérations qui doivent s'exécuter simultanémment ou se terminer en même temps.
 
 - slug: systematic_error
   en:
@@ -8302,6 +8463,32 @@
       logic and programming to represent a [binary](#binary) state of something.
 
 
+- slug: true_negative
+  ref:
+    - true_positive
+    - false_negative
+    - false_positive
+    - machine_learning
+    - classification
+  en:
+    term: "true negative"
+    def: >
+      Data points which are actually [false](#false) and correctly predicted as [false](#false).
+
+
+- slug: true_positive
+  ref:
+    - true_negative
+    - false_negative
+    - false_positive
+    - machine_learning
+    - classification
+  en:
+    term: "true positive"
+    def: >
+      Data points which are actually [true](#true) and correctly predicted as [true](#true).
+
+
 - slug: truthy
   ref:
     - falsy
@@ -8430,6 +8617,19 @@
       A unique address on the World-Wide Web. URLs originally identified web pages,
       but may also represent datasets or database queries, particularly if they
       include a [query string](#query_string).
+      
+    
+- slug: user_interface
+  ref:
+    - cli
+    - gui
+  en:
+    term: "user interface"
+    acronym: "UI"
+    def: >
+      Platform for interaction between a user and a machine. The interaction may occur via text 
+      (a [command line interface](#cli)), graphics and windows (a [graphical user interface](#gui)), 
+      or other methods such as voice-driven interfaces.
 
 
 - slug: utf_8
@@ -8687,6 +8887,15 @@
     def: >
       Um curinga, ou caracter curinga, é um caracter que corresponde a qualquer texto,
       como o `*` em `*.csv` (que corresponde a qualquer arquivo cujo nome termina em `*.csv`).
+
+
+- slug: workflow
+  en:
+    term: "workflow"
+    def: >
+      A way of describing work to be done as a set of tasks, typically with dependencies on
+      external inputs or the outputs of other tasks, which can be later be executed by a program.
+      An example is a Makefiles, which can be executed by the make Unix command.
 
 
 - slug: xml
