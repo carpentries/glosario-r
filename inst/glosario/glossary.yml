@@ -1136,8 +1136,7 @@
       ተጠቃሚው የ TAB ቁልፍን በመጫን በፍጥነት በአጠቃቀሙ አንድ ቃል ወይም ኮድ  እንዲጨርስ ተጠቃሚው ሊመርጥበት የሚያስችል ባህሪ ነዉ;;
   
   es:
-
-	term: "auto-completar"
+    term: "auto-completar"
     def: >
      Funcionalidad que le permite a una persona usuaria terminar una palabra o código rapidamente 
      pulsando la tecla TAB para que aparezca una lista de posibles palabras o códigos entre los que 
@@ -5842,11 +5841,20 @@
     term: "loop body"
     def: >
       The statement or statements executed by a loop.
-
   am:
     term: የሉፍ አካል
     def: >
       በሉፕ የተተገበረው መግለጫ ወይም መግለጫዎች።
+      
+- slug: lsof
+  en:
+    term: "lsof"
+    def: >
+      UNIX command to see the list of open files being used by [processes](#process). 
+  es:
+    term: "lsof"
+    def: >
+      Comando en UNIX para ver la lista de archivos abiertos siendo utilizados por [procesos](#process).
 
 - slug: machine_learning
   en:
