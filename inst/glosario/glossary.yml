@@ -393,6 +393,14 @@
     def: >
       አወቃቀሩን የሚወክል በጥልቀት የተቀመጠ የውሂብ መዋቅር ወይም [ዛፍ](#tree)ፕሮግራም ለምሳሌ ፣ AST ሀ ን የሚወክል [መስቀለኛ መንገድ](#node) ሊኖረው ይችላል ["while` loop](#while_loop) ከአንድ [ልጅ](#child_tree) ጋር ሁኔታ እና ሌላ የ [loop አካል](#loop_body)።
 
+- slug: accuracy
+  en:
+    term: "accuracy"
+    def: >
+      Statistical measure of a classification model which gives the proportion 
+      of correct predictions among total number of cases. It is calculated as 
+      Accuracy = (TP+TN)/(TP+TN+FP+FN)
+
 - slug: actual_result
   de:
     term: "Tatsächliches Ergebnis"
@@ -690,6 +698,15 @@
       Melawana e e salwang morago ke khompiutara/sebalamakgolo go rarabolola dikgwetlho tse di amang tiriso ya tse di mo boranyaneng.
 
 
+- slug: anaconda
+  ref:
+    - pip
+    - conda
+  en:
+    term: "Anaconda"
+    def: >
+      Anaconda is a [software distribution] (#software_distribution) of R and Python. It is also a [repository] (#repository) of open-source Python and R programs for data science, packaged using the [conda](#conda) [package manager] (#package_manager). Anaconda also creates Anaconda Navigator, a suite of desktop tools including an [IDE] (#ide) and the [Jupyter Notebook](#jupyter_notebook) application.  
+     
 - slug: anchor
   en:
     term: "anchor"
@@ -2585,6 +2602,14 @@
       for [machine learning][#machine_learning], simulations, and other fields which benifit
       from parallel computation.
 
+- slug: conda
+  ref:
+    - pip
+    - anaconda
+  en:
+    term: "conda"
+    def: >
+      A [package manager] (#package_manager) and environment management system, particularly popular for Python programs.
 - slug: condition
   ref:
     - handle_condition
@@ -3216,6 +3241,12 @@
     term: የውሂብ ክርክር
     def: >
       ለአነስተኛ መጠን [የመረጃ ምህንድስና](#data_engineering) የትብብር ስም።
+
+- slug: debug
+  en:
+    term: "debug"
+    def: >
+      In a computer environment 'debug' refers to the process of finding and resolving errors (also known as 'bugs') within computer programs or systems.
 
 - slug: decision_tree
   ref:
@@ -8149,6 +8180,14 @@
     def: >
       A preliminary vote used to determine whether further discussion is needed in a meeting.
 
+- slug: sensitivity
+  en:
+    term: "sensitivity"
+    def: >
+      Statistical measure of a classification model which gives the True Positive rate. For 
+      example, the proportion of people who have a disease that test positive. Calculated 
+      as Sensitivity = TP/(TP+FN).
+
 - slug: sequential_data
   en:
     term: "sequential data"
@@ -8379,6 +8418,14 @@
       A [software distribution](#software_distribution) that includes the source code,
       typically so that programs can be recompiled on the target computer when they
       are installed.
+
+- slug: specificity
+  en:
+    term: "specificity"
+    def: >
+      Statistical measure of a classification model which gives the False Negative rate. 
+      For example, the proportion of people who do not have a disease that test negative. 
+      Calculated as Specificity = TN/(TN+FP).
 
 - slug: spectral analysis 
   ref:
