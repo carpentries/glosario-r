@@ -1607,6 +1607,10 @@
       Une unité d'information ne pouvant prendre que deux valeurs, souvent désignées par les alternatives oui/non 
       ou vrai/faux. En informatique cela représente un état de 0 ou 1.
       አማራጮችን የሚወክል የመረጃ ክፍል ፣ አዎ / አይደለም ፣ (እውነት) (#true) / [ውሸት](#false) የ 0 ወይም የ 1 ሁኔታን በማስላት ላይ ፡፡ አዎ / አይደለም ፣ (እውነት) (#true) / [ውሸት](#false) አማራጮችን የሚወክል የመረጃ ክፍል የ 0 ወይም የ 1 ሁኔታን በማስላት ላይ ፡፡]
+  af:
+    term: bit
+    def: >
+      'n Eenheid van inligting wat alternatiewe voorstel, ja/nee, waar/vals. Dit kan voorgestel work as 0 of 1.
   nl:
     term: bit
     def: >
@@ -1847,6 +1851,10 @@
     term: "bug"
     def: >
       Una [carasterística](#feature_software) faltante o indeseada de un software.
+  af:
+    term: bug
+    def: >
+      'n Ontbrekende of ongewenste kenmerk van 'n stuk sagteware; die digitale ekwivalent van 'n onkruid.
 
 - slug: bug_report
   en:
@@ -2130,6 +2138,11 @@
     def: >
       Eine Beziehung zwischen zwei Ereignissen oder Zuständen, wobei klar ist,
       dass es einen ursächlichen oder anlässlichen Zusammenhang zwischen den beiden gibt.
+  sw:
+    term: "Kusababisha"
+    def: >
+      Uhusiano kati ya matukio tofauti, ambapo inadaiwa kuwa tukio moja linawajibika
+      kuzalisha au kuathiri mabadiliko katika nyingine.
 
   am:
     term: causation
@@ -2370,6 +2383,10 @@
     term: መከፋፈል
     def: >
       ቡድኖቹ ራሳቸው በማይሆንበት ጊዜ መረጃዎችን በቡድን የመከፋፈል ሂደት አስቀድሞ የታወቀ ነው ።
+  sw:
+    term: "kugawanya"
+    def: >
+      Mchakato wa kugawanya data katika vikundi wakati vikundi vyenyewe bado havijagunduliwa mapema.
 
 - slug: code_coverage
   en:
@@ -2434,6 +2451,10 @@
     term: ትዕዛዝ
     def: >
       አንድ የኮምፒውተር ፕሮግራም አንድ የተወሰነ ሥራን እንዲሠራ የሚነግረው መመሪያ።
+  sw:
+    term: "amri"
+    def: >
+      Agizo la kuiambia programu ya kompyuta kufanya kazi maalum.
 
 - slug: command_history
   en:
@@ -2487,6 +2508,12 @@
     term: አስተያየት
     def: >
       እንደ ኮድ ተደርጎ በማይታይ ጽሁፍ የተፃፈ ጽሑፍ ይልቁንስ ኮዱን ምን እያደረገ እንዳለ የሚገልጽ ጽሑፍ።  እነዚህ ብዙውን ጊዜ አጫጭር ማስታወሻዎች ናቸው፣ ብዙ ጊዜ በ '፩' (በብዙ የፕሮግራም ቋንቋዎች) መጀመር።
+  sw:
+    term: "maoni"
+    def: >
+      Maandishi yaliyoandikwa kwa hati ambayo hayachukuliwi kama kanuni ya kutekelezwa, lakini kama
+      maandishi ambayo yanaelezea kile kanuni hufanya nini. Mara nyingi, hati hizi huwa na maelezo mafupi, 
+      yanayoanza na `#` (katika lugha nyingi za programu).
 
 - slug: commit
   en:
@@ -2578,6 +2605,13 @@
     term: የሒሳብ ልሳነ-ቋንቋ
     def: >
       ለ[ፓርስቲንግ](#parse) ወይም ለመረዳት የሂሳብ ዘዴዎች ጥናት ወይም ተግባራዊነት የሰው ልጆች ቋንቋዎች ። የመጀመሪያ አቀራረቦች አልጎሪዝሚክ ነበሩ; አብዛኞቹ ዘመናዊ አቀራረቦች አኃዛዊ መረጃዎች ናቸው.
+      
+  
+  sw:
+    term: "isimu ya hesabu"
+    def: >
+      Utafiti au utumiaji wa mbinu za kukokotoa na [kuchanganua](#parse) au kuelewa lugha za binadamu. Mbinu za awali zilikuwa za algorithmic; mbinu nyingi za kisasa ni za takwimu.
+           
 
 - slug: computational_notebook
   en:
@@ -2624,7 +2658,10 @@
     def: >
       'n Fout of ander onverwagte gebeurtenis wat die normale vloei van beheer ontwrig.
       
-      
+  sw:
+    term: "hali"
+    def: >
+      Hitilafu au tukio lingine lisilotarajiwa ambalo linatatiza mtiririko wa kawaida wa udhibiti.
 
   am:
     term: ሁኔታ
@@ -6265,12 +6302,16 @@
       O valor médio de um conjunto de dados, mais apropriadamente conhecido como
       [média aritmética](#arithmetic_mean) para que seja distinguido da média
       [geométrica](#geometric_mean) e da [harmônica](#harmonic_mean).
-
   am:
     term: ማለት
     def: >
       የውሂብ ስብስብ አማካይ ዋጋ ፣ ይበልጥ በትክክል በትክክል "ሂሳብ" ተብሎ ይጠራል ከ [ጂኦሜትሪክ](#arithmetic_mean) ለመለየት[የሂሳብ_ማለት]#geometric_mean) እና [harmonic](#harmonic_mean) ማለት ነው።
-
+  sw:
+    term: "wastani"
+    def: >
+      Namba ya katikati kwa data.  Kuikokotoa, jumla nambari halafu gawana na nambari
+      za nambari.
+      
 - slug: mean_absolute_error
   ref:
     - mean_squared_error
@@ -7213,6 +7254,10 @@
     term: "+1"
     def: >
       Un voto a favor de alguna cosa.
+  af:
+    term: :+1"
+    def: >
+      Om ten gunste van iets te stem.
 
 
 - slug: poisson_distribution
@@ -9312,7 +9357,11 @@
       y la media. La [desviación estándar](#standard_deviation) se usa a menudo en
       su lugar, ya que tiene las mismas unidades que los datos, mientras que la
       varianza se expresa en unidades al cuadrado.
-
+  sw:
+    term: "achano"
+    def: >
+      Mraba ya mbali ya kawaida kutoka [wastani](#mean). Kuipata, tengua nambari na
+      wastani ya nambari hizo, halafu kokotoa wastani ya mraba.
 
 - slug: vector
   en:
