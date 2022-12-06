@@ -2400,7 +2400,15 @@
     term: ኮድ ሽፋን (በፈተና)
     def: >
       ፈተና ሲከናውን ምን ያህል [ቤተ መጻሕፍት](#library) ወይም ፕሮግራም ይፈፀም።  ይህ የተለመደ ነው እንደ አንድ በመቶ የኮድ መስመሮች ሪፖርት ተደርጓል ለምሳሌ, ከ 50 መስመሮች ውስጥ 40 ከሆነ አንድ ፋይል በፈተና ወቅት ይሰራል, እነዚያ ምርመራዎች 80% ኮድ ሽፋን አላቸው::
-
+      
+  sw:
+    term: "kuasisi msimbo (majaribuni)"
+    def: >
+       Ni kiasi gani [maktaba](#library) au programu imetekelezwa wakati wa majaribio. 
+       kwa mfano, ikiwa mistari 40 kati ya 50 ndani faili imetekelezwa wakati wa majaribio, 
+       majaribio hayo yana kiwango cha asilimia 80%.
+    
+  
 - slug: code_review
   en:
     term: "code review"
@@ -2716,6 +2724,13 @@
     term: የቅንብር ፋይል
     def: >
       የሶፍትዌሩን ፕሮግራም መስፈሪያዎች እና የመጀመሪያ አቀማመዶች የሚወስን ፋይል. ቅንብር ወይም config, ፋይሎች ብዙውን ጊዜ ለውጦች ለሚታዩበት መረጃ ጥቅም ላይ ይውላሉ, እንደ አካባቢ-የተለየ አቀማመጥ.
+      
+  sw:
+    term: "faili ya usanidi"
+    def: >
+      Faili inayobainisha vigezo na mipangilio ya awali ya programu. Faili ya usanidi hutumiwa kwa habari  zinazobadilika mara nyingi, 
+      kama vile mipangilio iambatanayo ya mazingira.
+
 
 - slug: console
   en:
@@ -2728,6 +2743,13 @@
     term: ኮንሶል
     def: >
       አንድ ተጠቃሚ ትዕዛዞች ሊገባበት የሚችልበት የኮምፒውተር ተርሚናል ወይም እንደ ዛጎል ያለ ፕሮግራም እንዲህ ያለውን መሣሪያ የሚኮርጅ ነው።
+      
+  sw:
+    term: "koni ya kompyuta"
+    def: >
+      Kituo cha kompyuta ambapo mtumiaji anaweza kuingiza amri, au programu, kama vile shell
+      ambayo huiga kifaa kama hicho.
+      
 
 - slug: confusion_matrix
   en:
@@ -2755,6 +2777,12 @@
     def: >
       قيمة عددية ثابتة لا يمكن أن تتغير وهي عكس المتغير الذي يمكن أن يأخذ أكثر من قيمة.
 
+  sw:
+    term: "thabiti"
+    def: >-
+      Thamani ambayo haiwezi kubadilishwa baada ya kubainishwa, 
+      ukilinganisha na [kigeu](#variable_program) ambayo hubadilika.
+      
 
 - slug: constructor
   en:
@@ -2786,6 +2814,12 @@
     term: ቀጣይነት ያለው እርምጃ
     def: >
       በአሁኑ ጊዜ እየተለፈፈ ያለው ትዕዛዝ አለመሆኑን የሚያመለክት [አፋጣኝ](#prompt) ገና ሙሉ እስከሆነ ድረስ አይሮጥም
+
+  sw:
+    term: "kishawishi endelevu"
+    def: >
+       [kishawishi](#prompt) kinachoashiria kwamba amri inayochapwa kwa sasa bado haijakamilika, 
+       na itaendeshwa mara tu itakapokamilika.
 
 - slug: continuous_integration
   en:
@@ -2954,6 +2988,13 @@
     term: ማዕከላዊ ማቀነባበሪያ ክፍል
     def: >
       የማንኛውም ዲጂታል ኮምፒውተር ዋና ሃርድዌር. ሲፒዩ ነው::  መመሪያዎችን የሚተረጉም እና የሚፈፅም አስፈላጊ የኤሌክትሮኒክ ስረሰር ከሶፍትዌሩ ወይም ከሌላ ሃርድዌር የተወሰደ።በተጨማሪም ማዕከላዊ ፕሮሲሰር ተብሎ ይጠራል፤ ዋና ፕሮሲሰር ወይም ማይክሮፕሮሰሰር ::
+
+  sw:
+    term: "Central Processing Unit"
+    def: >
+      Vifaa vikuu vya kompyuta yoyote ya dijitali inayojumuisha
+      sakiti muhimu za kielektroniki zinazotafsiri na kutekeleza maagizo
+      kutoka kwa programu au maunzi mengine.
 
 - slug: cran
   ref:
@@ -3302,6 +3343,11 @@
     def: >
       In a computer environment 'debug' refers to the process of finding and resolving errors (also known as 'bugs') within computer programs or systems.
 
+  sw:
+    term: "utatuzi"
+    def: >
+      Katika mazingira ya kompyuta 'utatuzi' inarejelea mchakato wa kutafuta na kutatua makosa (pia hujulikana kama hitilafu) ndani ya programu au mifumo ya kompyuta.
+
 - slug: decision_tree
   ref:
     - random_forests
@@ -3346,6 +3392,11 @@
     def: >
       Uma operação unária que diminui o valor de uma variável, geralmente em um.
 
+  sw:
+    term: "kupunguza"
+    def: >
+      Operesheni isiyo ya kawaida ambayo hupunguza thamani ya kigezo, kwa kawaida kwa 1.
+      
 
 - slug: deep_learning
   en:
@@ -3358,6 +3409,13 @@
     term: ጥልቅ ትምህርት
     def: >
       የሚጠቀሙባቸው [neural network](#neural_network) ስልተ ቀመሮች በተከታታይ በከፍተኛ ደረጃዎች ባህሪያትን ለማውጣት ብዙ ንብርብሮች።
+      
+  sw:
+    term: "kujifunza kwa kina"
+    def: >
+      Familia ya algoriti za mtandao wa neva [neural network](#neural_network) ambazo hutumia tabaka nyingi 
+      ili kutoa vipengele katika viwango vya juu.
+      
 
 - slug: default_target
   en:
@@ -3648,6 +3706,11 @@
     term: የጎራ እውቀት
     def: >
       ስለ አንድ የተወሰነ የችግር ጎራ መረዳትን ፣ ለምሳሌ ፣ ስለ የትራንስፖርት ሎጂስቲክስ.
+  
+  sw:
+    term: "maarifa ya kikoa"
+    def: >
+      Uelewa wa kikoa maalum, kwa mfano, ujuzi wa vifaa vya usafiri.
 
 - slug: double
   en:
@@ -3686,6 +3749,11 @@
     term: ወደታች ድምጽ መስጠት
     def: >
       በአንድ ነገር ላይ የሚደረግ ድምጽ
+      
+  sw:
+    term: "kura ya chini"
+    def: >
+      Kura dhidi ya kitu.
 
 - slug: dry
   en:
@@ -3843,6 +3911,12 @@
     term: አካባቢ
     def: >
       ተለዋዋጭ ስሞችን እና የሚጠቅሷቸውን እሴቶች የሚያከማች መዋቅር።
+      
+   
+  sw:
+    term: "mazingira"
+    def: >
+      Muundo unaohifadhi seti ya majina tofauti na thamani wanazorejelea.
 
 - slug: error_handling
   en:
@@ -3895,6 +3969,11 @@
     term: ግምገማ
     def: >
       እንደ "1 + 2 * 3/4" ያለ አገላለጽን የመውሰድ እና የማዞር ሂደት ወደ አንድ ፣ የማይቀለበስ እሴት።
+      
+  sw:
+    term: "tathmini"
+    def: >
+      Mchakato wa kuchukua usemi kama vile `1+2*3/4` na kuugeuza kuwa thamani moja isiyoweza kupunguzwa.
 
 - slug: exception
   en:
@@ -3941,6 +4020,10 @@
     def: >
       El valor que se supone debe producir una sección de código cuando se prueba de una 
       manera determinada, o el estado en el que se supone debe dejar el sistema.
+  sw:
+    term: "matokeo yanayotarajiwa (ya majaribio)"
+    def: >
+      Thamani ambayo kipande cha programu kinatakiwa kutoa kinapojaribiwa kwa njia fulani, au hali ambayo kinatakiwa kuondoka kwenye mfumo.
 
 - slug: exploratory_programming
   en:
@@ -3959,6 +4042,10 @@
     term: ተመራማሪ መርሃግብር
     def: >
       ሶፍትዌሩ በሚጻፍበት ጊዜ መስፈርቶች ብቅ የሚሉበት ወይም የሚለወጡበት የሶፍትዌር ልማት ዘዴ ፣ ብዙውን ጊዜ ከቀደሙት ሥራዎች ለሚመጡ ውጤቶች ምላሽ ይሰጣል ፡፡
+  sw:
+    term: "programu ya uchunguzi"
+    def: >
+      Mbinu ya uundaji wa programu ambayo mahitaji huibuka au kubadilika jinsi programu inavyoandikwa, mara nyingi kwa kujibu matokeo ya uendeshaji wa mapema.
 
 - slug: export
   en:
