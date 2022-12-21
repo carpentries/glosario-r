@@ -133,6 +133,14 @@
     term: የተተወው ዌር
     def: >
       ከአሁን በኋላ እየተስተካከለ ያለው ዌር።
+  tn:
+    term: "Matlotla"
+    def: >
+      Serweboleta (software) se se sa tlholeng se tlhokomelwa kgotsa se tlhabololwa.
+  it:
+    term: "abandonware"
+    def: >
+      "Un software abbandonato, non più mantenuto"
 
 - slug: absolute_error
   de:
@@ -253,6 +261,12 @@
     term: ፍጹም መንገድ
     def: በ [የፋይል ስርዓት ውስጥ ወደ ተመሳሳይ ሥፍራ የሚጠቁም መንገድ የሚገመገምበት ቦታ ምንም ይሁን ምን ፡፡ ፍፁም ጎዳና
       እኩል ነው ጂኦግራፊ ውስጥ ኬክሮስ እና ኬንትሮስ
+  it:
+    term: "percorso assoluto del file"
+    def: >
+      Un percorso a un file che punta allo stesso luogo nel [filesystem](#filesystem)
+      indipendentemente da dove venga valutato. Un percorso assoluto del file è 
+      l'equivalente di latitudine e longitudine in geografia.
 
 - slug: absolute_row_number
   de:
@@ -297,6 +311,11 @@
   am:
     term: ፍጹም ረድፍ ቁጥር
     def: የትኞቹም ክፍሎች ቢኖሩ በሠንጠረዥ ውስጥ የአንድ ረድፍ ቅደም ተከተል ማውጫ ጠረጴዛ እየታየ ነው ፡፡
+  it:
+    term: "numero di riga assoluto"
+    def: >
+      Indice sequenziale di una riga in una tabella, indipendetemente da quale sezione
+      della tabella sia visualizzata.
 
 - slug: abstract_method
   de:
@@ -361,6 +380,13 @@
     def: "በ [ነገር-ተኮር መርሃግብር](#oop) ውስጥ አንድ [ዘዴ](#method) ተገልፇል ነገር ግን አልተተገበረም ፡፡
       መርሃግብሮች [ወላጅ] ውስጥ ረቂቅ ዘዴን ይገልፃሉ ክፍል](#parent_class) [የህፃናት ክፍሎች](#child_class)
       ማቅረብ አለበት ፡፡ \n"
+  it:
+    term: "metodo astratto"
+    def: >
+      In [programmazione orientata agli oggetti](#oop), un [metodo](#method) che è
+      definito ma non implementato. Il programmatore definisce un metodo astratto in
+      una [classe padre](#parent_class) per specificare delle operazioni che la 
+      [classe figlia](#child_class) deve implementare.
 
 - slug: abstract_syntax_tree
   en:
@@ -595,7 +621,12 @@
       selbstorganisierter Teams ein Program entwickelt wird. Im Gegensatz dazu
       stehen klassische Ansätze die häufig aufwändiger Planung bedürfen.
       [Explorative Programmierung](#exploratory_programming) ist oft agil.
-
+  tn:
+    term: "Tiro ya Potlako"
+    def: >
+      thulaganyo ya go kwala khoutu ya dirweboleta (software) e e remeletseng
+      mo dikgatong-potlana tse di mmalwa le mo dikakgelong tse di tlhomameng, go na le mo mananeong
+      a sennella-ruri le togamaano ko tshimologong.
 
 - slug: algorithm
   en:
@@ -647,6 +678,11 @@
       Αλγόριθμος είναι ένα σύνολο από βήματα ή κανόνες για τη διεκπεραίωση μιας συγκεκριμένης εργασίας.
       Στην πληροφορική, αλγόριθμος είναι ένα σύνολο από εντολές σε κάποιο πρόγραμμα οι οποίες επιλύουν κάποιο
       υπολογιστικό πρόβλημα.
+  it:
+    term: "algoritmo"
+    def: >
+      Un algoritmo è una sequenza finita di operazioni da eseguire al fine di realizzare un certo compito.
+      In informatica, un algoritmo è una sequenza finita di istruzioni presenti in un programma che permette di risolvere un problema computazionale.
       
 - slug: algorithmic_bias
   ref:
@@ -863,7 +899,12 @@
     term: የትግበራ ፕሮግራም በይነገጽ
     def: >
       በአንድ የሶፍትዌር ቤተ-መጽሐፍት ወይም ድር የሚሰጡ የተግባሮች እና የአሠራር ሂደቶች ስብስብ ሌላ መተግበሪያ ከእሱ ጋር መገናኘት የሚችልበት አገልግሎት። ኤፒ አይ ኮድ አይደለም  ፣ የመረጃ ቋቱ ወይም አገልጋዩ የመዳረሻ ነጥብ ነው ፡፡
-
+  tn:
+    term: "Mekgwatiriso ya Segokaganyi (API)"
+    def: >
+      Setlhotshwana sa ditiriso le ditsamaiso mo motlobong wa serweboleta (software library), kgotsa mo Tirelong ya Webo (web service), 
+      se se gokaganyang motlobo kana tirelo ya teng le Tiriso (app) e sele. Ga se khoutu, polokelotshedimosetso kana sefara: ke seletlelelakgolagano.
+      
 - slug: append_mode
   en:
     term: "append mode"
@@ -2089,7 +2130,13 @@
       "camel case" werden keine Leerzeichen, Unterstriche (`_`), Punkte (`.`)
       oder Bindestriche (`-`) verwandt und jedes Wort großgeschrieben.
       Beispiele sind: `BerechneSumme` oder `findeMuster`.
-
+  tn:
+    term: "Mokwalo wa Kamela"
+    def: >
+      Ke mokgwa wa go kwala dikaelo tsa khomputara ka go sa tsenye matshwao a sekgala (space), 
+      thalela (`_`), khutlo (`.`) kana thaladi (`-`) mo maineng a maemedi a boleng jo bo fetogang (variables) kana a dilo (objects). 
+      Mo godimo ga moo, lefoko lengwe le lengwe mo maineng a le simolola ka tlhakakgolo. 
+      Dikai tsa mokwalo o ke `CalculateSum` le `findPattern`.
 
 - slug: catch_exception
   ref:
@@ -7731,6 +7778,11 @@
     def: >
       Uma popular linguagem de programação interpretada, de código aberto,  que
       depende de indentação para definir a estrutura de controle.
+  it:
+    term: "Python"
+    def: >
+      Un linguaggio di programmazione open-source (pubblicamente accessibile), orientato a oggetti, interpretato (non necessita di compilazione) e 
+      che utlizza l'indentazione per definire le strutture di controllo.
 
 
 - slug: quantile
