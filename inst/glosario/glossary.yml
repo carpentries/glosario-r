@@ -426,7 +426,12 @@
       Statistical measure of a classification model which gives the proportion 
       of correct predictions among total number of cases. It is calculated as 
       Accuracy = (TP+TN)/(TP+TN+FP+FN)
-      
+  es:
+    term: "precisión"
+    def: >
+      Medida estadística de un modelo de clasificación que da la proporción 
+      de predicciones correctas entre el número total de casos. 
+      Se calcula como Precisión = (TP+TN)/(TP+TN+FP+FN)
   sw:
     term: "usahihi"
     def: >
@@ -10046,7 +10051,7 @@
     def: >
       Short for "YAML Ain't Markup Language", a way to represent nested data using
       indentation rather than the parentheses and commas of [JSON](#json). YAML is
-      often used in configuration files and to define [parameters](#parameter) for various flavors
+      often used in configuration files and to define [parameters](#parameter) for various flavours
       of [Markdown](#markdown) documents.
   fr:
     term: "YAML"
