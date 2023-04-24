@@ -1,0 +1,13 @@
+---
+title: "Test Glosario RMD Support"
+output: html_document
+glosario:
+  base_url:
+    - http://carpentries.org/glosario
+  language:
+    - en
+  requires:
+  - readr
+  defines:
+  - data_frame
+---
