@@ -5,7 +5,7 @@
 \title{Get a glossary}
 \usage{
 get_glossary(
-  url = "https://raw.githubusercontent.com/carpentries/glosario/master/glossary.yml",
+  url = "https://raw.githubusercontent.com/carpentries/glosario/main/glossary.yml",
   cache = tempdir()
 )
 }
