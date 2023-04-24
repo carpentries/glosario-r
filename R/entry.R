@@ -226,7 +226,6 @@ Glossary <- R6::R6Class("Glossary",
           }
 
           entries_lang <- e[names(e) %in% iso_langs()]
-          message("parsing: ", slug)
           res <- GlossaryEntry$new(
             slug = slug,
             term = entries_lang[[1]]$term,
