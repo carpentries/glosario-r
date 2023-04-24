@@ -191,14 +191,24 @@ Glossary <- R6::R6Class("Glossary",
     initialize = function(glossary_path = NULL,
                           cache_path = tempdir()) {
       if (is.null(glossary_path)) {
-        raw_glossary <- list(
-          uri = system.file("glosario/glossary.yml", package = "glosario"),
-          entries = yaml::read_yaml(system.file("glosario/glossary.yml",
-            package = "glosario"
-          ),
-          eval.expr = FALSE
+        ### Check if there has been an update performed
+        user_data_dir <- rappdirs::user_data_dir(appname = "glosario")
+        if (dir.exists(user_data_dir)){
+          raw_glossary <- list(
+            uri = paste0(user_data_dir, "/glossary.yml"),
+            entries = yaml::read_yaml(paste0(user_data_dir, "/glossary.yml"),
+                                      eval.expr = FALSE)
           )
-        )
+        } else {
+          raw_glossary <- list(
+            uri = system.file("glosario/glossary.yml", package = "glosario"),
+            entries = yaml::read_yaml(system.file("glosario/glossary.yml",
+                                                  package = "glosario"),
+                                      eval.expr = FALSE
+                                      )
+            )
+        }
+
       } else if (!is.null(cache_path)) {
         validate_glossary_uri(glossary_path)
         raw_glossary <- use_cache(glossary_path, cache_path)
