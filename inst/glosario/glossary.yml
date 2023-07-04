@@ -4893,7 +4893,7 @@
       estimating an average rates of change or some other multiplicative 
       constant. 
 
-- slug: geomtry_shader
+- slug: geometry_shader
   ref:
     - gpu
     - shader
@@ -7338,7 +7338,7 @@
 
 - slug: openrefine
   ref:
-    - tidy data
+    - tidy_data
   en:
     term: "OpenRefine"
     def: >
@@ -8930,9 +8930,6 @@
 - slug: spectral analysis 
   ref:
     - python
-    - data analysis
-    - bayesian inference 
-    - bayesian statistics
   en:
     term: "spectral analysis/ spectrum analysis problem"
     def: >
